@@ -1,0 +1,20 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<DialogWidget>:
+	id: main
+	canvas:
+		Color: 
+			rgba: 1, 1, 1, 1
+		Rectangle:
+			pos: self.pos
+			size: self.size
+
+	BoxLayout:
+		orientation: "horizontal"
+
+		Image:
+			id: icon
+					
+		GridLayout:
+			id: textLayout

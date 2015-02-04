@@ -1,0 +1,13 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<MapScreen>:
+	FloatLayout:
+		IconButton:
+			source: "map.png"
+			size: root.size
+			on_press: root.click()
+
+		DialogWidget:
+			size: (root.size[0], root.size[1] * 0.25)
+			icon: "map.png"
