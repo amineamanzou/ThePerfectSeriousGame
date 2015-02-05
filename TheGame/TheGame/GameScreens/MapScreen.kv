@@ -3,11 +3,15 @@
 
 <MapScreen>:
 	FloatLayout:
-		IconButton:
-			source: "map.png"
-			size: root.size
-			on_press: root.click()
+		Scatter:
+			id: scatter
 
-		DialogWidget:
-			size: (root.size[0], root.size[1] * 0.25)
-			icon: "map.png"
+			size: root.size
+
+			IconButton:
+				id: map
+
+				source: "map.png"
+				pos: scatter.pos
+				size: root.size
+				on_press: root.click()
