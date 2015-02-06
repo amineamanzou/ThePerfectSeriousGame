@@ -24,6 +24,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomWidget\DynImage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomWidget\__init__.py" />
     <Compile Include="Dialog\DialogWidget.py">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +35,7 @@
     <Compile Include="GameScreens\GameScreen.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GameScreens\DeskScreen.py" />
     <Compile Include="GameScreens\MapScreen.py">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +48,7 @@
     <InterpreterReference Include="{4d1d36f4-ab46-49d7-9960-0bdb8e369c35}\3.3" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="desk.png" />
     <Content Include="Dialog\DialogWidget.kv">
       <SubType>Code</SubType>
     </Content>
@@ -52,14 +58,16 @@
     <Content Include="GameScreens\GameScreen.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="GameScreens\MapScreen.kv" />
     <Content Include="map.png" />
-    <Content Include="GameScreens\MapScreen.kv">
+    <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameScreens\" />
     <Folder Include="Dialog\" />
+    <Folder Include="CustomWidget\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,16 +5,10 @@ kivy.require('1.8.0')
 
 from kivy.uix.widget import Widget, Builder
 from kivy.uix.layout import Layout
-from kivy.uix.behaviors import ButtonBehavior
-from kivy.uix.image import Image
-from kivy.animation import Animation
-from kivy.graphics.transformation import Matrix
-from kivy.clock import Clock
-
-from functools import partial
 
 from GameScreen import GameScreen
 from Dialog.DialogWidget import DialogWidget
+from CustomWidget.DynImage import DynImage
 
 Builder.load_file("GameScreens/MapScreen.kv")
 
@@ -35,7 +29,7 @@ class MapScreen(GameScreen):
                 print " Case RH "
             elif(mouse[0] < 0.34375 * width and mouse[1] < 0.394 * height):
                 """ Case bureau """
-                print " Case bureau "
+                self.app.changeScreen("DeskScreen");
             elif(mouse[0] > 0.34375 * width and mouse[0] < 0.56875 * width and mouse[1] < 0.394 * height):
                 """ Case marketing """
                 print " Case marketing "
@@ -48,7 +42,3 @@ class MapScreen(GameScreen):
         else:
             """ En dehors de la map """
             print " En dehors de la map "
-
-
-class IconButton(ButtonBehavior, Image):
-    pass

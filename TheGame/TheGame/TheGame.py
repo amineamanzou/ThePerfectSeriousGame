@@ -10,6 +10,7 @@ from kivy.uix.widget import Widget
 from kivy.uix.image import Image
 
 from GameScreens.MapScreen import MapScreen
+from GameScreens.DeskScreen import DeskScreen
 
 class GameApp(App):
     def build(self):
@@ -31,10 +32,12 @@ class GameWidget(Widget):
 		self.changeScreen("MapScreen")
 
     def changeScreen(self, screen):
-		self.clear_widgets()
-		if screen == "MapScreen":
-			self.add_widget(MapScreen(app=self))
-		else:
-			self.changeScreen("MapScreen")		
+        self.clear_widgets()
+        if screen == "MapScreen":
+            self.add_widget(MapScreen(app=self))
+        elif screen == "DeskScreen":
+            self.add_widget(DeskScreen(app=self))
+        else:
+            self.changeScreen("MapScreen")
 
 GameApp().run()

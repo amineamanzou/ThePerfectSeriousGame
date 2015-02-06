@@ -8,6 +8,6 @@ from kivy.uix.widget import Widget, Builder
 Builder.load_file("Dialog/DialogWidget.kv")
 
 class DialogWidget(Widget):
-    icon = ""
-    def __init__(self, **kwargs):
+    def __init__(self, icon, **kwargs):
         super(DialogWidget, self).__init__(**kwargs)
+        print self.ids.icon
