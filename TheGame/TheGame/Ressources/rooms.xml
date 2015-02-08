@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rooms>
+  
+  <room id="1">
+    <name>Couloir</name>
+    <background>./Images/room_couloir.png</background>
+    <character>./Images/char_couloir.png</character>
+    <x min="0.20" max="0.75"></x>
+    <y min="0.138" max="0.95"></y>
+    <fuckDialogs>
+      <text id="1">Il n'y a rien à faire ici...</text>
+      <text id="2">C'est l'heure d'aller bosser.</text>
+    </fuckDialogs>
+    <!-- une piece a aussi un score, variable dans le code-->
+  </room>
+  
+  <room id="2">
+    <name>MOE</name>
+    <background>./Images/room_moe.png</background>
+    <character>./Images/char_moe.png</character>
+    <x min="" max="0.44375"></x>
+    <y min="0.566" max=""></y>
+    <fuckDialogs>
+      <text id="1">Ça sent le geek par ici.</text>
+      <text id="2">Je vois le monde en noir et vert !</text>
+      <text id="3">print("Hello Worlds !");</text>
+    </fuckDialogs>
+  </room>
+  
+  <room id="3">
+    <name>RH</name>
+    <background>./Images/room_rh.png</background>
+    <character>./Images/char_rh.png</character>
+    <x min="0.44375" max=""></x>
+    <y min="0.75" max=""></y>
+    <fuckDialogs>
+      <text id="1">Il y a beaucoup de formulaires ici, mais rien pour moi.</text>
+      <text id="2">Les mamies ne pourront rien faire pour moi ici.</text>
+    </fuckDialogs>
+  </room>
+  
+  <room id="4">
+    <name>bureau</name>
+    <background>./Images/room_bureau.png</background>
+    <character>./Images/char_bureau.png</character>
+    <x min="" max="0.34375"></x>
+    <y min="" max="0.394"></y>
+    <fuckDialogs>
+      <text id="1">Ça fait du bien d'être au calme.</text>
+      <text id="2">Ce n'est pas encore l'heure du café.</text>
+      <text id="3">J'ai encore des choses à faire...</text>
+    </fuckDialogs>
+  </room>
+  
+  <room id="5">
+    <name>marketing</name>
+    <background>./Images/room_marketing.png</background>
+    <character>./Images/char_marketing.png</character>
+    <x min="0.34375" max="0.56875"></x>
+    <y min="" max="0.394"></y>
+    <fuckDialogs>
+      <text id="1">De la publicité partout partout partout !</text>
+      <text id="2">Ce n'est pas le moment de jouer à les formes et les couleurs.</text>
+    </fuckDialogs>
+  </room>
+  
+  <room id="6">
+    <name>boss</name>
+    <background>./Images/room_boss.png</background>
+    <character>./Images/char_boss.png</character>
+    <x min="0.56875" max=""></x>
+    <y min="" max="0.577"></y>
+    <fuckDialogs>
+      <text id="1">En réunion.</text>
+      <text id="2">Toujours en réunion.</text>
+      <text id="3">Ce n'est pas le moment.</text>
+    </fuckDialogs>
+  </room>
+</rooms>

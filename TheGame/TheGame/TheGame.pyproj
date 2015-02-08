@@ -67,12 +67,18 @@
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Ressources\Chapters\chapter1.xml" />
+    <Content Include="Ressources\Chapters\chapter2.xml" />
+    <Content Include="Ressources\rooms.xml" />
+    <Content Include="Ressources\story.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameScreens\" />
     <Folder Include="Dialog\" />
     <Folder Include="CustomWidget\" />
     <Folder Include="Images\" />
+    <Folder Include="Ressources\" />
+    <Folder Include="Ressources\Chapters\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
