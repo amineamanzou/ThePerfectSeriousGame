@@ -46,12 +46,3 @@ class MapScreen(GameScreen):
         else:
             """ En dehors de la map """
             print " En dehors de la map "
-
-    
-
-
-class room():
-    score = minX = minY = maxX = maxY = 0
-    name = ""
-    imageChar = imageBack = ""
-    dialogs = []

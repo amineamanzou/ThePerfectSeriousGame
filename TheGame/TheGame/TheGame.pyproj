@@ -28,6 +28,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CustomWidget\__init__.py" />
+    <Compile Include="Data\RoomReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\XmlReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\__init__.py" />
     <Compile Include="Dialog\DialogElement.py" />
     <Compile Include="Dialog\DialogTextElement.py" />
     <Compile Include="Dialog\DialogWidget.py">
@@ -44,6 +51,10 @@
     <Compile Include="GameScreens\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Room.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\__init__.py" />
     <Compile Include="TheGame.py" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +88,8 @@
     <Folder Include="Dialog\" />
     <Folder Include="CustomWidget\" />
     <Folder Include="Images\" />
+    <Folder Include="Data\" />
+    <Folder Include="Models\" />
     <Folder Include="Ressources\" />
     <Folder Include="Ressources\Chapters\" />
   </ItemGroup>
