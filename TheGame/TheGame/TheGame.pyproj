@@ -28,6 +28,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CustomWidget\__init__.py" />
+    <Compile Include="Dialog\DialogElement.py" />
+    <Compile Include="Dialog\DialogTextElement.py" />
     <Compile Include="Dialog\DialogWidget.py">
       <SubType>Code</SubType>
     </Compile>
@@ -48,7 +50,7 @@
     <InterpreterReference Include="{4d1d36f4-ab46-49d7-9960-0bdb8e369c35}\3.3" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="desk.png" />
+    <Content Include="Dialog\DialogTextElement.kv" />
     <Content Include="Dialog\DialogWidget.kv">
       <SubType>Code</SubType>
     </Content>
@@ -59,7 +61,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="GameScreens\MapScreen.kv" />
-    <Content Include="map.png" />
+    <Content Include="Images\desk.png" />
+    <Content Include="Images\map.png" />
+    <Content Include="Images\profil-test.png" />
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
     </Content>
@@ -68,6 +72,7 @@
     <Folder Include="GameScreens\" />
     <Folder Include="Dialog\" />
     <Folder Include="CustomWidget\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

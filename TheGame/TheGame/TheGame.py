@@ -7,7 +7,6 @@ from kivy.app import App
 from kivy.core.window import Window
 from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
-from kivy.uix.image import Image
 
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
@@ -26,18 +25,28 @@ class GameApp(App):
 
 class GameWidget(Widget):
     app = ObjectProperty(None)
+    gameScreen = ObjectProperty(None)
 
     def __init__(self, **kwargs):
 		super(GameWidget, self).__init__(**kwargs)		
 		self.changeScreen("MapScreen")
 
     def changeScreen(self, screen):
+        if self.gameScreen is not None:
+            self.gameScreen.hide()
+
+            while self.gameScreen.visible:
+                continue
+
         self.clear_widgets()
         if screen == "MapScreen":
-            self.add_widget(MapScreen(app=self))
+            self.gameScreen = MapScreen(app=self, opacity=0)
         elif screen == "DeskScreen":
-            self.add_widget(DeskScreen(app=self))
+            self.gameScreen = DeskScreen(app=self, opacity=0)
         else:
-            self.changeScreen("MapScreen")
+            self.gameScreen = MapScreen(app=self, opacity=0)
+        self.add_widget(self.gameScreen)
+
+        self.gameScreen.show()
 
 GameApp().run()

@@ -2,19 +2,25 @@
 #:import kivy kivy
 
 <DialogWidget>:
-	id: main
-	canvas:
-		Color: 
-			rgba: 1, 1, 1, 1
-		Rectangle:
-			pos: self.pos
-			size: self.size
+
 
 	BoxLayout:
+		id: layout
 		orientation: "horizontal"
+		size: root.size
+		pos: root.pos
 
 		Image:
 			id: icon
-					
-		GridLayout:
-			id: textLayout
+			size_hint: (.2, 1)
+			size: (root.height, root.height)
+			source: root.icon
+
+		DialogElement:
+			canvas:
+				Color:
+					rgba: 1, 1, 1, 1
+				Rectangle:
+					pos: self.pos
+					size: self.size
+			id: elementContainer
