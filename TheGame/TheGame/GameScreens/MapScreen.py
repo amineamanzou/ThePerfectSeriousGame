@@ -10,6 +10,10 @@ from GameScreen import GameScreen
 from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
 
+from Data.RoomReader import RoomReader
+
+import xml.etree.ElementTree as ET
+
 Builder.load_file("GameScreens/MapScreen.kv")
 
 class MapScreen(GameScreen):
@@ -17,6 +21,11 @@ class MapScreen(GameScreen):
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
+        
+        tree = ET.parse(r'Ressources/rooms.xml')
+        root = tree.getroot()
+        print root
+      
 
 
 

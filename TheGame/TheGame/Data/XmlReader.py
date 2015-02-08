@@ -9,6 +9,6 @@ class XmlReader():
         try:
             self.xml = ElementTree.parse(filename)
         except Exception:
-            raise Exception("Erreur lors de la récupèration du xml") 
+            raise Exception("Erreur lors de la recuperation du xml") 
 
         return super().__init__(*args)
