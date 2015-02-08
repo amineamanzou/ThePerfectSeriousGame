@@ -21,7 +21,8 @@
     <content>[size=20]Introduction à votre mission[/size][size=12]\nVous devez mettre un place un serious game sur [i]l'intranet[/i] de l'entreprise.
               \nIl s'agit essentiellement d'un serious game ayant comme objectif de mettre en avant la culture de l'entreprise.
               \nAméliorer les liens entre les entités est également un réel but de ce projet.
-              \nBonne chance. LoL.[/size]</content>
+              \nBonne chance.\nLoL.[/size]
+    </content>
     <x>600</x>
     <y>600</y>
     <image>./Images/fiche.png</image>
@@ -87,26 +88,26 @@
   </dialog>
 
   <!-- Deuxième branche, côté MOE -->
-  <dialog id="10" idParent="3"  type="C" idBat="5" end="false">
+  <dialog id="10" idParent="3"  type="C" idBat="2" end="false">
     <text>Bienvenue au sein de la DSI. Je suis C.Tonpy, Directeur de ce département.
           Nous sommes l'équipe qui va vous aider dans la réalisation du serious game.
     </text>
   </dialog>
 
-  <dialog id="11" idParent="10"  type="C" idBat="5" end="false">
+  <dialog id="11" idParent="10"  type="C" idBat="2" end="false">
     <text>
       J'ai quelques questions à vous poser.
       Vous avez déjà eu des instructions sur le projet.
     </text>
   </dialog>
 
-  <dialog id="12" idParent="11"  type="C" idBat="5" end="false">
+  <dialog id="12" idParent="11"  type="C" idBat="2" end="false">
     <text>
       Pouvez vous me rappeler la technologie à utiliser pour ce projet ?
     </text>
   </dialog>
 
-  <dialog id="13" idParent="12"  type="E" idBat="5" end="false">
+  <dialog id="13" idParent="12"  type="E" idBat="2" end="false">
     <title>Quelle technologie doit être utilisée pour le développement ?</title>
     <choix>
       <answer id="1">
@@ -128,7 +129,7 @@
     </choix>
   </dialog>
 
-  <dialog id="14" idParent="13"  type="C" idBat="5" end="false">
+  <dialog id="14" idParent="13"  type="C" idBat="2" end="false">
     <text>
       Très bien, je vous fait confiance. "Tant que ça fonctionne" comme on dit souvent...
       Pendant que vous êtes là, si vous pouvez dire aux ressources humaines de traiter 
@@ -136,7 +137,7 @@
     </text>
   </dialog>
 
-  <dialog id="15" idParent="14"  type="E" idBat="5" end="false">
+  <dialog id="15" idParent="14"  type="E" idBat="2" end="false">
     <title>Vous répondez à Tonpy ?</title>
     <choix>
       <answer id="1">
@@ -150,7 +151,7 @@
     </choix>
   </dialog>
 
-  <dialog id="16" idParent="15"  type="C" idBat="5" end="true">
+  <dialog id="16" idParent="15"  type="C" idBat="2" end="true">
     <text>
       C'est tout du côté de la MOE, merci de m'avoir écouté. Bon courage.
     </text>
