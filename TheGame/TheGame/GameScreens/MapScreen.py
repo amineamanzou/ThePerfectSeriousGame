@@ -13,8 +13,12 @@ from CustomWidget.DynImage import DynImage
 Builder.load_file("GameScreens/MapScreen.kv")
 
 class MapScreen(GameScreen):
+    rooms = []
+
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
+
+
 
     def click(self):
         mouse = self.app.app.window.mouse_pos
@@ -42,3 +46,12 @@ class MapScreen(GameScreen):
         else:
             """ En dehors de la map """
             print " En dehors de la map "
+
+    
+
+
+class room():
+    score = minX = minY = maxX = maxY = 0
+    name = ""
+    imageChar = imageBack = ""
+    dialogs = []
