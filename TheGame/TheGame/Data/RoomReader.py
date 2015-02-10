@@ -8,6 +8,7 @@ class RoomReader(XmlReader):
         XmlReader.__init__(self, filename, *args)
 
     def parse(self):
+        # pour l'explication du code, voir l'exemple commente dans StoryReader.py
         listRoom = []
         print listRoom
         for room in self.xml.getroot():
