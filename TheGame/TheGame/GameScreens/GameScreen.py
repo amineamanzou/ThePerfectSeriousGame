@@ -6,6 +6,7 @@ kivy.require('1.8.0')
 from kivy.uix.widget import Widget, Builder
 from kivy.properties import ObjectProperty
 from kivy.animation import Animation
+from kivy.clock import Clock
 
 Builder.load_file("GameScreens/GameScreen.kv")
 
@@ -14,7 +15,7 @@ class GameScreen(Widget):
     visible = False
 
     def __init__(self, **kwargs):
-		super(GameWidget, self).__init__(**kwargs);self.size = self.app.app.window.size
+        super(GameWidget, self).__init__(**kwargs);self.size = self.app.app.window.size
 
     def show(self):
         anim = Animation(opacity=1, duration=2)
