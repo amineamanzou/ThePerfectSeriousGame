@@ -12,7 +12,7 @@ import os
 
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
-from GameScreens.ErrorScreen import ErrorScreen
+from Managers.RoomsManager import RoomsManager
 
 class GameApp(App):
     def build(self):
@@ -32,9 +32,12 @@ class GameApp(App):
 class GameWidget(Widget):
     app = ObjectProperty(None)
     gameScreen = ObjectProperty(None)
+    roomsManager = object
 
     def __init__(self, **kwargs):
         super(GameWidget, self).__init__(**kwargs)
+        self.roomsManager = RoomsManager(self.app.APPLICATION_PATH + os.path.normpath('/Ressources/rooms.xml'))
+
         self.changeScreen("MapScreen")
 
     def changeScreen(self, screen):
@@ -49,8 +52,6 @@ class GameWidget(Widget):
             self.gameScreen = MapScreen(app=self, opacity=0)
         elif screen == "DeskScreen":
             self.gameScreen = DeskScreen(app=self, opacity=0)
-        elif screen == "ErrorScreen":
-            self.gameScreen = ErrorScreen()
         else:
             self.gameScreen = MapScreen(app=self, opacity=0)
         self.add_widget(self.gameScreen)

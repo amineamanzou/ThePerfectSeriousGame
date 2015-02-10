@@ -53,6 +53,10 @@
     <Compile Include="GameScreens\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Managers\RoomsManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managers\__init__.py" />
     <Compile Include="Models\EvaluationDialog.py" />
     <Compile Include="Models\FicheDialog.py" />
     <Compile Include="Models\ClassicDialog.py" />
@@ -101,6 +105,7 @@
     <Folder Include="Images\" />
     <Folder Include="Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Managers\" />
     <Folder Include="Ressources\" />
     <Folder Include="Ressources\Chapters\" />
   </ItemGroup>

@@ -4,4 +4,4 @@
 Package contenant les modeles
 """
 
-__all__ = ['Room']
+__all__ = ['Room', 'Chapter', 'AbstractDialog', 'ClassicDialog', 'EvalChoice', 'EvaluationDialog', 'FicheDialog']
