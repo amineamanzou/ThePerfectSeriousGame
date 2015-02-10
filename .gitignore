@@ -161,3 +161,4 @@ $RECYCLE.BIN/
 
 # Pycharm IDE
 .idea/*
+*.pyc
