@@ -7,6 +7,8 @@ from kivy.uix.widget import Widget, Builder
 from kivy.properties import ObjectProperty
 from kivy.animation import Animation
 
+import itertools
+
 Builder.load_file("GameScreens/GameScreen.kv")
 
 class GameScreen(Widget):
@@ -14,7 +16,8 @@ class GameScreen(Widget):
     visible = False
 
     def __init__(self, **kwargs):
-		super(GameWidget, self).__init__(**kwargs);self.size = self.app.app.window.size
+        super(Widget, self).__init__(**kwargs)
+        self.size = self.app.app.window.size
 
     def show(self):
         anim = Animation(opacity=1, duration=2)
@@ -28,3 +31,10 @@ class GameScreen(Widget):
 
     def setVisible(self, bool, **kwargs):
         self.visible = bool
+
+    def showError(self, ex):
+        """x = itertools.count(0)
+        message = "Une erreur est survenue lors de l'execution de l'ecran : " + x.__class__.__name__
+        message += "\n" + ex
+        self = ErrorScreen(error=message)"""
+        pass

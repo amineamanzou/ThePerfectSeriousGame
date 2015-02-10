@@ -1,0 +1,21 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<ErrorScreen>:
+    BoxLayout:
+        canvas:
+            Color:
+                rgba: 237, 220, 168, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        pos: root.pos
+        size: root.size
+        orientation: "horizontal"
+
+        Label:
+            text: "OUPS !"
+
+        label:
+            text: ""

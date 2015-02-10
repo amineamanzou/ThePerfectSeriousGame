@@ -8,6 +8,8 @@ from kivy.core.window import Window
 from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
 
+import os
+
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
 
@@ -22,6 +24,8 @@ class GameApp(App):
 
     def configure(self):
         self.window.size = (1600, 900)
+        self.APPLICATION_PATH = os.path.dirname(__file__)
+        self.APPLICATION_ENV = "DEBUG"
 
 class GameWidget(Widget):
     app = ObjectProperty(None)

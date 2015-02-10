@@ -4,4 +4,4 @@
 Package contenant les ecrans de jeu
 """
 
-__all__ = ['GameScreen', 'MapScreen', 'DeskScreen']
+__all__ = ['GameScreen', 'MapScreen', 'DeskScreen', 'ErrorScreen']
