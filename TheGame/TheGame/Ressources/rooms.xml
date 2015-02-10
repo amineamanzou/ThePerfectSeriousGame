@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rooms>
-  
+ 
   <room id="1">
     <name>Couloir</name>
     <background>./Images/room_couloir.png</background>

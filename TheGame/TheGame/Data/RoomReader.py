@@ -9,18 +9,19 @@ class RoomReader(XmlReader):
 
     def parse(self):
         listRoom = []
+        print listRoom
         for room in self.xml.getroot():
-            aRoom = Room()
-            aRoom.id = room.attrib.id
-            aRoom.name = root[0].text
-            aRoom.imageBackground = root[1].text
-            aRoom.imageChar = root[2].text
-            aRoom.xMin = root[3].attrib.min
-            aRoom.xMax = root[3].attrib.max
-            aRoom.yMin = root[4].attrib.min
-            aRoom.yMax = root[4].attrib.min
+            aRoom = Room()   
+            aRoom.id = room.attrib['id']
+            aRoom.name = room[0].text
+            aRoom.imageBackground = room[1].text
+            aRoom.imageChar = room[2].text
+            aRoom.xMin = room[3].attrib['min']
+            aRoom.xMax = room[3].attrib['max']
+            aRoom.yMin = room[4].attrib['min']
+            aRoom.yMax = room[4].attrib['max']
             score= 0
-            for fuck in root.findall('text'):
+            for fuck in room.findall('text'):
                 aRoom.fuckDialogs.append(fuck.find('text').text)
             listRoom.append(aRoom)
         return listRoom
