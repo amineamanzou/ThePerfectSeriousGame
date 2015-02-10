@@ -23,17 +23,18 @@ class GameApp(App):
         self.root = GameWidget(app=self)
 
     def configure(self):
-        self.window.size = (1600, 900)
+        self.window.size = (1200, 800)
         self.APPLICATION_PATH = os.path.dirname(__file__)
         self.APPLICATION_ENV = "DEBUG"
+
 
 class GameWidget(Widget):
     app = ObjectProperty(None)
     gameScreen = ObjectProperty(None)
 
     def __init__(self, **kwargs):
-		super(GameWidget, self).__init__(**kwargs)		
-		self.changeScreen("MapScreen")
+        super(GameWidget, self).__init__(**kwargs)
+        self.changeScreen("MapScreen")
 
     def changeScreen(self, screen):
         if self.gameScreen is not None:

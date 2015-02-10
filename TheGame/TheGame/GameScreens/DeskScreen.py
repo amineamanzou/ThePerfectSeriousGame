@@ -44,12 +44,14 @@ class DeskScreen(GameScreen):
 
     def showNoteContent(self, content):
         self.ids.note.text = content
-        anim = Animation(pos=(self.ids.note.pos[0], self.size[1] * 0.1))
-        anim.start(self.ids.note)
+        slide = Animation(pos=(self.ids.note.pos[0], self.size[1] * 0.1))
+        slide.start(self.ids.note)
+        self.ids.shadow.size = self.size
 
     def hideNote(self):
-        anim = Animation(pos=(self.ids.note.pos[0], self.size[1]))
-        anim.start(self.ids.note)
+        slide = Animation(pos=(self.ids.note.pos[0], self.size[1]))
+        slide.start(self.ids.note)
+        self.ids.shadow.size = (0, 0)
 
     def test(self):
         self.addNote(Note())
