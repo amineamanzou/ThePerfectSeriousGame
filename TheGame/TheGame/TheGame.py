@@ -4,7 +4,6 @@ import kivy
 kivy.require('1.8.0')
 
 from kivy.app import App
-from kivy.core.window import Window
 from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
 

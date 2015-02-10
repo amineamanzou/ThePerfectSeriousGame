@@ -17,7 +17,9 @@ from Models.AbstractDialog import AbstractDialog
 from Models.ClassicDialog import ClassicDialog
 from Models.FicheDialog import FicheDialog
 from Models.EvaluationDialog import EvaluationDialog
-from Models.EvalChoice import EvalChoice
+
+import os
+
 
 Builder.load_file("GameScreens/MapScreen.kv")
 
@@ -28,12 +30,13 @@ class MapScreen(GameScreen):
         super(GameScreen, self).__init__(**kwargs)
 
         ############### TEST de RoomReader : renvoi les rooms ######################
-        rooms = RoomReader(self.app.app.APPLICATION_PATH + '\\Ressources\\rooms.xml')
+        rooms = RoomReader(self.app.app.APPLICATION_PATH + os.path.normpath('/Ressources/rooms.xml'))
+
         for room in rooms.parse():
             print room
 
         ############### TEST de StoryReader : renvoi les chapters ######################
-        story = StoryReader(self.app.app.APPLICATION_PATH + '\\Ressources\\story.xml')
+        story = StoryReader(self.app.app.APPLICATION_PATH + os.path.normpath('/Ressources/story.xml'))
         for chapter in story.parse():
             print chapter
         
