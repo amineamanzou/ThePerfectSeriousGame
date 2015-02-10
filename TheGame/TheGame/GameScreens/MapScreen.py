@@ -11,6 +11,13 @@ from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
 
 from Data.RoomReader import RoomReader
+from Data.StoryReader import StoryReader
+
+from Models.AbstractDialog import AbstractDialog
+from Models.ClassicDialog import ClassicDialog
+from Models.FicheDialog import FicheDialog
+from Models.EvaluationDialog import EvaluationDialog
+from Models.EvalChoice import EvalChoice
 
 Builder.load_file("GameScreens/MapScreen.kv")
 
@@ -20,10 +27,23 @@ class MapScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
 
+        ############### TEST de RoomReader : renvoi les rooms ######################
         rooms = RoomReader(self.app.app.APPLICATION_PATH + '\\Ressources\\rooms.xml')
-        
         for room in rooms.parse():
             print room
+
+        ############### TEST de StoryReader : renvoi les chapters ######################
+        story = StoryReader(self.app.app.APPLICATION_PATH + '\\Ressources\\story.xml')
+        for chapter in story.parse():
+            print chapter
+        
+        ############### TEST instanciation ###########""
+        choice = EvalChoice() 
+        dialog = AbstractDialog()       
+        cDialog = ClassicDialog()      
+        fDialog = FicheDialog()      
+        eDialog = EvaluationDialog()
+       
 
     def click(self):
         mouse = self.app.app.window.mouse_pos
