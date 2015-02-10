@@ -20,11 +20,6 @@ class MapScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
 
-        rooms = RoomReader(self.app.app.APPLICATION_PATH + '\\Ressources\\rooms.xml')
-        
-        for room in rooms.parse():
-            print room
-
     def click(self):
         mouse = self.app.app.window.mouse_pos
         width = self.size[0]

@@ -12,6 +12,7 @@ import os
 
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
+from GameScreens.ErrorScreen import ErrorScreen
 
 class GameApp(App):
     def build(self):
@@ -47,6 +48,8 @@ class GameWidget(Widget):
             self.gameScreen = MapScreen(app=self, opacity=0)
         elif screen == "DeskScreen":
             self.gameScreen = DeskScreen(app=self, opacity=0)
+        elif screen == "ErrorScreen":
+            self.gameScreen = ErrorScreen()
         else:
             self.gameScreen = MapScreen(app=self, opacity=0)
         self.add_widget(self.gameScreen)

@@ -7,7 +7,11 @@ from kivy.uix.widget import Widget, Builder
 from kivy.properties import ObjectProperty
 from kivy.animation import Animation
 
+from kivy.uix.label import Label
+
 import itertools
+
+from GameScreens.ErrorScreen import ErrorScreen
 
 Builder.load_file("GameScreens/GameScreen.kv")
 
@@ -33,8 +37,12 @@ class GameScreen(Widget):
         self.visible = bool
 
     def showError(self, ex):
-        """x = itertools.count(0)
-        message = "Une erreur est survenue lors de l'execution de l'ecran : " + x.__class__.__name__
+        x = itertools.count(0)
+        message = "Une erreur est survenue lors de l'execution de l'ecran : " + type(self).__name__
         message += "\n" + ex
-        self = ErrorScreen(error=message)"""
-        pass
+
+        error = ErrorScreen(size=self.size, app=self.app)
+        error.setDebugMessage(message)
+
+        self.clear_widgets()
+        self.add_widget(error)

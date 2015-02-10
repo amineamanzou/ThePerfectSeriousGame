@@ -41,6 +41,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dialog\__init__.py" />
+    <Compile Include="GameScreens\ErrorScreen.py" />
     <Compile Include="GameScreens\GameScreen.py">
       <SubType>Code</SubType>
     </Compile>

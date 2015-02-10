@@ -2,20 +2,28 @@
 #:import kivy kivy
 
 <ErrorScreen>:
-    BoxLayout:
-        canvas:
-            Color:
-                rgba: 237, 220, 168, 1
-            Rectangle:
-                pos: self.pos
-                size: self.size
+    canvas:
+        Color:
+            rgba: 0.237, 0.220, 0.168, 1
+        Rectangle:
+            pos: root.pos
+            size: root.size
 
-        pos: root.pos
-        size: root.size
-        orientation: "horizontal"
+	cols: 1
 
-        Label:
-            text: "OUPS !"
+    GridLayout:
+		pos: root.pos
+		size: root.size
 
-        label:
-            text: ""
+		cols: 1
+
+		Label:
+			text: "OUPS :'("
+			font_size: "50sp"
+
+		Label:
+			text: "Une erreur est survenue, veuillez nous excuser pour la gène occasionnée"
+			font_size: "25sp"
+
+		Label:
+			text: root.debug
