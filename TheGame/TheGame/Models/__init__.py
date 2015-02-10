@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Package contenant les modèles
+Package contenant les modeles
 """
 
 __all__ = ['Room']

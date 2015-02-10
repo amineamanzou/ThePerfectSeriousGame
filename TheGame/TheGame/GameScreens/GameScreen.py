@@ -8,6 +8,8 @@ from kivy.properties import ObjectProperty
 from kivy.animation import Animation
 from kivy.clock import Clock
 
+import itertools
+
 Builder.load_file("GameScreens/GameScreen.kv")
 
 class GameScreen(Widget):
@@ -29,3 +31,10 @@ class GameScreen(Widget):
 
     def setVisible(self, bool, **kwargs):
         self.visible = bool
+
+    def showError(self, ex):
+        """x = itertools.count(0)
+        message = "Une erreur est survenue lors de l'execution de l'ecran : " + x.__class__.__name__
+        message += "\n" + ex
+        self = ErrorScreen(error=message)"""
+        pass

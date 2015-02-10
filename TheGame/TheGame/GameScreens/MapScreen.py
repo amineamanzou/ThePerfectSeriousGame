@@ -10,6 +10,8 @@ from GameScreen import GameScreen
 from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
 
+from Data.RoomReader import RoomReader
+
 Builder.load_file("GameScreens/MapScreen.kv")
 
 class MapScreen(GameScreen):
@@ -18,7 +20,10 @@ class MapScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
 
-
+        rooms = RoomReader(self.app.app.APPLICATION_PATH + '\\Ressources\\rooms.xml')
+        
+        for room in rooms.parse():
+            print room
 
     def click(self):
         mouse = self.app.app.window.mouse_pos

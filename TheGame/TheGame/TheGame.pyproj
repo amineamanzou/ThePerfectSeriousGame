@@ -68,6 +68,7 @@
     <Content Include="Game.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="GameScreens\ErrorScreen.kv" />
     <Content Include="GameScreens\GameScreen.kv">
       <SubType>Code</SubType>
     </Content>

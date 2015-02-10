@@ -161,4 +161,6 @@ $RECYCLE.BIN/
 
 # Pycharm IDE
 .idea/*
+
+# Fichiers python compil�s
 *.pyc
