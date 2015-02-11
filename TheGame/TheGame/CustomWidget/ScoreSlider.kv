@@ -1,0 +1,19 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<ScoreSlider>:
+	canvas:
+		Color:
+			rgba: 0, 0, 0, 0.75
+		Rectangle:
+			pos: self.pos
+			size: self.size
+
+	Slider:
+		pos: root.pos
+		size: root.size
+		min: -100
+		max: 100
+		step: 0
+		value: root.score 
+		disabled: True

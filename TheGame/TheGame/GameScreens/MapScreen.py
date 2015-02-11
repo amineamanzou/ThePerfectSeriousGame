@@ -10,6 +10,7 @@ from kivy.animation import Animation
 from GameScreen import GameScreen
 from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
+from CustomWidget.ScoreSlider import ScoreSlider
 
 from Data.RoomReader import RoomReader
 from Data.StoryReader import StoryReader
@@ -34,6 +35,12 @@ class MapScreen(GameScreen):
             self.showError(ex.message)
 
         self.ids.dialog.bind(visible=self.setRoomVisible)
+
+        for room in self.rooms:
+            if room.name != "bureau" and room.name != "boss":
+                slider = ScoreSlider(size=("100dp", "30dp"))
+                slider.pos = (room.xMax * self.size[0] - slider.size[0], room.yMin * self.size[1])
+                self.ids.map.add_widget(slider)
        
     def click(self):
         if not self.ids.dialog.visible:

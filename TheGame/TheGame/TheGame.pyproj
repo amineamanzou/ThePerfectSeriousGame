@@ -27,6 +27,9 @@
     <Compile Include="CustomWidget\DynImage.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CustomWidget\ScoreSlider.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CustomWidget\__init__.py" />
     <Compile Include="Data\StoryReader.py" />
     <Compile Include="Data\RoomReader.py">
@@ -75,6 +78,9 @@
     <InterpreterReference Include="{4d1d36f4-ab46-49d7-9960-0bdb8e369c35}\3.3" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomWidget\ScoreSlider.kv">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Dialog\DialogTextElement.kv" />
     <Content Include="Dialog\DialogWidget.kv">
       <SubType>Code</SubType>

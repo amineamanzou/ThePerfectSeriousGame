@@ -21,7 +21,7 @@ class RoomReader(XmlReader):
             aRoom.xMax = float(room[3].attrib['max'])
             aRoom.yMin = float(room[4].attrib['min'])
             aRoom.yMax = float(room[4].attrib['max'])
-            score= 0
+            aRoom.score= 0
             for fuck in room.findall('text'):
                 aRoom.fuckDialogs.append(fuck.find('text').text)
             listRoom.append(aRoom)
