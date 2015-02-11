@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rooms>
- 
+  <!--
   <room id="1">
     <name>Couloir</name>
     <background>./Images/room_couloir.png</background>
@@ -11,8 +11,7 @@
       <text id="1">Il n'y a rien à faire ici...</text>
       <text id="2">C'est l'heure d'aller bosser.</text>
     </fuckDialogs>
-    <!-- une piece a aussi un score, variable dans le code-->
-  </room>
+  </room>-->
   
   <room id="2">
     <name>MOE</name>
