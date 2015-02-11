@@ -39,6 +39,10 @@ class MapScreen(GameScreen):
         height = self.size[1]
 
         for room in self.rooms:
-            print room.xMin
             if(mouse[0] > room.xMin * width and mouse[0] < room.xMax * width and mouse[1] > room.yMin * height and mouse[1] < room.yMax * height):
                 print room
+                if(room.name == "bureau"):
+                    self.app.changeScreen("DeskScreen")
+                else:
+                    pass
+                break

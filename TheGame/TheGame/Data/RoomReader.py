@@ -17,10 +17,10 @@ class RoomReader(XmlReader):
             aRoom.name = room[0].text
             aRoom.imageBackground = room[1].text
             aRoom.imageChar = room[2].text
-            aRoom.xMin = room[3].attrib['min']
-            aRoom.xMax = room[3].attrib['max']
-            aRoom.yMin = room[4].attrib['min']
-            aRoom.yMax = room[4].attrib['max']
+            aRoom.xMin = float(room[3].attrib['min'])
+            aRoom.xMax = float(room[3].attrib['max'])
+            aRoom.yMin = float(room[4].attrib['min'])
+            aRoom.yMax = float(room[4].attrib['max'])
             score= 0
             for fuck in room.findall('text'):
                 aRoom.fuckDialogs.append(fuck.find('text').text)
