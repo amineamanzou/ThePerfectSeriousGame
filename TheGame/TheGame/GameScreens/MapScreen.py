@@ -5,6 +5,7 @@ kivy.require('1.8.0')
 
 from kivy.uix.widget import Widget, Builder
 from kivy.uix.layout import Layout
+from kivy.animation import Animation
 
 from GameScreen import GameScreen
 from Dialog.DialogWidget import DialogWidget
@@ -31,18 +32,28 @@ class MapScreen(GameScreen):
             self.rooms = self.app.roomsManager.getRooms()
         except Exception as ex:
             self.showError(ex.message)
+
+        self.ids.dialog.bind(visible=self.setRoomVisible)
        
-
     def click(self):
-        mouse = self.app.app.window.mouse_pos
-        width = self.size[0]
-        height = self.size[1]
+        if not self.ids.dialog.visible:
+            mouse = self.app.app.window.mouse_pos
+            width = self.size[0]
+            height = self.size[1]
 
-        for room in self.rooms:
-            if(mouse[0] > room.xMin * width and mouse[0] < room.xMax * width and mouse[1] > room.yMin * height and mouse[1] < room.yMax * height):
-                print room
-                if(room.name == "bureau"):
-                    self.app.changeScreen("DeskScreen")
-                else:
-                    pass
-                break
+            for room in self.rooms:
+                if(mouse[0] > room.xMin * width and mouse[0] < room.xMax * width and mouse[1] > room.yMin * height and mouse[1] < room.yMax * height):
+                    if(room.name == "bureau"):
+                        self.app.changeScreen("DeskScreen")
+                    else:
+                        self.ids.room.source = room.imageBackground
+                        self.ids.dialog.icon = room.imageChar
+                        self.ids.dialog.show()
+                    break
+
+    def setRoomVisible(self, obj, visible):
+        if visible:
+            anim = Animation(opacity=1)
+        else:
+            anim = Animation(opacity=0)
+        anim.start(self.ids.room)

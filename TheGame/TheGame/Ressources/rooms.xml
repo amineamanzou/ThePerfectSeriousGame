@@ -53,8 +53,8 @@
   
   <room id="5">
     <name>marketing</name>
-    <background>./Images/room_marketing.png</background>
-    <character>./Images/char_marketing.png</character>
+    <background>./Images/Rooms/room_marketing.jpg</background>
+    <character>./Images/Characters/char_marketing.png</character>
     <x min="0.34375" max="0.56875"></x>
     <y min="0.138" max="0.394"></y>
     <fuckDialogs>

@@ -17,3 +17,19 @@
 				keep_ratio: False
 				allow_stretch: True
 				on_press: root.click()
+
+			Image:
+				id: room
+
+				pos: scatter.pos
+				size: root.size
+				keep_ratio: False
+				allow_stretch: True
+				opacity: 0
+
+			DialogWidget:
+				id: dialog
+
+				size: (root.size[0], root.size[1] * 0.2)
+				pos: (root.pos[0], root.pos[1] - dialog.size[1])
+				visible: False

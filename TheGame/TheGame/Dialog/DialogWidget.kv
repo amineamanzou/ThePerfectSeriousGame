@@ -2,7 +2,12 @@
 #:import kivy kivy
 
 <DialogWidget>:
-
+	canvas:
+		Color:
+			rgba: 0.89, 0.88, 0.93, 1
+		Rectangle:
+			pos: self.pos
+			size: self.size
 
 	BoxLayout:
 		id: layout
@@ -17,10 +22,4 @@
 			source: root.icon
 
 		DialogElement:
-			canvas:
-				Color:
-					rgba: 1, 1, 1, 1
-				Rectangle:
-					pos: self.pos
-					size: self.size
 			id: elementContainer

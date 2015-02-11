@@ -4,7 +4,7 @@ import kivy
 kivy.require('1.8.0')
 
 from kivy.uix.widget import Widget, Builder
-from kivy.properties import StringProperty, ObjectProperty
+from kivy.properties import StringProperty, ObjectProperty, BooleanProperty
 from kivy.animation import Animation
 
 from DialogTextElement import DialogTextElement
@@ -14,17 +14,20 @@ Builder.load_file("Dialog/DialogWidget.kv")
 
 class DialogWidget(Widget):
     icon = StringProperty('')
+    visible = BooleanProperty(True)
+
     def __init__(self, **kwargs):
         super(DialogWidget, self).__init__(**kwargs)
 
     def hide(self):
-        self.lastPos = (self.pos[0], self.pos[1])
         anim = Animation(pos=(self.pos[0], self.pos[1] - self.size[1]))
         anim.start(self)
+        self.visible = False
 
     def show(self):
-        anim = Animation(pos=self.lastPos)
+        anim = Animation(pos=(self.pos[0], self.pos[1] + self.size[1]))
         anim.start(self)
+        self.visible = True
 
     def changeElement(self, element):
         self.ids.elementContainer = element
