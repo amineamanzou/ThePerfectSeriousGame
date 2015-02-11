@@ -6,7 +6,7 @@
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
   <!-- Deux dialogues classiques -->
-  <dialog id="1" idParent="" type="C" idBat="4" end="false">
+  <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Bonjour, voici votre bureau. Vous y trouverez vos comptes rendus et différents notes.
           Je vous rappelle que votre mission conciste en la mise en place d'une serious game au sein de l'entreprise.</text>
     <!-- un dialog a aussi un attribut done, une variable dans le code, pour savoir si il est lu-->

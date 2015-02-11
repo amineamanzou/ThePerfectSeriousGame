@@ -26,7 +26,6 @@ class MapScreen(GameScreen):
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
-
         try:
             self.rooms = self.app.roomsManager.getRooms()
         except Exception as ex:

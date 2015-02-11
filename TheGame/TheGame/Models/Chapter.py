@@ -6,7 +6,7 @@ class Chapter():
     # les attributs du chapitre 
     id = nextChapter = NumericProperty() # id et chapitre suivant
     file = StringProperty() # fichier associe a lire
-    listIdMustBeRead = ListProperty() # les id qui doivent etre lus pour finir le chapitre
+    listIdMustBeRead = [] # les id qui doivent etre lus pour finir le chapitre
 
     # redefinition du toString
     def __str__( self ):

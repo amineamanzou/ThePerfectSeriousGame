@@ -13,6 +13,9 @@ from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
 from Managers.RoomsManager import RoomsManager
 
+from Data.ChapterReader import ChapterReader
+from Data.StoryReader import StoryReader
+
 class GameApp(App):
     def build(self):
         from kivy.base import EventLoop
@@ -36,6 +39,28 @@ class GameWidget(Widget):
     def __init__(self, **kwargs):
         super(GameWidget, self).__init__(**kwargs)
         self.roomsManager = RoomsManager(self.app.APPLICATION_PATH + os.path.normpath('/Ressources/rooms.xml'))
+        
+        """
+        rooms = self.roomsManager.getRooms()
+        print "Y A UN BUG LA A CAUSE DE ROOM READER"
+        for r in rooms:
+            print r.fuckDialogs
+
+        ##### TEST CHAPTER READER
+        testChapterReader = ChapterReader(self.app.APPLICATION_PATH + os.path.normpath('/Ressources/Chapters/chapter1.xml'))
+        dialogs = testChapterReader.parse()
+        print "Y A UN BUG LA A CAUSE DE CHAPTER READER"
+        for d in dialogs:
+            if(d.type == "E"):
+                print d.choices
+
+        ##### TEST STORY READER
+        testStoryReader = StoryReader(self.app.APPLICATION_PATH + os.path.normpath('/Ressources/story.xml'))
+        chapters = testStoryReader.parse()
+        print "Y A UN BUG LA A CAUSE DE STORY READER"
+        for c in chapters:
+            print c.listIdMustBeRead
+        """
 
         self.changeScreen("MapScreen")
 

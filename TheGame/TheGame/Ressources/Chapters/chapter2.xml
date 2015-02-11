@@ -6,7 +6,7 @@
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
   <!-- Deux dialogues classiques -->
-  <dialog id="1" idParent="" type="C" idBat="4" end="false">
+  <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>
       Dialogue classique
     </text>

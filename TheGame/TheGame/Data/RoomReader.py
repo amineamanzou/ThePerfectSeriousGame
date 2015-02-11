@@ -10,10 +10,9 @@ class RoomReader(XmlReader):
     def parse(self):
         # pour l'explication du code, voir l'exemple commente dans StoryReader.py
         listRoom = []
-        print listRoom
         for room in self.xml.getroot():
             aRoom = Room()   
-            aRoom.id = room.attrib['id']
+            aRoom.id = int(room.attrib['id'])
             aRoom.name = room[0].text
             aRoom.imageBackground = room[1].text
             aRoom.imageChar = room[2].text
@@ -22,7 +21,9 @@ class RoomReader(XmlReader):
             aRoom.yMin = float(room[4].attrib['min'])
             aRoom.yMax = float(room[4].attrib['max'])
             score= 0
-            for fuck in room.findall('text'):
-                aRoom.fuckDialogs.append(fuck.find('text').text)
+            aRoom.fuckDialogs = []  # il FAUT vider le tableau, sinon les valeurs sont conservess...
+            for fuck in room[5]:
+                aRoom.fuckDialogs.append(fuck.text.encode('utf-8'))
+     
             listRoom.append(aRoom)
         return listRoom

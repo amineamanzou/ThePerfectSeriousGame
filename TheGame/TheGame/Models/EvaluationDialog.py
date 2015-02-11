@@ -6,7 +6,7 @@ from Models.AbstractDialog import AbstractDialog
 class EvaluationDialog(AbstractDialog):
     # les attributs du dialogue evaluation reprennent ceux d'un dialogue plus d'autres attributs
     title = StringProperty() # le titre
-    choices = ListProperty() # la liste d'objets Choice
+    choices = [] # la liste d'objets Choice
 
     # redefinition du toString
     def __str__( self ):

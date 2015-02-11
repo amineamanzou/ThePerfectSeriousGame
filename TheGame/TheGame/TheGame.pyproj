@@ -28,6 +28,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CustomWidget\__init__.py" />
+    <Compile Include="Data\ChapterReader.py" />
     <Compile Include="Data\StoryReader.py" />
     <Compile Include="Data\RoomReader.py">
       <SubType>Code</SubType>
