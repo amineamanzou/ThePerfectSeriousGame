@@ -27,6 +27,9 @@
     <Compile Include="CustomWidget\DynImage.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CustomWidget\ScoreSlider.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CustomWidget\__init__.py" />
     <Compile Include="Data\ChapterReader.py" />
     <Compile Include="Data\StoryReader.py" />
@@ -76,6 +79,9 @@
     <InterpreterReference Include="{4d1d36f4-ab46-49d7-9960-0bdb8e369c35}\3.3" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomWidget\ScoreSlider.kv">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Dialog\DialogTextElement.kv" />
     <Content Include="Dialog\DialogWidget.kv">
       <SubType>Code</SubType>
@@ -90,10 +96,12 @@
     <Content Include="GameScreens\MapScreen.kv" />
     <Content Include="Images\desk.png" />
     <Content Include="Images\map.png" />
-    <Content Include="Images\profil-test.png" />
+    <Content Include="Images\Characters\char_marketing.png" />
+    <Content Include="Images\Characters\profil-test.png" />
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Images\Rooms\room_marketing.jpg" />
     <Content Include="Ressources\Chapters\chapter1.xml" />
     <Content Include="Ressources\Chapters\chapter2.xml" />
     <Content Include="Ressources\rooms.xml" />
@@ -105,6 +113,8 @@
     <Folder Include="CustomWidget\" />
     <Folder Include="Images\" />
     <Folder Include="Data\" />
+    <Folder Include="Images\Characters\" />
+    <Folder Include="Images\Rooms\" />
     <Folder Include="Models\" />
     <Folder Include="Managers\" />
     <Folder Include="Ressources\" />
