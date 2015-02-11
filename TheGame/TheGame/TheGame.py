@@ -24,7 +24,7 @@ class GameApp(App):
 
     def configure(self):
         self.window.size = (1200, 800)
-        self.APPLICATION_PATH = os.path.dirname(__file__)
+        self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
         self.APPLICATION_ENV = "DEBUG"
 
 
