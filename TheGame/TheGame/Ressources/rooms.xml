@@ -53,7 +53,7 @@
   
   <room id="5">
     <name>marketing</name>
-    <background>./Images/Rooms/room_marketing.jpg</background>
+    <background>./Images/Rooms/room_marketing.png</background>
     <character>./Images/Characters/char_marketing.png</character>
     <x min="0.34375" max="0.56875"></x>
     <y min="0.138" max="0.394"></y>

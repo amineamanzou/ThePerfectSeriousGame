@@ -57,7 +57,13 @@
     <Compile Include="GameScreens\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Managers\ChapterManager.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Managers\RoomsManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managers\StoryManager.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Managers\__init__.py" />
@@ -101,7 +107,7 @@
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Images\Rooms\room_marketing.jpg" />
+    <Content Include="Images\Rooms\room_marketing.png" />
     <Content Include="Ressources\Chapters\chapter1.xml" />
     <Content Include="Ressources\Chapters\chapter2.xml" />
     <Content Include="Ressources\rooms.xml" />
