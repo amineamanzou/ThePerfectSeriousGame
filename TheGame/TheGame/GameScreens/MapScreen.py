@@ -12,6 +12,8 @@ from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
 from CustomWidget.ScoreSlider import ScoreSlider
 
+import random
+
 Builder.load_file("GameScreens/MapScreen.kv")
 
 class MapScreen(GameScreen):
@@ -43,6 +45,13 @@ class MapScreen(GameScreen):
                     if(room.name == "bureau"):
                         self.app.changeScreen("DeskScreen")
                     else:
+                        try:
+                            dialog = self.app.gameManager.getNextDialog(room.id)
+                            if(dialog == None):
+                                dialog = room.fuckDialogs[random.randint(0, len(room.fuckDialogs) - 1)]
+                        except Exception as ex:
+                            self.showError(ex.message)
+
                         self.ids.room.source = room.imageBackground
                         self.ids.dialog.icon = room.imageChar
                         self.ids.dialog.show()
