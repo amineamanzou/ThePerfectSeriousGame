@@ -21,6 +21,8 @@ class StoryManager(object):
     def getNextChapter(self):
         if(self.currentChapter == None):
             self.currentChapter = 0
+        elif(self.currentChapter == len(self.chapters)):
+            return None
         else:
             self.currentChapter += 1
 

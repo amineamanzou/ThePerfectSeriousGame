@@ -12,15 +12,6 @@ from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
 from CustomWidget.ScoreSlider import ScoreSlider
 
-from Data.RoomReader import RoomReader
-from Data.StoryReader import StoryReader
-
-from Models.AbstractDialog import AbstractDialog
-from Models.ClassicDialog import ClassicDialog
-from Models.FicheDialog import FicheDialog
-from Models.EvaluationDialog import EvaluationDialog
-from Models.EvalChoice import EvalChoice
-
 Builder.load_file("GameScreens/MapScreen.kv")
 
 class MapScreen(GameScreen):
@@ -29,7 +20,7 @@ class MapScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
         try:
-            self.rooms = self.app.roomsManager.getRooms()
+            self.rooms = self.app.gameManager.roomsManager.getRooms()
         except Exception as ex:
             self.showError(ex.message)
 

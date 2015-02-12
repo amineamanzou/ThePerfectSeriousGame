@@ -4,4 +4,4 @@
 Package contenant les managers
 """
 
-__all__ = ['RoomsManager', 'StoryManager']
+__all__ = ['RoomsManager', 'StoryManager', 'ChapterManager', 'GameManager']

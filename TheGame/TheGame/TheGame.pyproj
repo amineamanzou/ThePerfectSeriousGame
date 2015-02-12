@@ -51,6 +51,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GameScreens\DeskScreen.py" />
+    <Compile Include="GameScreens\LoadingScreen.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GameScreens\MapScreen.py">
       <SubType>Code</SubType>
     </Compile>
@@ -58,6 +61,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Managers\ChapterManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managers\GameManager.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Managers\RoomsManager.py">
@@ -97,6 +103,9 @@
     </Content>
     <Content Include="GameScreens\ErrorScreen.kv" />
     <Content Include="GameScreens\GameScreen.kv">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="GameScreens\LoadingScreen.kv">
       <SubType>Code</SubType>
     </Content>
     <Content Include="GameScreens\MapScreen.kv" />

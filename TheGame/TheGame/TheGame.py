@@ -11,9 +11,8 @@ import os
 
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
-from Managers.RoomsManager import RoomsManager
-from Managers.StoryManager import StoryManager
-from Managers.ChapterManager import ChapterManager
+
+from Managers.GameManager import GameManager
 
 class GameApp(App):
     def build(self):
@@ -33,20 +32,17 @@ class GameApp(App):
 class GameWidget(Widget):
     app = ObjectProperty(None)
     gameScreen = ObjectProperty(None)
-    roomsManager = storyManager = chapterManager = object
+    gameManager = object
 
     def __init__(self, **kwargs):
         super(GameWidget, self).__init__(**kwargs)
 
         try:
             self.changeScreen("LoadingScreen")
-            self.roomsManager = RoomsManager(self.app.APPLICATION_PATH + os.path.normpath('/Ressources/rooms.xml'))
-            self.storyManager = StoryManager(self.app.APPLICATION_PATH + os.path.normpath('/Ressources/story.xml'))
-            self.chapterManager = ChapterManager(self.app.APPLICATION_PATH + os.path.normpath(self.storyManager.getNextChapter().file))
+            self.gameManager = GameManager(self.app.APPLICATION_PATH)
             self.changeScreen("StartScreen")
         except Exception as ex:
             self.gameScreen.showError(ex.message)
-        
 
     def changeScreen(self, screen):
         if self.gameScreen is not None:
