@@ -25,15 +25,13 @@ class DeskScreen(GameScreen):
 
     def click(self):
         self.hideNote()
-        self.ids.dialog.hide()
 
-        """
         if self.displayed:
             self.ids.dialog.hide()
         else:
             self.ids.dialog.show()
         self.displayed = not self.displayed
-        self.ids.dialog.changeElement(DialogTextElement(text="Attention, ceci est un test", isEnd=True))"""
+        self.ids.dialog.changeElement(DialogTextElement(text="Attention, ceci est un test", isEnd=True))
 
     def addNote(self, note):
         self.notes.append(note)

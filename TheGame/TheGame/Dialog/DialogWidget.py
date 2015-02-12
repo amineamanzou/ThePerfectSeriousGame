@@ -32,3 +32,4 @@ class DialogWidget(Widget):
     def changeElement(self, element):
         self.ids.elementContainer = element
         self.ids.elementContainer.size = (self.ids.layout.size[0] - self.height, self.ids.layout.size[1])
+        self.ids.elementContainer.displayDialog("Ceci est un test plus long pour voir si c'est justifie")
