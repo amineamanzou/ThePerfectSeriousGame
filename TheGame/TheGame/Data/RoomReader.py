@@ -20,7 +20,7 @@ class RoomReader(XmlReader):
             aRoom.xMax = float(room[3].attrib['max'])
             aRoom.yMin = float(room[4].attrib['min'])
             aRoom.yMax = float(room[4].attrib['max'])
-            score= 0
+            aRoom.score = int(10)
             aRoom.fuckDialogs = []  # il FAUT vider le tableau, sinon les valeurs sont conservess...
             for fuck in room[5]:
                 aRoom.fuckDialogs.append(fuck.text.encode('utf-8'))
