@@ -33,6 +33,5 @@ class StartScreen(GameScreen):
         self.ids.dialog.startDialog(roomIntro)
 
     def nextScreen(self, bindValue, bindedObject):
-        print self.ids.dialog.visible
         if not self.ids.dialog.visible:
             self.app.changeScreen('MapScreen')
