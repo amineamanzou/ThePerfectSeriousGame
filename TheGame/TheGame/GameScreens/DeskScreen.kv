@@ -23,6 +23,11 @@
 			pos: (root.size[0] - 150, root.size[1] - 150)
 			size: ("100dp","100dp")
 		    on_press: root.app.changeScreen("MapScreen")
+		
+		FloatLayout:
+			id: ficheContainer
+			size: root.size
+			pos: root.pos
 
         DynImage:
             id: shadow
@@ -37,7 +42,6 @@
 					pos: self.pos
 					size: shadow.size
 
-
 		RstDocument:
 			id: note
 			background_color: [1, 1, 1, 1]
@@ -45,3 +49,4 @@
 			size: (root.size[1] * 0.566, root.size[1] * 0.8)
 			color: [0, 0, 0, 1]
 			bar_width: "15px"
+			index: 100
