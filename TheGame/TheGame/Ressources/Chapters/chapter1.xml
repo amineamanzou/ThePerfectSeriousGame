@@ -6,17 +6,17 @@
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
   <!-- Deux dialogues classiques -->
-  <dialog id="1" idParent="0" type="C" idBat="2" end="false">
+  <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Bonjour, voici votre bureau. Vous y trouverez vos comptes rendus et différents notes. Je vous rappelle que votre mission conciste en la mise en place d'une serious game au sein de l'entreprise.</text>
     <!-- un dialog a aussi un attribut done, une variable dans le code, pour savoir si il est lu-->
   </dialog>
 
-  <dialog id="2" idParent="1"  type="C" idBat="2" end="false">
+  <dialog id="2" idParent="1"  type="C" idBat="4" end="false">
     <text> Vous trouverez des informations complémentaires sur le sujet dans le document posé sur votre bureau. A bientôt.</text>
   </dialog>
 
   <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
-  <dialog id="3" idParent="2" type="F" idBat="2" end="false">
+  <dialog id="3" idParent="2" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter1-note1.rst</content>
     <x>40</x>
     <y>31</y>
