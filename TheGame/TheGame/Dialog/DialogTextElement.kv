@@ -2,10 +2,20 @@
 #:import kivy kivy
 
 <DialogTextElement>:
+	canvas:
+		Color:
+			rgba: 0.89, 0.88, 0.93, 1
+		Rectangle:
+			pos: root.pos
+			size: root.size
+
     RstDocument:
         id: textViewer
         size: (root.size[0], root.size[1] * 0.8)
+		pos: (root.pos[0], root.size[1] * 0.2)
 
     Button:
         id: nextButton
         size: (root.size[0], root.size[1] * 0.2)
+		pos: root.pos
+		on_press: root.click()

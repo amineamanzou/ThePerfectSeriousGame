@@ -9,11 +9,16 @@ class RoomsManager(object):
     def __init__(self, xmlFilePath, *args):
         self.xmlFilePath = xmlFilePath
 
+        try:
+            reader = RoomReader(self.xmlFilePath)
+            self.rooms = reader.parse()
+        except Exception as ex:
+            raise ex
+
     def getRooms(self):
-        if len(self.rooms) == 0:
-            try:
-                reader = RoomReader(self.xmlFilePath)
-                self.rooms = reader.parse()
-            except Exception as ex:
-                raise ex
         return self.rooms
+
+    def getRoomById(self, roomId):
+        for room in self.rooms:
+            if room.id == roomId:
+                return room

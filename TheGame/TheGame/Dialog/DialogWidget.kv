@@ -9,35 +9,13 @@
 			pos: self.pos
 			size: self.size
 
-	BoxLayout:
-		id: layout
-		orientation: "horizontal"
-		size: root.size
+	Image:
+		id: icon
+		size: (root.height, root.height)
 		pos: root.pos
+		source: root.icon
 
-		Image:
-			id: icon
-			size_hint: (.2, 1)
-			size: (root.height, root.height)
-			source: root.icon
-
-		DialogElement:
-		    id: elementContainer
-			canvas:
-				Color:
-					rgba: 0,0,0,1
-				Rectangle:
-					pos: self.pos
-					size: self.size
-			DialogTextElement:
-                Label:
-                    id: textViewer
-                    pos: ( (elementContainer.pos[0]+120)*2, elementContainer.pos[1]+40 )
-                    size_hint: 1, 1
-                    text_size: (900,400)
-                    max_lines: 3
-                    valign: 'middle'
-                    halign: 'justify'
-                    color: (1, 1, 1, 1)
-                    font_size: 30
-                    text: 'Ceci est un test'
+	BoxLayout:
+		id: elementContainer
+		size: (root.size[0] - root.height, root.size[1])
+		pos: (root.size[1], root.pos[1])

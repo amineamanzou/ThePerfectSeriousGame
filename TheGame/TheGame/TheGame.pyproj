@@ -6,7 +6,7 @@
     <ProjectGuid>1aeabb66-0518-40f4-9a54-7dfc8ddaf2a8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>TheGame.py</StartupFile>
-    <SearchPath>E:\Kivy\kivy\</SearchPath>
+    <SearchPath>..\..\..\..\..\Kivy\kivy\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>TheGame</Name>
@@ -41,6 +41,9 @@
     </Compile>
     <Compile Include="Data\__init__.py" />
     <Compile Include="Dialog\DialogElement.py" />
+    <Compile Include="Dialog\DialogEvalElement.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Dialog\DialogTextElement.py" />
     <Compile Include="Dialog\DialogWidget.py">
       <SubType>Code</SubType>
@@ -94,6 +97,7 @@
     <Content Include="CustomWidget\ScoreSlider.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Dialog\DialogEvalElement.kv" />
     <Content Include="Dialog\DialogTextElement.kv" />
     <Content Include="Dialog\DialogWidget.kv">
       <SubType>Code</SubType>
