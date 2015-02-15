@@ -9,10 +9,15 @@
 			pos: root.pos
 			size: root.size
 
-    RstDocument:
+    Label:
         id: textViewer
         size: (root.size[0], root.size[1] * 0.8)
 		pos: (root.pos[0], root.size[1] * 0.2)
+		valign: 'middle'
+		halign: 'justify'
+		color: 0, 0, 0, 1
+		text_size: (self.size[0] * 0.95, self.size[1] * 0.95)
+		font_size: "18sp"
 
     Button:
         id: nextButton

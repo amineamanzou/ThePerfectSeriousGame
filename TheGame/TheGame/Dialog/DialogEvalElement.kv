@@ -8,3 +8,18 @@
 		Rectangle:
 			pos: root.pos
 			size: root.size
+
+	BoxLayout:
+		id: layoutEval
+		orientation: "vertical"
+		size: root.size
+		pos: root.pos
+
+		Label:
+			id: labelEval
+			size: (layoutEval.size[0], "5dp")
+			size_hint: (1, 0.3)
+
+		GridLayout:
+			id: layoutButtons
+			cols: 2

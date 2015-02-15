@@ -8,6 +8,7 @@ from kivy.properties import StringProperty, ObjectProperty, BooleanProperty, Num
 from kivy.animation import Animation
 
 from DialogTextElement import DialogTextElement
+from DialogEvalElement import DialogEvalElement
 from DialogElement import DialogElement
 
 import random
@@ -19,6 +20,7 @@ class DialogWidget(Widget):
     visible = BooleanProperty(True)
     gameManager = ObjectProperty()
     currentRoom = ObjectProperty()
+    dialog = object
 
     def __init__(self, **kwargs):
         super(DialogWidget, self).__init__(**kwargs)
@@ -36,15 +38,16 @@ class DialogWidget(Widget):
     def startDialog(self, room):
         self.currentRoom = room   
         self.icon = self.currentRoom.imageChar
+        
         self.dialog = self.gameManager.getNextDialog(self.currentRoom.id)
-
+        
         if self.dialog == None: # S'il s'agit d'une fiche ou pas de dialogue
             dialog = self.currentRoom.fuckDialogs[random.randint(0, len(self.currentRoom.fuckDialogs) - 1)]
             element = DialogTextElement(text=dialog, isEnd=True)
         elif self.dialog.type == "C":
-            element = DialogTextElement(text=dialog.text, isEnd=self.gameManager.chapterManager.haveNext(self.currentRoom.id))
+            element = DialogTextElement(text=self.dialog.text, isEnd=self.gameManager.chapterManager.haveNext(self.currentRoom.id))
         elif self.dialog.type == "E":
-            element = Label(text="Pas encore implemente")
+            element = DialogEvalElement(options=self.dialog.choices)
         else:
             raise Exception("Type de dialogue inconnu")
         

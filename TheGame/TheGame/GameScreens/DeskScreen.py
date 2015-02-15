@@ -24,53 +24,8 @@ class DeskScreen(GameScreen):
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
-
-        ################# TEST EN DUR #######################
-
-        f1 = FicheDialog()
-        f1.id = 1
-        f1.idParent = 0
-        f1.idBat = 4
-        f1.end = False
-        f1.done = False
-        f1.type = "F"
-        f1.content = "[b] Coucou [/b] World 1 !"
-        f1.image = "Images/note.png"
-        f1.x = 40
-        f1.y = 31
-
-        f2 = FicheDialog()
-        f2.id = 2
-        f2.idParent = 1
-        f2.idBat = 4
-        f2.end = False
-        f2.done = False
-        f2.type = "F"
-        f2.content = "[b] Coucou [/b] World 2 !"
-        f2.image = "Images/note.png"
-        f2.x = 65
-        f2.y = 32
-
-        f3 = FicheDialog()
-        f3.id = 3
-        f3.idParent = 2
-        f3.idBat = 4
-        f3.end = False
-        f3.done = False
-        f3.type = "F"
-        f3.content = "[b] Coucou [/b] World 3 !"
-        f3.image = "Images/note.png"
-        f3.x = 55
-        f3.y = 35
-
-        self.app.gameManager.fiches.append(f1)
-        self.app.gameManager.fiches.append(f2)
-        self.app.gameManager.fiches.append(f3)
-        
-        ################# FIN TEST EN DUR ###################
         
         for fiche in self.app.gameManager.fiches:
-            print 'FICHE ' + fiche.content
             self.addNote(fiche)
 
         self.ids.dialog.gameManager = self.app.gameManager
@@ -91,7 +46,7 @@ class DeskScreen(GameScreen):
         self.ids.ficheContainer.add_widget(image)
 
     def showNoteContent(self, content):
-        self.ids.note.text = content
+        self.ids.note.source = content
         slide = Animation(pos=(self.ids.note.pos[0], self.size[1] * 0.1))
         slide.start(self.ids.note)
         self.ids.shadow.size = self.size

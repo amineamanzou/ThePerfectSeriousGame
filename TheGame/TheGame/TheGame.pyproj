@@ -124,6 +124,9 @@
     <Content Include="Images\Rooms\room_marketing.png" />
     <Content Include="Ressources\Chapters\chapter1.xml" />
     <Content Include="Ressources\Chapters\chapter2.xml" />
+    <Content Include="Ressources\Notes\chapter1-note1.rst">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Ressources\rooms.xml" />
     <Content Include="Ressources\story.xml" />
   </ItemGroup>
@@ -139,6 +142,7 @@
     <Folder Include="Managers\" />
     <Folder Include="Ressources\" />
     <Folder Include="Ressources\Chapters\" />
+    <Folder Include="Ressources\Notes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

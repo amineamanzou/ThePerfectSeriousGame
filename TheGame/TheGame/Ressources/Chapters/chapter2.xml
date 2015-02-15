@@ -24,9 +24,9 @@
     <content>
       [size=20]Fiche[/size]
     </content>
-    <x>800</x>
-    <y>600</y>
-    <image>./Images/fiche.png</image>
+    <x>65</x>
+    <y>32</y>
+    <image>./Images/note.png</image>
   </dialog>
   
   <!-- Première branche : marketing -->
@@ -46,9 +46,9 @@
     <content>
       [size=20]Fiche[/size]
     </content>
-    <x>1000</x>
-    <y>600</y>
-    <image>./Images/fiche.png</image>
+    <x>55</x>
+    <y>35</y>
+    <image>./Images/note.png</image>
   </dialog>
 
   <dialog id="7" idParent="6" type="C" idBat="5" end="false">
