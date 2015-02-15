@@ -15,8 +15,8 @@
   
   <room id="2">
     <name>MOE</name>
-    <background>./Images/room_moe.png</background>
-    <character>./Images/char_moe.png</character>
+    <background>./Images/Rooms/room_moe.png</background>
+    <character>./Images/Characters/char_moe.png</character>
     <x min="0.2" max="0.435"></x>
     <y min="0.56" max="0.95"></y>
     <fuckDialogs>
@@ -28,8 +28,8 @@
   
   <room id="3">
     <name>RH</name>
-    <background>./Images/room_rh.png</background>
-    <character>./Images/char_rh.png</character>
+    <background>./Images/Rooms/room_rh.png</background>
+    <character>./Images/Characters/char_rh.png</character>
     <x min="0.44375" max="0.70"></x>
     <y min="0.75" max="0.95"></y>
     <fuckDialogs>
@@ -40,8 +40,8 @@
   
   <room id="4">
     <name>bureau</name>
-    <background>./Images/room_bureau.png</background>
-    <character>./Images/char_bureau.png</character>
+    <background>./Images/Rooms/room_bureau.png</background>
+    <character>./Images/Characters/char_bureau.png</character>
     <x min="0.2" max="0.35"></x>
     <y min="0.138" max="0.394"></y>
     <fuckDialogs>
@@ -65,8 +65,8 @@
   
   <room id="6">
     <name>boss</name>
-    <background>./Images/room_boss.png</background>
-    <character>./Images/char_boss.png</character>
+    <background>./Images/Rooms/room_boss.png</background>
+    <character>./Images/Characters/char_boss.png</character>
     <x min="0.56875" max="0.75"></x>
     <y min="0.138" max="0.577"></y>
     <fuckDialogs>
