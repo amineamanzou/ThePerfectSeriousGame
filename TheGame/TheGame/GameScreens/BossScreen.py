@@ -16,18 +16,10 @@ from Dialog.DialogTextElement import DialogTextElement
 Builder.load_file("GameScreens/BossScreen.kv")
 
 class BossScreen(GameScreen):
-    displayed = True
     rooms = []
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
-
-    def click(self):
-        if self.displayed:
-            self.ids.dialog.hide()
-        else:
-            self.ids.dialog.show()
-        self.displayed = not self.displayed
 
     def bossDecision(self):
         rooms = self.app.gameManager.roomsManager.getRooms()

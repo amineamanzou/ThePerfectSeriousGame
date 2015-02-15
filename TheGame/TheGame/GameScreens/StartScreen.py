@@ -19,7 +19,6 @@ from Models.Room import Room
 Builder.load_file("GameScreens/StartScreen.kv")
 
 class StartScreen(GameScreen):
-    displayed = True
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
@@ -30,13 +29,3 @@ class StartScreen(GameScreen):
         roomIntro.imageChar = "Images/Characters/profil-test.png"
 
         self.ids.dialog.startDialog(roomIntro)
-
-
-    def click(self):
-
-        if self.displayed:
-            self.ids.dialog.hide()
-        else:
-            self.ids.dialog.show()
-        self.displayed = not self.displayed
-        #self.ids.dialog.changeElement(DialogTextElement(text="Attention, ceci est un test", isEnd=True))

@@ -19,7 +19,6 @@ from Models.FicheDialog import FicheDialog
 Builder.load_file("GameScreens/DeskScreen.kv")
 
 class DeskScreen(GameScreen):
-    displayed = True
 
     noteSize = (0.05, 0.09)
 
@@ -31,15 +30,6 @@ class DeskScreen(GameScreen):
 
         self.ids.dialog.gameManager = self.app.gameManager
 
-    def click(self):
-        self.hideNote()
-
-        if self.displayed:
-            self.ids.dialog.hide()
-        else:
-            self.ids.dialog.show()
-        self.displayed = not self.displayed
-        self.ids.dialog.changeElement(DialogTextElement(text="Attention, ceci est un test", isEnd=True))
 
     def addNote(self, fiche):
         image = DynImage(source=fiche.image, pos=(self.size[0] * (fiche.x / 100.0), self.size[1] * (fiche.y/100.0)), size_hint=self.noteSize)
