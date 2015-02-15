@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 from XmlReader import XmlReader
 from Models.Room import Room

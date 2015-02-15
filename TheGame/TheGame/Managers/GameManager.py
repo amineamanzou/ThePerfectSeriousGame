@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 from Managers.RoomsManager import RoomsManager
 from Managers.StoryManager import StoryManager
