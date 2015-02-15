@@ -45,7 +45,7 @@ class DialogWidget(Widget):
             dialog = self.currentRoom.fuckDialogs[random.randint(0, len(self.currentRoom.fuckDialogs) - 1)]
             element = DialogTextElement(text=dialog, isEnd=True)
         elif self.dialog.type == "C":
-            element = DialogTextElement(text=self.dialog.text, isEnd=self.gameManager.chapterManager.haveNext(self.currentRoom.id))
+            element = DialogTextElement(text=self.dialog.text, isEnd=not self.gameManager.chapterManager.haveNext(self.dialog.id))
         elif self.dialog.type == "E":
             element = DialogEvalElement(options=self.dialog.choices)
         else:

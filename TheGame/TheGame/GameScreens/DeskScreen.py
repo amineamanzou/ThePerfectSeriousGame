@@ -42,14 +42,15 @@ class DeskScreen(GameScreen):
 
     def addNote(self, fiche):
         image = DynImage(source=fiche.image, pos=(self.size[0] * (fiche.x / 100.0), self.size[1] * (fiche.y/100.0)), size_hint=self.noteSize)
-        image.bind(on_press=lambda x: self.showNoteContent(fiche.content))
+        image.bind(on_press=lambda x: self.showNoteContent(fiche))
         self.ids.ficheContainer.add_widget(image)
 
-    def showNoteContent(self, content):
-        self.ids.note.source = content
+    def showNoteContent(self, fiche):
+        self.ids.note.source = self.app.app.APPLICATION_PATH + fiche.content
         slide = Animation(pos=(self.ids.note.pos[0], self.size[1] * 0.1))
         slide.start(self.ids.note)
         self.ids.shadow.size = self.size
+        self.app.gameManager.setDialogDone(fiche.id)
 
     def hideNote(self):
         slide = Animation(pos=(self.ids.note.pos[0], self.size[1]))

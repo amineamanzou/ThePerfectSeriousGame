@@ -21,9 +21,7 @@
 
   <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
   <dialog id="3" idParent="2" type="F" idBat="4" end="false">
-    <content>
-      [size=20]Fiche[/size]
-    </content>
+    <content>/Ressources/Notes/chapter2-note1.rst</content>
     <x>65</x>
     <y>32</y>
     <image>./Images/note.png</image>
@@ -43,9 +41,7 @@
   </dialog>
 
   <dialog id="6" idParent="5" type="F" idBat="4" end="false">
-    <content>
-      [size=20]Fiche[/size]
-    </content>
+    <content>/Ressources/Notes/chapter2-note2.rst</content>
     <x>55</x>
     <y>35</y>
     <image>./Images/note.png</image>

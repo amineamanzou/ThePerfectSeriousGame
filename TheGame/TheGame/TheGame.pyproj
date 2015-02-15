@@ -127,6 +127,12 @@
     <Content Include="Ressources\Notes\chapter1-note1.rst">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Ressources\Notes\chapter2-note1.rst">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Ressources\Notes\chapter2-note2.rst">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Ressources\rooms.xml" />
     <Content Include="Ressources\story.xml" />
   </ItemGroup>

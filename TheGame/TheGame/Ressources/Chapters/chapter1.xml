@@ -17,7 +17,7 @@
 
   <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
   <dialog id="3" idParent="2" type="F" idBat="2" end="false">
-    <content>./Ressources/Notes/chapter1-note1.rst</content>
+    <content>/Ressources/Notes/chapter1-note1.rst</content>
     <x>40</x>
     <y>31</y>
     <image>./Images/note.png</image>
