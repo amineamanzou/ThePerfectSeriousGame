@@ -45,6 +45,8 @@ class MapScreen(GameScreen):
                 if(mouse[0] > room.xMin * width and mouse[0] < room.xMax * width and mouse[1] > room.yMin * height and mouse[1] < room.yMax * height):
                     if(room.name == "bureau"):
                         self.app.changeScreen("DeskScreen")
+                    elif(room.name == "boss"):
+                        self.app.changeScreen("BossScreen")
                     else:
                         try:
                             dialog = self.app.gameManager.getNextDialog(room.id)
