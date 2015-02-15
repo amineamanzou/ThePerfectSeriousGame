@@ -2,6 +2,7 @@
 
 import kivy
 import kivy.metrics as Metrics
+
 kivy.require('1.8.0')
 
 from kivy.uix.widget import Widget, Builder
@@ -18,14 +19,20 @@ from Models.Room import Room
 
 Builder.load_file("GameScreens/StartScreen.kv")
 
-class StartScreen(GameScreen):
 
+class StartScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
         self.ids.dialog.gameManager = self.app.gameManager
+        self.ids.dialog.bind(visible=self.nextScreen)
 
         roomIntro = Room()
         roomIntro.id = 99
         roomIntro.imageChar = "Images/Characters/profil-test.png"
 
         self.ids.dialog.startDialog(roomIntro)
+
+    def nextScreen(self, bindValue, bindedObject):
+        print self.ids.dialog.visible
+        if not self.ids.dialog.visible:
+            self.app.changeScreen('MapScreen')
