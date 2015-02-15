@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 from kivy.properties import NumericProperty, StringProperty, ListProperty
 

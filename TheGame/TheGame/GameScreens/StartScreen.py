@@ -1,7 +1,7 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 
 import kivy
+import kivy.metrics as Metrics
 kivy.require('1.8.0')
 
 from kivy.uix.widget import Widget, Builder
@@ -13,28 +13,30 @@ from CustomWidget.DynImage import DynImage
 from Dialog.DialogWidget import DialogWidget
 from Dialog.DialogTextElement import DialogTextElement
 
-Builder.load_file("GameScreens/BossScreen.kv")
+from Models.FicheDialog import FicheDialog
+from Models.Room import Room
 
-class BossScreen(GameScreen):
+Builder.load_file("GameScreens/StartScreen.kv")
+
+class StartScreen(GameScreen):
     displayed = True
-    rooms = []
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
+        self.ids.dialog.gameManager = self.app.gameManager
+
+        roomIntro = Room()
+        roomIntro.id = 99
+        roomIntro.imageChar = "Images/Characters/profil-test.png"
+
+        self.ids.dialog.startDialog(roomIntro)
+
 
     def click(self):
+
         if self.displayed:
             self.ids.dialog.hide()
         else:
             self.ids.dialog.show()
         self.displayed = not self.displayed
-
-    def bossDecision(self):
-        rooms = self.app.gameManager.roomsManager.getRooms()
-        globalscore = 0
-        for room in rooms:
-            globalscore += room.score
-        if (globalscore > 0):
-            print "Boss : Go pour le projet les differents departements ont l'air satisfait de votre travail."
-        else:
-            print "Boss : No go, desole ton projet ne reponds pas au besoin de l'entreprise. On a besoin de dynamiser les differents departements."
+        #self.ids.dialog.changeElement(DialogTextElement(text="Attention, ceci est un test", isEnd=True))

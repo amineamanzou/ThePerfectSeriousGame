@@ -49,6 +49,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dialog\__init__.py" />
+    <Compile Include="GameScreens\StartScreen.py" />
     <Compile Include="GameScreens\ErrorScreen.py" />
     <Compile Include="GameScreens\GameScreen.py">
       <SubType>Code</SubType>
@@ -105,6 +106,7 @@
     <Content Include="Game.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="GameScreens\StartScreen.kv" />
     <Content Include="GameScreens\ErrorScreen.kv" />
     <Content Include="GameScreens\GameScreen.kv">
       <SubType>Code</SubType>
@@ -122,6 +124,8 @@
     </Content>
     <Content Include="Images\note.png" />
     <Content Include="Images\Rooms\room_marketing.png" />
+    <Content Include="Images\start.png" />
+    <Content Include="Ressources\Chapters\chapter0.xml" />
     <Content Include="Ressources\Chapters\chapter1.xml" />
     <Content Include="Ressources\Chapters\chapter2.xml" />
     <Content Include="Ressources\Notes\chapter1-note1.rst">
