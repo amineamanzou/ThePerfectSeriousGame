@@ -15,6 +15,7 @@ Builder.load_file("Dialog/DialogWidget.kv")
 class DialogWidget(Widget):
     icon = StringProperty('')
     visible = BooleanProperty(True)
+    gameManager = ObjectProperty()
 
     def __init__(self, **kwargs):
         super(DialogWidget, self).__init__(**kwargs)

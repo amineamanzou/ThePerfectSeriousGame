@@ -26,6 +26,7 @@ class MapScreen(GameScreen):
         except Exception as ex:
             self.showError(ex.message)
 
+        self.ids.dialog.gameManager = self.app.gameManager
         self.ids.dialog.bind(visible=self.setRoomVisible)
 
         for room in self.rooms:

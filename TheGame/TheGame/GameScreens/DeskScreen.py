@@ -23,6 +23,8 @@ class DeskScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
 
+        self.ids.dialog.gameManager = self.app.gameManager
+
     def click(self):
         self.hideNote()
 
