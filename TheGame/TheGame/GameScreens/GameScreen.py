@@ -17,7 +17,7 @@ from GameScreens.ErrorScreen import ErrorScreen
 Builder.load_file("GameScreens/GameScreen.kv")
 
 class GameScreen(Widget):
-    app = ObjectProperty(None)
+    app = ObjectProperty(None) # Le game widget qui a les attributs de cette classe (gameManager, etc.)
     visible = False
 
     def __init__(self, **kwargs):

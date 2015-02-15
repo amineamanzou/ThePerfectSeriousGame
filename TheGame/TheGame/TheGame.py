@@ -11,6 +11,7 @@ import os
 
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
+from GameScreens.BossScreen import BossScreen
 
 from Managers.GameManager import GameManager
 
@@ -56,6 +57,8 @@ class GameWidget(Widget):
             self.gameScreen = MapScreen(app=self, opacity=0)
         elif screen == "DeskScreen":
             self.gameScreen = DeskScreen(app=self, opacity=0)
+        elif screen == "BossScreen":
+            self.gameScreen = BossScreen(app=self, opacity=0)
         else:
             self.gameScreen = MapScreen(app=self, opacity=0)
         self.add_widget(self.gameScreen)
