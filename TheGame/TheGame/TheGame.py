@@ -9,6 +9,7 @@ from kivy.uix.widget import Widget
 
 import os
 
+from GameScreens.StartScreen import StartScreen
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
 from GameScreens.BossScreen import BossScreen
@@ -53,7 +54,9 @@ class GameWidget(Widget):
                 continue
 
         self.clear_widgets()
-        if screen == "MapScreen":
+        if screen == "StartScreen":
+            self.gameScreen = StartScreen(app=self, opacity=0)
+        elif screen == "MapScreen":
             self.gameScreen = MapScreen(app=self, opacity=0)
         elif screen == "DeskScreen":
             self.gameScreen = DeskScreen(app=self, opacity=0)
