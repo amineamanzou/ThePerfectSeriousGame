@@ -27,7 +27,7 @@ class GameManager(object):
             try:
                 dialog = self.chapterManager.getNextDialog(roomId)
                 if(dialog.type == "F"): 
-                    self.fiches.append(dialog)# si c'est une fiche, on l'ajoute à la liste
+                    self.fiches.append(dialog)# si c'est une fiche, on l'ajoute a la liste
                     return None # on retourne null
                 else:
                     return dialog # sinon on retourne le dialog (ou none su y en a plus)

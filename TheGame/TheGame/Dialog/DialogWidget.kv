@@ -21,23 +21,31 @@
 			size: (root.height, root.height)
 			source: root.icon
 
-		DialogElement:
-		    id: elementContainer
-			canvas:
-				Color:
-					rgba: 0,0,0,1
-				Rectangle:
-					pos: self.pos
-					size: self.size
-			DialogTextElement:
-                Label:
-                    id: textViewer
-                    pos: ( (elementContainer.pos[0]+120)*2, elementContainer.pos[1]+40 )
-                    size_hint: 1, 1
-                    text_size: (900,400)
-                    max_lines: 3
-                    valign: 'middle'
-                    halign: 'justify'
-                    color: (1, 1, 1, 1)
-                    font_size: 30
-                    text: 'Ceci est un test'
+		BoxLayout:
+			id: layout_eval
+			orientation: "vertical"
+			size: ((root.size[0] - root.height), root.height - 20)
+			pos: root.pos
+
+			Label:
+				text: "Ceci est un texte"
+				size: (layout_eval.size[0], "5dp")
+				size_hint: (1,0.3)
+
+			GridLayout:
+				cols: 2
+				Button:
+					id: answer1
+					text: 'Answer 1'
+
+				Button:
+					id: answer2
+					text: 'Answer 2'
+
+				Button:
+					id: answer3
+					text: 'Answer 3'
+
+				Button:
+					id: answer4
+					text: 'Answer 4'
