@@ -21,9 +21,9 @@ class ChapterManager(object):
 
     def setDone(self, dialogId):
         for dialog in self.availables:
-            if(dialog.id == dialogId):
-                self.availables.remove(dialog)
+            if(dialog.id == dialogId):     
                 dialog.done = True
+                self.availables.remove(dialog)
                 for nextDialog in self.dialogs:
                     if(nextDialog.idParent == dialogId):
                         self.availables.append(nextDialog)
@@ -32,3 +32,10 @@ class ChapterManager(object):
         for dialog in self.availables:
             if(dialog.idBat == roomId):
                 return dialog
+
+    def haveNext(self, dialogId):
+        for nextDialog in self.dialogs:
+            if(nextDialog.idParent == dialogId):
+                if(nextDialog.type != "F"):
+                    return True
+        return False

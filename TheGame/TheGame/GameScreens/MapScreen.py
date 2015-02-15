@@ -12,8 +12,6 @@ from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
 from CustomWidget.ScoreSlider import ScoreSlider
 
-import random
-
 Builder.load_file("GameScreens/MapScreen.kv")
 
 class MapScreen(GameScreen):
@@ -45,17 +43,15 @@ class MapScreen(GameScreen):
                 if(mouse[0] > room.xMin * width and mouse[0] < room.xMax * width and mouse[1] > room.yMin * height and mouse[1] < room.yMax * height):
                     if(room.name == "bureau"):
                         self.app.changeScreen("DeskScreen")
+                    elif(room.name == "boss"):
+                        self.app.changeScreen("BossScreen")
                     else:
                         try:
-                            dialog = self.app.gameManager.getNextDialog(room.id)
-                            if(dialog == None):
-                                dialog = room.fuckDialogs[random.randint(0, len(room.fuckDialogs) - 1)]
+                            self.ids.room.source = room.imageBackground
+                            self.ids.dialog.startDialog(room)
+                            self.ids.dialog.show()
                         except Exception as ex:
                             self.showError(ex.message)
-
-                        self.ids.room.source = room.imageBackground
-                        self.ids.dialog.icon = room.imageChar
-                        self.ids.dialog.show()
                     break
 
     def setRoomVisible(self, obj, visible):
