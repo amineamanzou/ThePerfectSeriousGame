@@ -43,8 +43,12 @@ class DialogWidget(Widget):
         self.dialog = self.gameManager.getNextDialog(self.currentRoom.id)
         
         if self.dialog == None: # S'il s'agit d'une fiche ou pas de dialogue
-            dialog = self.currentRoom.fuckDialogs[random.randint(0, len(self.currentRoom.fuckDialogs) - 1)]
-            element = DialogTextElement(text=dialog, isEnd=True)
+            if len(self.currentRoom.fuckDialogs) != 0:
+                dialog = self.currentRoom.fuckDialogs[random.randint(0, len(self.currentRoom.fuckDialogs) - 1)]
+                element = DialogTextElement(text=dialog, isEnd=True)
+            else:
+                self.hide()
+                return None
         elif self.dialog.type == "C":
             element = DialogTextElement(text=self.dialog.text, isEnd=not self.gameManager.chapterManager.haveNext(self.dialog.id))
         elif self.dialog.type == "E":
