@@ -48,20 +48,24 @@ class DialogWidget(Widget):
         elif self.dialog.type == "C":
             element = DialogTextElement(text=self.dialog.text, isEnd=not self.gameManager.chapterManager.haveNext(self.dialog.id))
         elif self.dialog.type == "E":
-            element = DialogEvalElement(options=self.dialog.choices)
+            element = DialogEvalElement(options=self.dialog.choices, title=self.dialog.title)
         else:
             raise Exception("Type de dialogue inconnu")
-        
+
         element.bind(close=self.closeElement)
+        
         self.changeElement(element)
 
     def changeElement(self, element):
         self.ids.elementContainer.clear_widgets()
         self.ids.elementContainer.add_widget(element)
 
-    def closeElement(self, val, name):
+    def closeElement(self, obj, val):
         if self.dialog != None:
             self.gameManager.setDialogDone(self.dialog.id)
+
+        if self.dialog.type == "E":
+            self.currentRoom.score += self.dialog.choices[obj.result].score
 
         if self.gameManager.getNextDialog(self.currentRoom.id) != None:
             self.startDialog(self.currentRoom)
