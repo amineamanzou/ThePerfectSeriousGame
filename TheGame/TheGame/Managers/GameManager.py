@@ -48,3 +48,8 @@ class GameManager(object):
                         self.chapterManager = ChapterManager(self.basePath + os.path.normpath(nextChapter.file))
             except Exception as ex:
                 raise ex
+
+    def dialogAvailableInRoom(self, roomId):
+        if(self.chapterManager.getNextDialog(roomId) != None):
+            return True
+        return False
