@@ -45,9 +45,6 @@
     <x min="0.2" max="0.35"></x>
     <y min="0.138" max="0.394"></y>
     <fuckDialogs>
-      <text id="1">Ça fait du bien d'être au calme.</text>
-      <text id="2">Ce n'est pas encore l'heure du café.</text>
-      <text id="3">J'ai encore des choses à faire...</text>
     </fuckDialogs>
   </room>
   

@@ -93,21 +93,21 @@
     </text>
   </dialog>
 
-  <!-- Deuxième branche, côté couloir -->
+  <!-- Deuxième branche, côté rh -->
 
-  <dialog id="12" idParent="3" type="C" idBat="1" end="false">
+  <dialog id="12" idParent="3" type="C" idBat="3" end="false">
     <text>
-      Dialogue classique debut branche 2 (couloir)
+      Dialogue classique debut branche 2 (rh)
     </text>
   </dialog>
 
-  <dialog id="13" idParent="12" type="C" idBat="1" end="false">
+  <dialog id="13" idParent="12" type="C" idBat="3" end="false">
     <text>
       Dialogue avant fiche
     </text>
   </dialog>
 
-  <dialog id="14" idParent="13"  type="E" idBat="1" end="false">
+  <dialog id="14" idParent="13"  type="E" idBat="3" end="false">
     <title>Question ?</title>
     <choix>
       <answer id="1">
@@ -121,7 +121,7 @@
     </choix>
   </dialog>
 
-  <dialog id="15" idParent="14" type="C" idBat="1" end="true">
+  <dialog id="15" idParent="14" type="C" idBat="3" end="true">
     <text>
       Fin dialogue 2
     </text>
