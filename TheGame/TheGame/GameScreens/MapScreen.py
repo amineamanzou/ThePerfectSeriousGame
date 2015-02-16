@@ -30,17 +30,7 @@ class MapScreen(GameScreen):
 
         self.ids.dialog.gameManager = self.app.gameManager
         self.ids.dialog.bind(visible=self.setRoomVisible)
-
-        for room in self.rooms:
-            if room.name != "bureau" and room.name != "boss":
-                slider = ScoreSlider(size=("100dp", "30dp"))
-                slider.pos = (room.xMax * self.size[0] - slider.size[0], room.yMin * self.size[1])
-                self.ids.map.add_widget(slider)
-            if(self.app.gameManager.dialogAvailableInRoom(room.id)):
-                warning = Image(source=(self.app.app.APPLICATION_PATH + os.path.normpath('/Images/warning.png')), size=("80dp", "80dp"))
-                warning.pos = (room.xMax * self.size[0] - warning.size[0], room.yMin * self.size[1])
-                self.ids.map.add_widget(warning)
-
+        self.reloadIcons();
        
     def click(self):
         if not self.ids.dialog.visible:
@@ -68,4 +58,17 @@ class MapScreen(GameScreen):
             anim = Animation(opacity=1)
         else:
             anim = Animation(opacity=0)
+            self.reloadIcons()
         anim.start(self.ids.room)
+
+    def reloadIcons(self):
+        self.ids.map.clear_widgets()
+        for room in self.rooms:
+            if room.name != "bureau" and room.name != "boss":
+                slider = ScoreSlider(size=("100dp", "30dp"))
+                slider.pos = (room.xMax * self.size[0] - slider.size[0], room.yMin * self.size[1])
+                self.ids.map.add_widget(slider)
+            if(self.app.gameManager.dialogAvailableInRoom(room.id)):
+                warning = Image(source=(self.app.app.APPLICATION_PATH + os.path.normpath('/Images/warning.png')), size=("80dp", "80dp"))
+                warning.pos = (room.xMax * self.size[0] - warning.size[0], room.yMin * self.size[1])
+                self.ids.map.add_widget(warning)
