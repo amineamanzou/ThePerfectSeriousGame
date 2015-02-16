@@ -67,9 +67,8 @@ class DialogWidget(Widget):
     def closeElement(self, obj, val):
         if self.dialog != None:
             self.gameManager.setDialogDone(self.dialog.id)
-
-        if self.dialog.type == "E":
-            self.currentRoom.score += self.dialog.choices[obj.result].score
+            if self.dialog.type == "E":
+                self.currentRoom.score += self.dialog.choices[obj.result].score
 
         if self.gameManager.getNextDialog(self.currentRoom.id) != None:
             self.startDialog(self.currentRoom)
