@@ -25,12 +25,9 @@ class DeskScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
         self.ids.dialog.gameManager = self.app.gameManager
+        self.ids.dialog.bind(visible=self.reloadNotes)
         self.ids.dialog.startDialog(self.app.gameManager.roomsManager.getRoomById(4))
-        for fiche in self.app.gameManager.fiches:
-            self.addNote(fiche)
-
-        self.ids.dialog.gameManager = self.app.gameManager
-
+        self.reloadNotes()
 
     def addNote(self, fiche):
         image = DynImage(source=fiche.image, pos=(self.size[0] * (fiche.x / 100.0), self.size[1] * (fiche.y/100.0)), size_hint=self.noteSize)
@@ -53,3 +50,8 @@ class DeskScreen(GameScreen):
     def backToMap(self):
         if not self.ids.dialog.visible:
             self.app.changeScreen("MapScreen")
+
+    def reloadNotes(self, opt1=None, opt2=None):
+        self.ids.ficheContainer.clear_widgets()
+        for fiche in self.app.gameManager.fiches:
+            self.addNote(fiche)

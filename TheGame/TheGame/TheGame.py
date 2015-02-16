@@ -1,4 +1,4 @@
-#!/usr/bin/python
+    #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import kivy
@@ -27,11 +27,17 @@ class GameApp(App):
         self.root = GameWidget(app=self)
 
     def configure(self):
-        self.window.size = (1200, 800)
-        self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
         self.APPLICATION_ENV = "DEBUG"
 
-
+        if self.APPLICATION_ENV == "DEBUG":
+            self.window.size = (1200, 800)
+        else:
+            self.window.size = (1920, 1080)
+            self.window.fullscreen = True
+            self.window.borderless = True
+        
+        self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
+        
 class GameWidget(Widget):
     app = ObjectProperty(None)
     gameScreen = ObjectProperty(None)
