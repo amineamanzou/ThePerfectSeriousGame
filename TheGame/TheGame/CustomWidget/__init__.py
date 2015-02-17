@@ -5,4 +5,4 @@
 Package contenant les divers widgets graphiques de moindre importance
 """
 
-__all__ = ['DynImage']
+__all__ = ['DynImage', 'MenuDialog', 'ScoreSlider']

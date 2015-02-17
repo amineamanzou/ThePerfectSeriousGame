@@ -1,10 +1,11 @@
-    #!/usr/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import kivy
 kivy.require('1.8.0')
 
 from kivy.app import App
+from kivy.core.window import Window
 from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
 
@@ -17,14 +18,21 @@ from GameScreens.BossScreen import BossScreen
 
 from Managers.GameManager import GameManager
 
+from CustomWidget.MenuDialog import MenuDialog
+
 class GameApp(App):
+    menu = ObjectProperty()
+
     def build(self):
         from kivy.base import EventLoop
         EventLoop.ensure_window()
         self.window = EventLoop.window
+        self.menu = MenuDialog(app=self)
 
         self.configure()
         self.root = GameWidget(app=self)
+        self.root.keyboard = Window.request_keyboard(self.keyboard_closed, self.root)
+        self.root.keyboard.bind(on_key_down=self.on_keyboard_down)
 
     def configure(self):
         self.APPLICATION_ENV = "DEBUG"
@@ -37,6 +45,18 @@ class GameApp(App):
             self.window.borderless = True
         
         self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
+
+    def keyboard_closed(self):
+        self.keyboard.unbind(on_key_down=self.on_keyboard_down)
+        self.keyboard = None
+
+    def on_keyboard_down(self, keyboard, keycode, text, modifiers):
+        if keycode[1] == 'escape':
+            self.menu.open()
+        return True
+
+    def quitter(self):
+        App.get_running_app().stop()
         
 class GameWidget(Widget):
     app = ObjectProperty(None)

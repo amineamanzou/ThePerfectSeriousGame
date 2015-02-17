@@ -1,0 +1,30 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<MenuDialog>:
+	size_hint: (None, None)
+	size: ("250dp", "200dp")
+	GridLayout:
+		pos: root.pos		
+		pos_hint: {'center_x':.5}
+		size_hint: (1, 1)
+		row_force_default: True
+		row_default_height: '50dp'
+		size: self.minimum_size
+		top: self.height
+		spacing: ["10dp", "10dp"]
+		padding: "15dp"
+		cols: 1
+		
+		Button:
+			size_hint: (0.9, 0.25)
+			font_size: '20sp'
+			text: "Quitter"
+			on_press: root.app.quitter()
+			
+		Button:
+			size_hint_x: None
+			width: '200dp'
+			font_size: '20sp'
+			text: "Retour"
+			on_press: root.dismiss()
