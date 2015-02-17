@@ -5,7 +5,7 @@
 	FloatLayout:
 		DynImage:
 			id: map
-			source: "Images/desk.png"
+			source: "Images/Rooms/room_boss.png"
 			pos: root.pos
 			size: root.size
 			keep_ratio: False
@@ -16,9 +16,3 @@
 			id: dialog
 			size: (root.width, root.height * 0.2)
 			icon: "Images/Characters/profil-test.png"
-
-        DynImage:
-		    source: "Images/mini-map.png"
-			pos: (root.size[0] - 150, root.size[1] - 150)
-			size: ("100dp","100dp")
-		    on_press: root.app.changeScreen("MapScreen")
