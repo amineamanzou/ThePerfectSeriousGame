@@ -21,6 +21,7 @@ Builder.load_file("GameScreens/DeskScreen.kv")
 
 class DeskScreen(GameScreen):
     noteSize = (0.05, 0.09)
+    fiches = []
 
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
@@ -31,16 +32,17 @@ class DeskScreen(GameScreen):
 
     def addNote(self, fiche):
         image = DynImage(source=fiche.image, pos=(self.size[0] * (fiche.x / 100.0), self.size[1] * (fiche.y/100.0)), size_hint=self.noteSize)
-        image.bind(on_press=lambda x: self.showNoteContent(fiche))
+        image.bind(on_press=lambda x: self.showNoteContent(fiche.id, fiche.content))
         self.ids.ficheContainer.add_widget(image)
 
-    def showNoteContent(self, fiche):
+    def showNoteContent(self, id, content):
         if not self.ids.dialog.visible:
-            self.ids.note.source = self.app.app.APPLICATION_PATH + os.path.normpath(fiche.content)
+            self.ids.note.toctrees = {}
+            self.ids.note.source = self.app.app.APPLICATION_PATH + os.path.normpath(content)
             slide = Animation(pos=(self.ids.note.pos[0], self.size[1] * 0.1))
             slide.start(self.ids.note)
             self.ids.shadow.size = self.size
-            self.app.gameManager.setDialogDone(fiche.id)
+            self.app.gameManager.setDialogDone(id)
 
     def hideNote(self):
         slide = Animation(pos=(self.ids.note.pos[0], self.size[1]))
@@ -53,5 +55,6 @@ class DeskScreen(GameScreen):
 
     def reloadNotes(self, opt1=None, opt2=None):
         self.ids.ficheContainer.clear_widgets()
-        for fiche in self.app.gameManager.fiches:
+        self.fiches = self.app.gameManager.fiches
+        for fiche in self.fiches:
             self.addNote(fiche)
