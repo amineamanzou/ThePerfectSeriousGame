@@ -47,6 +47,7 @@ class MapScreen(GameScreen):
                     else:
                         try:
                             self.ids.room.source = room.imageBackground
+                            self.ids.roomLabel.text = room.libelle
                             self.ids.dialog.startDialog(room)
                             self.ids.dialog.show()
                         except Exception as ex:
@@ -60,6 +61,7 @@ class MapScreen(GameScreen):
             anim = Animation(opacity=0)
             self.reloadIcons()
         anim.start(self.ids.room)
+        anim.start(self.ids.roomLabelContainer)
 
     def reloadIcons(self):
         self.ids.map.clear_widgets()
