@@ -30,6 +30,9 @@
     <Compile Include="CustomWidget\MenuDialog.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CustomWidget\RoomTitle.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CustomWidget\ScoreSlider.py">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +55,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dialog\__init__.py" />
+    <Compile Include="GameScreens\CreditsScreen.py" />
     <Compile Include="GameScreens\BossScreen.py" />
     <Compile Include="GameScreens\StartScreen.py" />
     <Compile Include="GameScreens\ErrorScreen.py" />
@@ -102,6 +106,9 @@
     <Content Include="CustomWidget\MenuDialog.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="CustomWidget\RoomTitle.kv">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="CustomWidget\ScoreSlider.kv">
       <SubType>Code</SubType>
     </Content>
@@ -113,6 +120,7 @@
     <Content Include="Game.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="GameScreens\CreditsScreen.kv" />
     <Content Include="GameScreens\BossScreen.kv" />
     <Content Include="GameScreens\StartScreen.kv" />
     <Content Include="GameScreens\ErrorScreen.kv" />
@@ -124,6 +132,7 @@
     </Content>
     <Content Include="GameScreens\MapScreen.kv" />
     <Content Include="Images\desk.png" />
+    <Content Include="Images\logo-univ-paris1.png" />
     <Content Include="Images\map.png" />
     <Content Include="Images\Characters\char_marketing.png" />
     <Content Include="Images\Characters\profil-test.png" />
@@ -148,6 +157,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="Ressources\rooms.xml" />
+    <Content Include="Ressources\sources.rst">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Ressources\story.xml" />
   </ItemGroup>
   <ItemGroup>

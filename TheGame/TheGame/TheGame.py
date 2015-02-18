@@ -15,6 +15,7 @@ from GameScreens.StartScreen import StartScreen
 from GameScreens.MapScreen import MapScreen
 from GameScreens.DeskScreen import DeskScreen
 from GameScreens.BossScreen import BossScreen
+from GameScreens.CreditsScreen import CreditsScreen
 
 from Managers.GameManager import GameManager
 
@@ -65,7 +66,7 @@ class GameWidget(Widget):
 
     def __init__(self, **kwargs):
         super(GameWidget, self).__init__(**kwargs)
-
+        
         try:
             self.changeScreen("LoadingScreen")
             self.gameManager = GameManager(self.app.APPLICATION_PATH)
@@ -89,6 +90,8 @@ class GameWidget(Widget):
             self.gameScreen = DeskScreen(app=self, opacity=0)
         elif screen == "BossScreen":
             self.gameScreen = BossScreen(app=self, opacity=0)
+        elif screen == "CreditsScreen":
+            self.gameScreen = CreditsScreen(app=self, opacity=0)
         else:
             self.gameScreen = MapScreen(app=self, opacity=0)
         self.add_widget(self.gameScreen)

@@ -10,9 +10,12 @@
 			size: root.size
 			keep_ratio: False
 			allow_stretch: True
-            on_press: root.bossDecision()
 
 		DialogWidget:
 			id: dialog
 			size: (root.width, root.height * 0.2)
 			icon: "Images/Characters/profil-test.png"
+
+		RoomTitle:
+			pos: (root.pos[0], root.size[1] - self.size[1])
+			libelle: "Bureau du boss"

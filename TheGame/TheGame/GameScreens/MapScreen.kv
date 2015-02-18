@@ -41,21 +41,7 @@
 				pos: (root.pos[0], root.pos[1] - dialog.size[1])
 				visible: False
 
-			BoxLayout:
-				id: roomLabelContainer
-				canvas:
-					Color:
-						rgba: 0.16, 0.22, 0.33, 0.85
-					Rectangle:
-						pos: self.pos
-						size: self.size
-
-				pos: (scatter.pos[0], scatter.size[1] - self.size[1])
-				size: ("400dp", "75dp")
-				orientation: 'vertical'
+			RoomTitle:
+				id: roomLabel
+				pos: (root.pos[0], root.size[1] - self.size[1])
 				opacity: 0
-
-				Label:
-					id: roomLabel
-					color: 1, 1, 1, 1
-					font_size: "20sp"

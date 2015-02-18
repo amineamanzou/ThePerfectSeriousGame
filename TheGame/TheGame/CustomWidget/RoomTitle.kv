@@ -1,0 +1,22 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<RoomTitle>:
+	canvas:
+		Color:
+			rgba: 0.16, 0.22, 0.33, 0.85
+		Rectangle:
+			pos: self.pos
+			size: self.size
+
+	size: ("400dp", "75dp")
+
+	BoxLayout:
+		pos: root.pos
+		size: root.size
+		orientation: 'vertical'
+
+		Label:
+			color: 1, 1, 1, 1
+			font_size: "20sp"
+			text: root.libelle

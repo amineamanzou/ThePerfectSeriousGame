@@ -12,6 +12,7 @@ from kivy.animation import Animation
 
 from GameScreen import GameScreen
 from CustomWidget.DynImage import DynImage
+from CustomWidget.RoomTitle import RoomTitle
 from Dialog.DialogWidget import DialogWidget
 from Dialog.DialogTextElement import DialogTextElement
 

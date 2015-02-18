@@ -1,0 +1,23 @@
+#:kivy 1.8
+#:import kivy kivy
+
+<CreditsScreen>:
+	Label:
+		canvas:
+			Line:
+				points: [20, root.size[1] - 130, root.size[0] - 20, root.size[1] - 130]
+				width: 1
+			Color:
+				rgba: 1, 1, 1, 1
+
+		text: "The Perfect Serious Game"
+		font_size: "40sp"
+		pos: (root.size[0] / 2 - self.size[0] / 2, root.size[1] - 150)
+		color: 1, 1, 1, 1
+
+	BoxLayout:
+		id: creditContainer
+		orientation: 'vertical'
+		size: (root.size[0], root.size[1] - 300)
+		pos: (root.pos[0], root.pos[1] - self.size[1])
+		spacing: "40dp"

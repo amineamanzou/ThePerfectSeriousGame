@@ -12,6 +12,7 @@ from kivy.uix.image import Image
 from GameScreen import GameScreen
 from Dialog.DialogWidget import DialogWidget
 from CustomWidget.DynImage import DynImage
+from CustomWidget.RoomTitle import RoomTitle
 from CustomWidget.ScoreSlider import ScoreSlider
 
 import os
@@ -47,7 +48,7 @@ class MapScreen(GameScreen):
                     else:
                         try:
                             self.ids.room.source = room.imageBackground
-                            self.ids.roomLabel.text = room.libelle
+                            self.ids.roomLabel.libelle = room.libelle
                             self.ids.dialog.startDialog(room)
                             self.ids.dialog.show()
                         except Exception as ex:
@@ -61,7 +62,7 @@ class MapScreen(GameScreen):
             anim = Animation(opacity=0)
             self.reloadIcons()
         anim.start(self.ids.room)
-        anim.start(self.ids.roomLabelContainer)
+        anim.start(self.ids.roomLabel)
 
     def reloadIcons(self):
         self.ids.map.clear_widgets()
