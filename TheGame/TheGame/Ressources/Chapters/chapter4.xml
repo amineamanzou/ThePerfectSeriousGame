@@ -2,6 +2,8 @@
 <chapter>
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
+<!--END 8 & 16-->
+
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Je pense qu'en ayant une meilleure ambiance, la qualité de vie au travail est meilleure, mais qu'en est il de l'efficacité du travail ?
       \nNous devrions utiliser notre serious game pour donner aux employés les méthodes pour être plus efficace !

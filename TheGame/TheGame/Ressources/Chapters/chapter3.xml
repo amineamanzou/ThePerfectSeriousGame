@@ -3,6 +3,8 @@
 
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
+<!--END 9 & 15-->
+
   <!-- Deux dialogues classiques -->
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Je crois que la communication est important au sein d'une entreprise. Grâce à elle, on peut rendre les choses meilleures.

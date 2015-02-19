@@ -2,6 +2,8 @@
 <chapter>
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
+<!--END 16-->
+
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Ah, tu es là, je me demandais quand tu passerais voir ton manager préféré !
       \nAlors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes objectifs ?</text>
@@ -151,7 +153,7 @@
   <image>./Images/fiche.png</image>
 </dialog>-->
 
-<dialog id="16" idParent="15" type="F" idBat="4" end="false">
+<dialog id="16" idParent="15" type="F" idBat="4" end="true">
   <content>/Ressources/Notes/chapter1-note1.rst</content>
   <x>40</x>
   <y>31</y>
