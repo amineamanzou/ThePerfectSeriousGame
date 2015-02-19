@@ -34,5 +34,5 @@ class CreditsScreen(GameScreen):
             
         self.ids.creditContainer.add_widget(Image(source=os.path.normpath("Images/logo-univ-paris1.png")))
      
-        anim = Animation(pos=(0, self.size[1] - 200 - self.ids.creditContainer.size[1]), duration=500.0, t='linear')
+        anim = Animation(pos=(0, self.size[1] - 200 - self.ids.creditContainer.size[1]), duration=700, t='linear')
         anim.start(self.ids.creditContainer)

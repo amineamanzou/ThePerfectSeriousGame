@@ -10,15 +10,20 @@ import os
 class GameManager(object):
     roomsManager = storyManager = chapterManager = object
     basePath = ""
+    env = ""
     end = False
     fiches = []
 
-    def __init__(self, basePath, *args):
+    def __init__(self, basePath, env, *args):
         self.basePath = basePath
+        self.env = env
 
         try:
             self.roomsManager = RoomsManager(self.basePath + os.path.normpath('/Ressources/rooms.xml'))
-            self.storyManager = StoryManager(self.basePath + os.path.normpath('/Ressources/story.xml'))
+            if self.env == "DEV":
+                self.storyManager = StoryManager(self.basePath + os.path.normpath('/Ressources/story-dev.xml'))
+            else:
+                self.storyManager = StoryManager(self.basePath + os.path.normpath('/Ressources/story.xml'))
             self.chapterManager = ChapterManager(self.basePath + os.path.normpath(self.storyManager.getNextChapter().file))
         except Exception as ex:
             raise ex

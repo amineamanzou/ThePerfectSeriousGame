@@ -36,9 +36,9 @@ class GameApp(App):
         self.root.keyboard.bind(on_key_down=self.on_keyboard_down)
 
     def configure(self):
-        self.APPLICATION_ENV = "DEBUG"
+        self.APPLICATION_ENV = "DEV"
 
-        if self.APPLICATION_ENV == "DEBUG":
+        if self.APPLICATION_ENV == "DEV":
             self.window.size = (1200, 800)
         else:
             self.window.size = (1920, 1080)
@@ -69,7 +69,7 @@ class GameWidget(Widget):
         
         try:
             self.changeScreen("LoadingScreen")
-            self.gameManager = GameManager(self.app.APPLICATION_PATH)
+            self.gameManager = GameManager(self.app.APPLICATION_PATH, self.app.APPLICATION_ENV)
             self.changeScreen("StartScreen")
         except Exception as ex:
             self.gameScreen.showError(ex.message)

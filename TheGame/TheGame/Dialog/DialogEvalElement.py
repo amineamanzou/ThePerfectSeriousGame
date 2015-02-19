@@ -21,7 +21,7 @@ class DialogEvalElement(DialogElement):
         super(DialogEvalElement, self).__init__(**kwargs)
         i = 0
         for option in self.options:
-            button = CustomButton(text=option.text, val=i)
+            button = CustomButton(text=option.text, val=i, markup=True)
             button.bind(on_press=self.click)
             self.ids.layoutButtons.add_widget(button)
             i += 1

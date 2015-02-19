@@ -46,9 +46,7 @@ class BossScreen(GameScreen):
 
         dialog = DialogTextElement()
         dialog.type = "C"
-        if globalscore >= 400:
-            dialog.text = ""
-        elif globalscore >= 300:
+        if globalscore >= 300:
             dialog.text = ""
         elif globalscore >= 200:
             dialog.text = ""
@@ -59,8 +57,6 @@ class BossScreen(GameScreen):
         elif globalscore >= -100:
             dialog.text = ""
         elif globalscore >= -200:
-            dialog.text = ""
-        elif globalscore >= -300:
             dialog.text = ""
         else:
             dialog.text = ""
