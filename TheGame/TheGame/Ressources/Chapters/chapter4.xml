@@ -51,11 +51,13 @@
     <!-- les différents choix -->
     <choix>
       <answer id="1">
-        <text>Le travail d'équipe ? Tant que chaque personne est compétente, le projet fonctionnera !</text>
+        <text>Le travail d'équipe ?
+        Tant que chaque personne est compétente, le projet fonctionnera !</text>
         <score>0</score>
       </answer>
       <answer id="2">
-        <text>En équipe, on peut s'entraider, combler nos lacunes et être plus efficace ensemble, cela améliore nos chances de succès.</text>
+        <text>En équipe, on peut s'entraider, combler nos lacunes et être plus efficace ensemble,
+        cela améliore nos chances de succès.</text>
         <score>20</score>
       </answer>
       <answer id="3">
@@ -68,7 +70,7 @@
   <dialog id="6" idParent="5"  type="C" idBat="6" end="false">
     <text>
       C'est votre point de vue. Pour ma part, les personnes qui nous entourent sont importantes car elles possèdent des connaissances que nous avons pas tous nécessairement.
-      \nAllez donc lire la fiche sur ce sujet et revenez me voir !
+      Allez donc lire la fiche sur ce sujet et revenez me voir !
     </text>
   </dialog>
 
@@ -99,22 +101,22 @@
   <dialog id="8" idParent="7"  type="C" idBat="6" end="true">
     <text>
       J'espère que votre serious game donnera l'envie et la motivation aux employés de partager leurs connaissances !
-      \nCela améliorera l'efficacité de l'entreprise et permettrait aux employés une bien meilleure communication.
-      \nN'hésitez pas à repasser me voir pour discuter de votre travail, a bientot.
+      Cela améliorera l'efficacité de l'entreprise et permettrait aux employés une bien meilleure communication.
+      N'hésitez pas à repasser me voir pour discuter de votre travail, a bientot.
     </text>
   </dialog>
 
   <!-- Deuxième branche, côté MOE -->
   <dialog id="9" idParent="2"  type="C" idBat="2" end="false">
     <text>Bienvenue au sein de la DSI. Je suis Eric, MOE.
-          \Ici se trouve l'équipe qui va vous aider dans la réalisation du serious game.
+          Ici se trouve l'équipe qui va vous aider dans la réalisation du serious game.
     </text>
   </dialog>
 
   <dialog id="10" idParent="9"  type="C" idBat="2" end="false">
     <text>
         J'ai entendu dire que vous avez commencé à travailler durement sur le sujet, les murs ont des oreilles !
-        \nNous avons quelques questions à vous poser afin de comprendre un peu mieux la finalité de ce projet.
+        Nous avons quelques questions à vous poser afin de comprendre un peu mieux la finalité de ce projet.
     </text>
   </dialog>
 
@@ -153,7 +155,8 @@
     <title>Utilisez-vous le continuous quality improvement dans votre projet ?</title>
     <choix>
       <answer id="1">
-        <text>Très bonne idée, cela nous permettra à chaque cycle de proposer des améliorations à notre serious game et de vérifier sa qualité !</text>
+        <text>Très bonne idée, cela nous permettra à chaque cycle de proposer des améliorations à notre
+        serious game et de vérifier sa qualité !</text>
         <score>10</score>
       </answer>
       <answer id="2">

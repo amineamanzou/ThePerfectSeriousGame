@@ -59,15 +59,18 @@
     <!-- les différents choix -->
     <choix>
       <answer id="1">
-        <text>Je pense que vous avez raison. En entretenant de bonnes relations avec mes collègues, je suis content de venir travailler le matin et je pense que cela me rend plus productif</text>
+        <text>Je pense que vous avez raison. En entretenant de bonnes relations avec mes collègues,
+          je suis content de venir travailler le matin et je pense que cela me rend plus productif</text>
         <score>5</score>
       </answer>
       <answer id="2">
-        <text>Qu'importe les relations entre collègues ? Je me rend au bureau le matin et fait ma journée de travail. Les relations avec mes collègues ne sont pas importantes.</text>
+        <text>Qu'importe les relations entre collègues? Je vais au bureau le matin et fait ma journée de travail.
+          Les relations avec mes collègues ne sont pas importantes.</text>
         <score>-5</score>
       </answer>
       <answer id="3">
-        <text>Je ne sais pas trop.. Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au travail.</text>
+        <text>Je ne sais pas trop..
+        Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au travail.</text>
         <score>0</score>
       </answer>
     </choix>

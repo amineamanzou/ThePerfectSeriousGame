@@ -1,12 +1,12 @@
-[size=20]Améliorer la qualité en entreprise[/size]
+Améliorer la qualité en entreprise
+===========================================
+Pourquoi travailler ensemble
+----------------------------------
 
-      [size=16]Pourquoi travailler ensemble[/size]
+Dans comme on a pu le voir, il est bénéfique de vivre avec respect et dans une bonne ambiance dans son environnement de travail.
+Cela permet par la suite de pouvoir travailler avec les autres et permettre à tous de s'améliorer !
 
-            [size=12]\nDans comme on a pu le voir, il est bénéfique de vivre avec respect et dans une bonne ambiance dans son environnement de travail.
-            \nCela permet par la suite de pouvoir travailler avec les autres et permettre à tous de s'améliorer !
+Travailler ensemble va permettre de partager la connaissance avec les autres employées,
+mais cela va également permettre d'améliorer les méthodes de travail afin de les rendre plus efficaces.
 
-            \nTravailler ensemble va permettre de partager la connaissance avec les autres employées,
-            \nmais cela va également permettre d'améliorer les méthodes de travail afin de les rendre plus efficaces.
-
-            \nNous allons pouvoir rencontrer des opérationnels et un chef d'équipe afin de pouvoir en savoir plus là-dessus
-            [/size]
+Nous allons pouvoir rencontrer des opérationnels et un chef d'équipe afin de pouvoir en savoir plus là-dessus
