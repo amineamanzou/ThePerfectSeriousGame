@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<chapter>
+  <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
+
+  <dialog id="1" idParent="0" type="C" idBat="4" end="false">
+    <text>Ah, tu es là, je me demandais quand tu passerais voir ton manager préféré !
+      \nAlors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes objectifs ?</text>
+  </dialog>
+
+  <dialog id="2" idParent="1"  type="E" idBat="4" end="false">
+    <title>Tes objectifs ?</title>
+    <choix>
+      <answer id="1">
+        <text>Tout n'est pas encore clair, je dois encore questionner quelques personnes.</text>
+        <score>10</score>
+      </answer>
+      <answer id="2">
+        <text>Bien sur, mon objectif est de faire un jeu sympa !</text>
+        <score>0</score>
+      </answer>
+      <answer id="3">
+        <text>Je suis perdu..</text>
+        <score>-10</score>
+      </answer>
+    </choix>
+  </dialog>
+</chapter>
+
+<dialog id="3" idParent="2" type="C" idBat="4" end="false">
+  <text>D'accord, bon, maintenant que tu connais le but de ce projet, il va falloir être plus précis pour avancer.
+  \nJe te conseille d'aller voir au département RH!</text>
+</dialog>
+
+<!-- RH :3 -->
+<dialog id="4" idParent="3" type="C" idBat="3" end="false">
+  <text>J'ai cru comprendre que tu cherches à fixer clairement tes objectifs. Dans ta démarche, je voudrais que tu réflechisses en premier lieu aux personnes à atteindre, as-tu ton idée ?</text>
+</dialog>
+
+<dialog id="5" idParent="4"  type="E" idBat="3" end="false">
+  <title>Personnes à atteindre ?</title>
+  <choix>
+    <answer id="1">
+      <text>Je pense que tout le monde peut être concerné par ce serious game, non ?</text>
+      <score>0</score>
+    </answer>
+    <answer id="2">
+      <text>Ce serious game doit atteindre dans un premier temps les salariés de cette entreprise.</text>
+      <score>10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="6" idParent="5" type="C" idBat="3" end="false">
+  <text>Je pense également que nous allons essayer d'atteindre les salariés de notre entreprise dans un premier temps.
+    \nEt si le jeu est un succès, nous pourrons peut-être envisager de partager ce projet avec d'autres entreprises !
+    \nJe pense qu'il serait interessant que tu rencontres ******, au service Marketing et vérifier cela.
+  </text>
+</dialog>
+
+<!--Marketing :5 -->
+<dialog id="7" idParent="6" type="C" idBat="5" end="false">
+  <text>Tu viens de voir ******, je me trompe ? Je vous ai vu discuter quand je passais avoir un RH, tout à l'heure !
+  \nJe suis content que tu passes par ici, tu es toujours le bienvenu.
+  \nTu as une question ?</text>
+</dialog>
+
+<dialog id="8" idParent="7"  type="E" idBat="3" end="false">
+  <title>Votre question ?</title>
+  <choix>
+    <answer id="1">
+      <text>Avec les RH, on a vu que les personnes à atteindre sont les salariés de l'entreprise, et plus largement, nous pourrons envisager d'exporter ce jeu dans d'autres entreprises.
+        \nEn représentant du service Marketing, penses-tu que ce soit une bonne solution ?</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Je continue mon investigation, c'est ******* qui m'a envoyé vers le service Marketing, je ne suis pas sur de comment vous pouvez m'aider.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="9" idParent="8" type="C" idBat="3" end="false">
+  <text>Je suis d'accord avec ***** (RH), c'est une bonne idée d'envisager l'export pour le futur de ce projet.
+  \nPendant que tu es au service Marketing, as-tu un autre sujet à aborder ?</text>
+</dialog>
+
+<dialog id="10" idParent="9"  type="E" idBat="3" end="false">
+  <title>Au service Marketing, quels objectifs vas-tu essayer de fixer ?</title>
+  <choix>
+    <answer id="1">
+      <text>L'image de l'entreprise doit-elle est mise en avant dans le serious game ?</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Vous allez m'aider à rendre le jeu plus joli ?</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="11" idParent="10" type="C" idBat="3" end="false">
+  <text>Le serious game, je l'espère, rendra fier les employés de travailler ensemble pour notre entreprise.
+  \nMais améliorer l'image de l'entreprise à l'interne ou en externe n'est pas le point principal de ce projet.</text>
+</dialog>
+
+<dialog id="12" idParent="11" type="C" idBat="3" end="false">
+  <text>Si tu as besoin d'autre chose, n'hésites pas à revenir.</text>
+</dialog>
+
+<!--Manager, Bureau-->
+<dialog id="13" idParent="12" type="C" idBat="4" end="false">
+  <text>Tu as pu en apprendre plus sur tes objectifs ?</text>
+</dialog>
+
+<dialog id="14" idParent="13"  type="E" idBat="4" end="false">
+  <title>Qu'as tu appris ?</title>
+  <choix>
+    <answer id="1">
+      <text>Pour être efficace, il faut fixer mes objectifs, je me rend compte qu'il y a de nombreux aspects à prendre en compte pour que notre serious game apporte le plus à l'entreprise.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Pour que le serious game améliore l'entreprise, il faut améliorer l'image de celle-ci.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="15" idParent="14" type="C" idBat="4" end="false">
+  <text>D'accord. J'ai eu des retours et je t'ai laissé une fiche te permettant d'avoir une synthèse et des informations complémentaires sur ce sujet.</text>
+</dialog>
+
+<!--<dialog id="16" idParent="15" type="F" idBat="4" end="false">
+  <content>[size=20]L'amélioration de l'entreprise[/size]
+
+          [size=12]
+          Voici les points que nous avons suivis:
+          \n• Faire un état des lieux afin de pouvoir fixer des objectifs à atteindre
+          \n• Savoir qui est la cible, cela permet d'orienté ton travail pour toucher les utilisateurs.
+          \n• Amélioration de l'image de l'entreprise
+          \n• Promouvoir et améliorer la communication interne et externe
+          \n• Améliorer la culture du risque
+
+          Tu as défini une série d'objectifs à atteindre ainsi qu'aborder certains points avec nos collaborateurs.
+          \nCes différents points s'inscrivent dans la démarche de création de ton serious game, mais plus largement, ils participent à l'amélioration de l'entreprise.
+          [/size]
+
+  </content>
+  <x>600</x>
+  <y>600</y>
+  <image>./Images/fiche.png</image>
+</dialog>-->
+
+<dialog id="16" idParent="15" type="F" idBat="4" end="false">
+  <content>/Ressources/Notes/chapter1-note1.rst</content>
+  <x>40</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+</chapter>
