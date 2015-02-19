@@ -6,8 +6,8 @@
 
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Je pense qu'en ayant une meilleure ambiance, la qualité de vie au travail est meilleure, mais qu'en est il de l'efficacité du travail ?
-      \nNous devrions utiliser notre serious game pour donner aux employés les méthodes pour être plus efficace !
-      \nAllons voir la fiche pour ce sujet.</text>
+      Nous devrions utiliser notre serious game pour donner aux employés les méthodes pour être plus efficace !
+      Tu peux aller voir la fiche pour ce sujet.</text>
   </dialog>
 
 <!--  <dialog id="2" idParent="1" type="F" idBat="4" end="false">
@@ -39,7 +39,7 @@
   <!-- Première branche, côté Boss -->
   <dialog id="3" idParent="2"  type="C" idBat="6" end="false">
     <text> Bonjour, je suis monsieur Alliance.
-      \nJ'espère que votre travail a bien commencé, j'espère que l'équipe sera efficace !</text>
+    J'espère que votre travail a bien commencé, j'espère que l'équipe sera efficace !</text>
   </dialog>
 
   <dialog id="4" idParent="3"  type="C" idBat="6" end="false">
@@ -148,7 +148,7 @@
   <dialog id="12" idParent="11"  type="C" idBat="2" end="false">
     <text>
       Très bien, je vous fait confiance. Le principal est que cela fonctionne...
-      \nPendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
+      Pendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
     </text>
   </dialog>
 
@@ -170,8 +170,8 @@
   <dialog id="14" idParent="13"  type="C" idBat="2" end="false">
     <text>
       C'est votre choix, nous vous suivons.
-      \nNous essayerons cependant d'utiliser une méthode permettant de réduire tout type de gaspillage en optimisant la réussite et la qualité de notre réalisation.
-      \nMerci d'être passé nous voir, a plus tard !
+      Nous essayerons cependant d'utiliser une méthode permettant de réduire tout type de gaspillage en optimisant la réussite et la qualité de notre réalisation.
+      Merci d'être passé nous voir, a plus tard !
     </text>
   </dialog>
 

@@ -6,7 +6,7 @@
 
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Ah, tu es là, je me demandais quand tu passerais voir ton manager préféré !
-      \nAlors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes objectifs ?</text>
+    Alors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes objectifs ?</text>
   </dialog>
 
   <dialog id="2" idParent="1"  type="E" idBat="4" end="false">
@@ -30,7 +30,7 @@
 
 <dialog id="3" idParent="2" type="C" idBat="4" end="false">
   <text>D'accord, bon, maintenant que tu connais le but de ce projet, il va falloir être plus précis pour avancer.
-  \nJe te conseille d'aller voir au département RH!</text>
+  Je te conseille d'aller voir au département RH!</text>
 </dialog>
 
 <!-- RH :3 -->
@@ -54,16 +54,16 @@
 
 <dialog id="6" idParent="5" type="C" idBat="3" end="false">
   <text>Je pense également que nous allons essayer d'atteindre les salariés de notre entreprise dans un premier temps.
-    \nEt si le jeu est un succès, nous pourrons peut-être envisager de partager ce projet avec d'autres entreprises !
-    \nJe pense qu'il serait interessant que tu rencontres ******, au service Marketing et vérifier cela.
+  Et si le jeu est un succès, nous pourrons peut-être envisager de partager ce projet avec d'autres entreprises !
+  Je pense qu'il serait interessant que tu rencontres ******, au service Marketing et vérifier cela.
   </text>
 </dialog>
 
 <!--Marketing :5 -->
 <dialog id="7" idParent="6" type="C" idBat="5" end="false">
   <text>Tu viens de voir ******, je me trompe ? Je vous ai vu discuter quand je passais avoir un RH, tout à l'heure !
-  \nJe suis content que tu passes par ici, tu es toujours le bienvenu.
-  \nTu as une question ?</text>
+  Je suis content que tu passes par ici, tu es toujours le bienvenu.
+  Tu as une question ?</text>
 </dialog>
 
 <dialog id="8" idParent="7"  type="E" idBat="3" end="false">
@@ -71,7 +71,7 @@
   <choix>
     <answer id="1">
       <text>Avec les RH, on a vu que les personnes à atteindre sont les salariés de l'entreprise, et plus largement, nous pourrons envisager d'exporter ce jeu dans d'autres entreprises.
-        \nEn représentant du service Marketing, penses-tu que ce soit une bonne solution ?</text>
+      En représentant du service Marketing, penses-tu que ce soit une bonne solution ?</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -83,7 +83,7 @@
 
 <dialog id="9" idParent="8" type="C" idBat="3" end="false">
   <text>Je suis d'accord avec ***** (RH), c'est une bonne idée d'envisager l'export pour le futur de ce projet.
-  \nPendant que tu es au service Marketing, as-tu un autre sujet à aborder ?</text>
+  Pendant que tu es au service Marketing, as-tu un autre sujet à aborder ?</text>
 </dialog>
 
 <dialog id="10" idParent="9"  type="E" idBat="3" end="false">
@@ -102,7 +102,7 @@
 
 <dialog id="11" idParent="10" type="C" idBat="3" end="false">
   <text>Le serious game, je l'espère, rendra fier les employés de travailler ensemble pour notre entreprise.
-  \nMais améliorer l'image de l'entreprise à l'interne ou en externe n'est pas le point principal de ce projet.</text>
+  Mais améliorer l'image de l'entreprise à l'interne ou en externe n'est pas le point principal de ce projet.</text>
 </dialog>
 
 <dialog id="12" idParent="11" type="C" idBat="3" end="false">
