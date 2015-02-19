@@ -10,6 +10,7 @@ from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
 
 import os
+from win32api import GetSystemMetrics
 
 from GameScreens.StartScreen import StartScreen
 from GameScreens.MapScreen import MapScreen
@@ -41,9 +42,8 @@ class GameApp(App):
         if self.APPLICATION_ENV == "DEV":
             self.window.size = (1200, 800)
         else:
-            self.window.size = (1920, 1080)
+            self.window.size = (GetSystemMetrics(0), GetSystemMetrics(1))
             self.window.fullscreen = True
-            self.window.borderless = True
         
         self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
 

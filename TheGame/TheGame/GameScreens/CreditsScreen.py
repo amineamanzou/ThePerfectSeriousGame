@@ -22,7 +22,7 @@ class CreditsScreen(GameScreen):
     def __init__(self, **kwargs):
         super(GameScreen, self).__init__(**kwargs)
         self.credits.append({"Title": "Développement", "Lines": ["Amanzou Amine", "Bouchez Django", "Taverne Émile"]})
-        self.credits.append({"Title": "Scénario", "Lines": ["Hennequin-Parrey Thomas", "Pierres Julie"]})
+        self.credits.append({"Title": "Scénario", "Lines": ["Hennequin-Parey Thomas", "Pierres Julie"]})
         self.credits.append({"Title": "Graphismes", "Lines": ["Taverne Émile"]})
 
         for element in self.credits:
