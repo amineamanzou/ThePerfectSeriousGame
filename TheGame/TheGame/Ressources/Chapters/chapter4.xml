@@ -38,7 +38,7 @@
 
   <!-- Première branche, côté Boss -->
   <dialog id="3" idParent="2"  type="C" idBat="6" end="false">
-    <text> Bonjour, je suis monsieur X, PDG de cette entreprise.
+    <text> Bonjour, je suis monsieur Alliance.
       \nJ'espère que votre travail a bien commencé, j'espère que l'équipe sera efficace !</text>
   </dialog>
 
@@ -117,38 +117,37 @@
 
   <dialog id="10" idParent="9"  type="C" idBat="2" end="false">
     <text>
-        J'ai entendu dire que vous avez commencé à travailler durement sur le sujet, les murs ont des oreilles !
-        Nous avons quelques questions à vous poser afin de comprendre un peu mieux la finalité de ce projet.
+        Tu as commencé à travailler durement sur le sujet, les murs ont des oreilles !
+        J'ai une question à te poser sur la réalisation de ce projet afin que notre travail soit optimal.
     </text>
   </dialog>
 
 
-
   <dialog id="11" idParent="10"  type="E" idBat="2" end="false">
-    <title>Quelle technologie doit être utilisée pour le développement ?</title>
+    <title>Comment souhaitez-vous organiser le travail  ?</title>
     <choix>
       <answer id="1">
-        <text>Le serious game doit être développé pour smartphone et tablettes Android.</text>
-        <score>-5</score>
+        <text>De manière naturelle, je vous fais confiance.</text>
+        <score>-10</score>
       </answer>
       <answer id="2">
-        <text>Le jeu doit être accessible de l'intranet, donc via une technologie web.</text>
+        <text>J'aimerai travailler de manière bien définie, et délivrer un serious game de qualité.</text>
         <score>20</score>
       </answer>
       <answer id="3">
-        <text>Un développement en COBOL, y a que ça de vrai !</text>
+        <text>On développe, et on verra par la suite les modifications à réaliser.</text>
         <score>-20</score>
       </answer>
       <answer id="4">
-        <text>Une application Widows, compatible avec les postes de travail acutels devrait suffire.</text>
-        <score>-10</score>
+        <text>On fixe notre plan de travail, on le suit, et on verra bien le résultat !</text>
+        <score>0</score>
       </answer>
     </choix>
   </dialog>
 
   <dialog id="12" idParent="11"  type="C" idBat="2" end="false">
     <text>
-      Très bien, je vous fait confiance. Le principal est que tous les employés puisse utiliser ce serious game...
+      Très bien, je vous fait confiance. Le principal est que cela fonctionne...
       \nPendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
     </text>
   </dialog>

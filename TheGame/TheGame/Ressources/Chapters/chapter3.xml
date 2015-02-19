@@ -44,7 +44,7 @@
 
   <!-- Première branche, côté BOSS -->
   <dialog id="4" idParent="3"  type="C" idBat="6" end="false">
-    <text> Bonjour, je suis monsieur X, PDG de cette entreprise. J'ai entendu parler de votre travail et de vos recherches.
+    <text> Bonjour, je suis monsieur Alliance, PDG de cette entreprise. J'ai entendu parler de votre travail et de vos recherches.
     Je suis en faveur d'une bonne ambiance au travail. J'aime à croire que les employés sont heureux dans leur environnement de travail et qu'ils entretiennent de bonnes relations avec leurs collègues.
     Cependant, j'espère que grâce à ce travail, nous pourrons inspirer d'avantage cet esprit d'harmonie à nos collaborateurs.</text>
   </dialog>
@@ -57,7 +57,7 @@
 
   <!-- Eval pour repondre au boss -->
   <dialog id="6" idParent="5"  type="E" idBat="6" end="false">
-    <title>Que répondez vous à Mr X ?</title>
+    <title>Que répondez vous à Mr Alliance ?</title>
     <!-- les différents choix -->
     <choix>
       <answer id="1">
