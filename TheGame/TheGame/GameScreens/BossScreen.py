@@ -67,4 +67,4 @@ class BossScreen(GameScreen):
         self.dialogs.append(dialog)
 
     def end(self, obj, val):
-        self.app.changeScreen("CreditsScreen    ")
+        self.app.changeScreen("CreditsScreen")
