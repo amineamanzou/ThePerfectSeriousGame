@@ -55,13 +55,13 @@
 <dialog id="6" idParent="5" type="C" idBat="3" end="false">
   <text>Je pense également que nous allons essayer d'atteindre les salariés de notre entreprise dans un premier temps.
   Et si le jeu est un succès, nous pourrons peut-être envisager de partager ce projet avec d'autres entreprises !
-  Je pense qu'il serait interessant que tu rencontres ******, au service Marketing et vérifier cela.
+  Je pense qu'il serait interessant que tu rencontres Jessica, au service Marketing et vérifier cela.
   </text>
 </dialog>
 
 <!--Marketing :5 -->
 <dialog id="7" idParent="6" type="C" idBat="5" end="false">
-  <text>Tu viens de voir ******, je me trompe ? Je vous ai vu discuter quand je passais avoir un RH, tout à l'heure !
+  <text>Tu viens de voir Brigitte je me trompe ? Je vous ai vu discuter quand je passais avoir un RH, tout à l'heure !
   Je suis content que tu passes par ici, tu es toujours le bienvenu.
   Tu as une question ?</text>
 </dialog>
@@ -75,15 +75,15 @@
       <score>10</score>
     </answer>
     <answer id="2">
-      <text>Je continue mon investigation, c'est ******* qui m'a envoyé vers le service Marketing, je ne suis pas sur de comment vous pouvez m'aider.</text>
+      <text>Je continue mon investigation, c'est Brigitte qui m'a envoyé vers le service Marketing, je ne suis pas sur de comment vous pouvez m'aider.</text>
       <score>0</score>
     </answer>
   </choix>
 </dialog>
 
 <dialog id="9" idParent="8" type="C" idBat="3" end="false">
-  <text>Je suis d'accord avec ***** (RH), c'est une bonne idée d'envisager l'export pour le futur de ce projet.
-  Pendant que tu es au service Marketing, as-tu un autre sujet à aborder ?</text>
+  <text>Je suis d'accord avec Brigitte (RH), c'est une bonne idée d'envisager l'export pour le futur de ce projet.
+  Pendant que tu es au service Marketing, as-tu un autre sujet dont tu voudrais parler ?</text>
 </dialog>
 
 <dialog id="10" idParent="9"  type="E" idBat="3" end="false">
