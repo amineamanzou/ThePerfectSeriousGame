@@ -6,8 +6,8 @@
 
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Je pense qu'en ayant une meilleure ambiance, la qualité de vie au travail est meilleure, mais qu'en est il de l'efficacité du travail ?
-      Nous devrions utiliser notre serious game pour donner aux employés les méthodes pour être plus efficace !
-      Tu peux aller voir la fiche pour ce sujet.</text>
+Nous devrions utiliser notre serious game pour donner aux employés les méthodes pour être plus efficace !
+Tu peux aller voir la fiche pour ce sujet.</text>
   </dialog>
 
 <!--  <dialog id="2" idParent="1" type="F" idBat="4" end="false">
@@ -43,12 +43,12 @@
   <!-- Première branche, côté Boss -->
   <dialog id="4" idParent="3"  type="C" idBat="6" end="false">
     <text> Bonjour, je suis monsieur Alliance. Oups, j'ai oublié qu'on s'est déjà rencontré, j'ai parfois la tête ailleurs excusez-moi.
-    J'espère que votre travail a bien commencé, j'espère que l'équipe sera efficace !</text>
+J'espère que votre travail a bien commencé, j'espère que l'équipe sera efficace !</text>
   </dialog>
 
   <dialog id="5" idParent="4"  type="C" idBat="6" end="false">
     <text>
-      Mais d'abord, j'aimerais savoir ce que vous attendez du travail d'équipe ?
+Mais d'abord, j'aimerais savoir ce que vous attendez du travail d'équipe ?
     </text>
   </dialog>
 
@@ -58,12 +58,12 @@
     <choix>
       <answer id="1">
         <text>Le travail d'équipe ?
-        Tant que chaque personne est compétente, le projet fonctionnera !</text>
+Tant que chaque personne est compétente, le projet fonctionnera !</text>
         <score>0</score>
       </answer>
       <answer id="2">
         <text>En équipe, on peut s'entraider, combler nos lacunes et être plus efficace ensemble,
-        cela améliore nos chances de succès.</text>
+cela améliore nos chances de succès.</text>
         <score>20</score>
       </answer>
       <answer id="3">
@@ -75,8 +75,8 @@
 
   <dialog id="7" idParent="6"  type="C" idBat="6" end="false">
     <text>
-      C'est votre point de vue. Pour ma part, les personnes qui nous entourent sont importantes car elles possèdent des connaissances que nous avons pas tous nécessairement.
-      Allez donc lire la fiche sur ce sujet et revenez me voir !
+C'est votre point de vue. Pour ma part, les personnes qui nous entourent sont importantes car elles possèdent des connaissances que nous avons pas tous nécessairement.
+Allez donc lire la fiche sur ce sujet et revenez me voir !
     </text>
   </dialog>
 
@@ -106,23 +106,23 @@
 
   <dialog id="9" idParent="8"  type="C" idBat="6" end="true">
     <text>
-      J'espère que votre serious game donnera l'envie et la motivation aux employés de partager leurs connaissances !
-      Cela améliorera l'efficacité de l'entreprise et permettrait aux employés une bien meilleure communication.
-      N'hésitez pas à repasser me voir pour discuter de votre travail et a bientot.
+J'espère que votre serious game donnera l'envie et la motivation aux employés de partager leurs connaissances !
+Cela améliorera l'efficacité de l'entreprise et permettrait aux employés une bien meilleure communication.
+N'hésitez pas à repasser me voir pour discuter de votre travail et a bientot.
     </text>
   </dialog>
 
   <!-- Deuxième branche, côté MOE -->
   <dialog id="10" idParent="3"  type="C" idBat="7" end="false">
     <text>Bienvenue au sein de la DSI. Je suis Eric, MOE.
-          Ici se trouve l'équipe qui va vous aider dans la réalisation du serious game.
+Ici se trouve l'équipe qui va vous aider dans la réalisation du serious game.
     </text>
   </dialog>
 
   <dialog id="11" idParent="10"  type="C" idBat="7" end="false">
     <text>
-        Tu as commencé à travailler durement sur le sujet, les murs ont des oreilles !
-        J'ai une question à te poser sur la réalisation de ce projet afin que notre travail soit optimal.
+Tu as commencé à travailler durement sur le sujet, les murs ont des oreilles !
+J'ai une question à te poser sur la réalisation de ce projet afin que notre travail soit optimal.
     </text>
   </dialog>
 
@@ -151,8 +151,8 @@
 
   <dialog id="13" idParent="12"  type="C" idBat="7" end="false">
     <text>
-      Très bien, je vous fait confiance. Le principal est que cela fonctionne.
-      Pendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
+Très bien, je vous fait confiance. Le principal est que cela fonctionne.
+Pendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
     </text>
   </dialog>
 
@@ -173,15 +173,15 @@ notre serious game et de vérifier sa qualité !</text>
 
   <dialog id="15" idParent="14"  type="C" idBat="7" end="false">
     <text>
-      C'est ton choix, nous te suivons.
-      Nous essayerons cependant d'utiliser une méthode de lean management permettant de réduire les gaspillages en optimisant la réussite et la qualité de notre réalisation.
-      Merci d'être passé nous voir, à plus tard !
+C'est ton choix, nous te suivons.
+Nous essayerons cependant d'utiliser une méthode de lean management permettant de réduire les gaspillages en optimisant la réussite et la qualité de notre réalisation.
+Merci d'être passé nous voir, à plus tard !
     </text>
   </dialog>
 
   <dialog id="16" idParent="15"  type="C" idBat="7" end="false">
     <text>
-      Pour en savoir plus sur les méthodes dont nous avons parlé, tu peux aller lire la fiche à ton bureau.
+Pour en savoir plus sur les méthodes dont nous avons parlé, tu peux aller lire la fiche à ton bureau.
     </text>
   </dialog>
 

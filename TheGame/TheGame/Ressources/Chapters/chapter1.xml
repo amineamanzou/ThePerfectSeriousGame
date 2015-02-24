@@ -56,8 +56,8 @@ Maintenant, c'est à toi de jouer!</text>
   <choix>
     <answer id="1">
       <text>J’irais voir le marketing pour mettre tes idées en application et nous ferons d’autres réunions,
-        comme ça tu sauras comment sont adaptés tes idées. Merci beaucoup pour tes conseils en tout cas,
-        j'ai été ravi de cette conversation!</text>
+comme ça tu sauras comment sont adaptés tes idées. Merci beaucoup pour tes conseils en tout cas,
+j'ai été ravi de cette conversation!</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -77,8 +77,8 @@ Qui vas-tu allez voir maintenant ?</text>
   <choix>
     <answer id="1">
       <text>Je vais lire votre fiche puis aller voir la responsable RH pour qu’elle me donne des informations
-        sur le ressenti des employés et leurs réactions face aux formations qu’elle organise.
-        Je pense qu’elle a une vue d’ensemble qui peut être intéressante. </text>
+sur le ressenti des employés et leurs réactions face aux formations qu’elle organise.
+Je pense qu’elle a une vue d’ensemble qui peut être intéressante. </text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -87,7 +87,7 @@ Qui vas-tu allez voir maintenant ?</text>
     </answer>
     <answer id="3">
       <text>Je vais aller à mon bureau pour lire votre fiche puis j’irais voir la MOE puis le PDG pour valider
-        la possibilité de faire une application mobile en plus de celle sur ordinateur.</text>
+la possibilité de faire une application mobile en plus de celle sur ordinateur.</text>
       <score>10</score>
     </answer>
   </choix>
@@ -130,9 +130,9 @@ Qui vas-tu allez voir maintenant ?</text>
   <choix>
     <answer id="1">
       <text>Oui en effet.
-        Vous avez une vue d’ensemble sur les attentes des employés, leurs problèmes mais aussi sur leur
-        ouverture d’esprit grâce aux formations que vous organisez.
-        Que pensez vous qu’il leur manque au quotidien dans leur travail?</text>
+Vous avez une vue d’ensemble sur les attentes des employés, leurs problèmes mais aussi sur leur
+ouverture d’esprit grâce aux formations que vous organisez.
+Que pensez vous qu’il leur manque au quotidien dans leur travail?</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -155,7 +155,7 @@ Qui vas-tu allez voir maintenant ?</text>
   <choix>
     <answer id="1">
       <text>Il faut donc stimuler le joueur a organiser le transfert des compétences et éclaircir la place
-        de chaque salarié surtout à son arrivée et ses enjeux.</text>
+de chaque salarié surtout à son arrivée et ses enjeux.</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -178,7 +178,7 @@ Qui vas-tu allez voir maintenant ?</text>
     </answer>
     <answer id="2">
       <text>Je voulais vous demandez si une application mobile soit bien perçue par les employés?
-        Je ne sais pas si les gens sont ouvert au digital.</text>
+Je ne sais pas si les gens sont ouvert au digital.</text>
       <score>0</score>
     </answer>
   </choix>
@@ -232,7 +232,7 @@ Qui vas-tu allez voir maintenant ?</text>
   <choix>
     <answer id="1">
       <text>Je voulais également vous demander, Magalie et la DRH sont favorable a fait une application sur
-        mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?</text>
+mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -273,12 +273,12 @@ Je suppose que vous avez commencé à réfléchir sur le jeu.</text>
   <choix>
     <answer id="1">
       <text>Pour le moment je collecte les informations, et ensuite je réfléchirai
-        à comment façonner le serious game.</text>
+à comment façonner le serious game.</text>
       <score>10</score>
     </answer>
     <answer id="2">
       <text>A vrai dire, je n’ai pas encore eu le temps de voir les applications, je réunis
-        les informations sur l’entreprise pour le moment.</text>
+les informations sur l’entreprise pour le moment.</text>
       <score>-10</score>
     </answer>
   </choix>
@@ -293,7 +293,7 @@ Je suppose que vous avez commencé à réfléchir sur le jeu.</text>
   <choix>
     <answer id="1">
       <text>Oui je souhaiterais développer l’application sur mobile Android et je voulais savoir
-        si les équipes informatiques maîtrisent ce language?</text>
+si les équipes informatiques maîtrisent ce language?</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -322,7 +322,7 @@ Revenez me voir dès que vous aurez avancé.</text>
   <choix>
     <answer id="1">
       <text>Vous connaissez déjà les objectifs du serious game qui ont pour base l'amélioration et
-        la dynamisation de l'entreprise sur les postes clés ou les échanges entre services sont forts.</text>
+la dynamisation de l'entreprise sur les postes clés ou les échanges entre services sont forts.</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -337,9 +337,9 @@ Revenez me voir dès que vous aurez avancé.</text>
   <choix>
     <answer id="1">
       <text>Le serious game sera sur l’intranet donc accessible par tous les objet connectés
-        au wifi de l’entreprise.
-        Je veux proposer le serious game sur mobile en plus de l’application sur ordinateur,
-        pour que les gens puissent faire le test en groupe et comparer leur résultat.</text>
+au wifi de l’entreprise.
+Je veux proposer le serious game sur mobile en plus de l’application sur ordinateur,
+pour que les gens puissent faire le test en groupe et comparer leur résultat.</text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -358,9 +358,9 @@ Revenez me voir dès que vous aurez avancé.</text>
   <choix>
     <answer id="1">
       <text>Je vous propose de prévoir une formation sur ce langage.
-        J’ai fait une demande d’expertise auprès d’Eric de la MOE.
-        Son estimation prévoit un besoin de 4 personnes pour un budget de formation de 5000€.
-        Il vous enverra directement une estimation détaillée. </text>
+J’ai fait une demande d’expertise auprès d’Eric de la MOE.
+Son estimation prévoit un besoin de 4 personnes pour un budget de formation de 5000€.
+Il vous enverra directement une estimation détaillée. </text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -379,9 +379,9 @@ Revenez me voir dès que vous aurez avancé.</text>
   <choix>
     <answer id="1">
       <text>Oui tout à fait, c’est aussi pour cela que je vous propose cette option.
-        C’est un langage qu’ils auront besoin d’utiliser plus tard.
-        Les former maintenant vous sera utile dans d’autres projets,
-        vous capitaliserez ces connaissances pour des projets clients également. </text>
+C’est un langage qu’ils auront besoin d’utiliser plus tard.
+Les former maintenant vous sera utile dans d’autres projets,
+vous capitaliserez ces connaissances pour des projets clients également. </text>
       <score>10</score>
     </answer>
     <answer id="2">
@@ -419,7 +419,7 @@ Revenez me voir dès que vous aurez avancé.</text>
     </answer>
     <answer id="2">
       <text>La formation va dynamiser l’équipe informatique du projet serious game et ils se sentiront impliqué
-        et motivé car on leur aura donné les bases pour maîtriser le projet. </text>
+et motivé car on leur aura donné les bases pour maîtriser le projet. </text>
       <score>10</score>
     </answer>
   </choix>

@@ -28,7 +28,7 @@ class StartScreen(GameScreen):
 
         roomIntro = Room()
         roomIntro.id = 99
-        roomIntro.imageChar = "Images/Characters/profil-test.png"
+        roomIntro.imageChar = "Images/Characters/char_rh.png"
 
         self.ids.dialog.startDialog(roomIntro)
 
