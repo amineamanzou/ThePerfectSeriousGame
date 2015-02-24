@@ -132,6 +132,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="GameScreens\MapScreen.kv" />
+    <Content Include="Images\desk.png" />
     <Content Include="Images\door.jpg" />
     <Content Include="Images\start.png" />
     <Content Include="Images\Characters\char_boss.png" />
@@ -139,7 +140,6 @@
     <Content Include="Images\Characters\char_moe.png" />
     <Content Include="Images\Characters\char_marketing.png" />
     <Content Include="Images\Characters\char_rh.png" />
-    <Content Include="Images\desk.png" />
     <Content Include="Images\Emoticons\emo-1.png" />
     <Content Include="Images\Emoticons\emo-2.png" />
     <Content Include="Images\Emoticons\emo-3.png" />
