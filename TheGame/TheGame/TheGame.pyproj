@@ -134,10 +134,11 @@
     <Content Include="Images\Characters\char_boss.png" />
     <Content Include="Images\Characters\char_moa.png" />
     <Content Include="Images\Characters\char_moe.png" />
+    <Content Include="Images\Characters\char_marketing.png" />
+    <Content Include="Images\Characters\char_rh.png" />
     <Content Include="Images\desk.png" />
     <Content Include="Images\logo-univ-paris1.png" />
     <Content Include="Images\map.png" />
-    <Content Include="Images\Characters\char_marketing.png" />
     <Content Include="Images\Characters\profil-test.png" />
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
