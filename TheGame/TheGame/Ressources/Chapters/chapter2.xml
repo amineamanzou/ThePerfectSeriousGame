@@ -47,13 +47,13 @@
   <!-- Première branche, côté BOSS -->
   <dialog id="5" idParent="4"  type="C" idBat="6" end="false">
     <text> Bonjour, je suis monsieur Alliance, PDG de cette entreprise. J'ai entendu parler de votre travail et de vos recherches.
-    Je suis en faveur d'une bonne ambiance au travail. J'aime à croire que les employés sont heureux dans leur environnement de travail et qu'ils entretiennent de bonnes relations avec leurs collègues.
-    Cependant, j'espère que grâce à ce travail, nous pourrons inspirer d'avantage cet esprit d'harmonie à nos collaborateurs.</text>
+Je suis en faveur d'une bonne ambiance au travail. J'aime à croire que les employés sont heureux dans leur environnement de travail et qu'ils entretiennent de bonnes relations avec leurs collègues.
+Cependant, j'espère que grâce à ce travail, nous pourrons inspirer d'avantage cet esprit d'harmonie à nos collaborateurs.</text>
   </dialog>
 
   <dialog id="6" idParent="5"  type="C" idBat="6" end="false">
     <text>
-      Et vous, pensez-vous que la bonne entente entre les collaborateurs rend l'entreprise plus vivable et plus efficace ?
+Et vous, pensez-vous que la bonne entente entre les collaborateurs rend l'entreprise plus vivable et plus efficace ?
     </text>
   </dialog>
 
@@ -82,7 +82,7 @@ Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au trava
 
   <dialog id="8" idParent="7"  type="C" idBat="6" end="false">
     <text>
-      J'ai une petite question, avez-vous déjà rencontrer les autres membres du projet ?
+J'ai une petite question, avez-vous déjà rencontrer les autres membres du projet ?
     </text>
   </dialog>
 
@@ -111,7 +111,7 @@ Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au trava
   <!-- Deuxième branche, côté RH -->
   <dialog id="11" idParent="4"  type="C" idBat="3" end="false">
     <text>Bienvenue au sein de la DRH. C'est moi, Brigitte.
-          Je vous attendais avec impatience.
+Je vous attendais avec impatience.
     </text>
   </dialog>
 
@@ -140,21 +140,21 @@ Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au trava
 
   <dialog id="14" idParent="13"  type="C" idBat="3" end="false">
     <text>
-      Chacun son point de vue, en ce qui me concerne je suis ravie qu'il n'y aie pas que des femmes dans les RH !
+Chacun son point de vue, en ce qui me concerne je suis ravie qu'il n'y aie pas que des femmes dans les RH !
     </text>
   </dialog>
 
   <dialog id="15" idParent="14"  type="C" idBat="3" end="false">
     <text>
-      Nous allons essayer de vous aider afin de promouvoir votre serious game au sein de l'organisation, mais également préparer le terrain afin de l'intégrer au processus de formation d'un employé!
-      Mais avant ça, il va te falloir collaborer avec les personnes en charge de la réalisation.
-      Reviens quand tu en as besoin !
+Nous allons essayer de vous aider afin de promouvoir votre serious game au sein de l'organisation, mais également préparer le terrain afin de l'intégrer au processus de formation d'un employé!
+Mais avant ça, il va te falloir collaborer avec les personnes en charge de la réalisation.
+Reviens quand tu en as besoin !
     </text>
   </dialog>
 
   <dialog id="16" idParent="15"  type="C" idBat="3" end="true">
     <text>
-      Je pense qu'on a fais le tour pour le moment, au plaisir de te revoir. Bon courage.
+Je pense qu'on a fais le tour pour le moment, au plaisir de te revoir. Bon courage.
     </text>
   </dialog>
 

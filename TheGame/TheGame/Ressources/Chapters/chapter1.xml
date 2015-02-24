@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<chapter>
+
+<!-- END 29 & 53 -->
+
+<dialog id="1" idParent="0" type="C" idBat="4" end="false">
+  <text>Bonjour, je m'appelle Greg. Je suis ton nouveau manager. On va beaucoup travailler ensemble, je me permets de te tutoyer si ça ne te dérange pas. Beaucoup le font ici.</text>
+</dialog>
+
+<dialog id="2" idParent="1" type="C" idBat="4" end="false">
+  <text>Je suis toujours là si tu as des questions ou besoins de conseil. Pour tout t‘avouer, je n'ai pas encore d'expérience concernant les serious game. Je t’ai mis un résumé d’un livre «Les serious game pour les nuls » sur ton bureau. Blague à part, il m’a l’air très bien fait! </text>
+</dialog>
+
+<dialog id="3" idParent="2" type="C" idBat="4" end="false">
+  <text>Tu as aussi la fiche de mission détaillé laissé par Brigitte. Il y en aura d’autres et tu auras aussi les comptes rendus des réunions avec les personnes que tu verras s'ils le jugent utile ou que tu leur demande.</text>
+</dialog>
+
+<dialog id="4" idParent="3" type="F" idBat="4" end="false">
+  <content>/Ressources/Notes/chapter1-note1.rst</content>
+  <x>40</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+<dialog id="5" idParent="4" type="F" idBat="4" end="false">
+  <content>/Ressources/Notes/chapter1-note2.rst</content>
+  <x>60</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+<dialog id="6" idParent="5" type="C" idBat="4" end="false">
+  <text>J’espère que la fiche t’a aidé ! Je ne voulais pas te laisser dans la nature, nous sommes une équipe maintenant! En parlant d’équipe, tu peux aller voir les responsables des services RH, marketing, MOA, MOE et le boss dans leurs bureaux. Ils sont là pour t’aider et sont au courant du projet. Tu devrais aller voir la responsable MOA, Magalie ! Elle a déjà une petite idée de ce qu’il faut, c’est elle qui a eu l’idée du serious game. Prend la porte en face en sortant c’est le bureau du fond. Tu verras c’est la blonde super canon. Et n’en profite pas trop! Clin d’œil
+Maintenant, c'est à toi de jouer!</text>
+</dialog>
+
+<!--MOA MAGALIE -->
+<dialog id="7" idParent="6" type="C" idBat="2" end="false">
+  <text>Bonjour Steve, ravie ! Greg m'a prévenu de ton arrivée. J'ai quelques idées et je voudrais que tu me confirme par la suite si elles sont adaptées.</text>
+</dialog>
+
+<dialog id="8" idParent="7" type="C" idBat="2" end="false">
+  <text>Premièrement, je voulais que ce serious game rapproche les managers de leurs équipes, qu'il rappelle le besoin de contact humain et aussi les méthodologies pas toujours respectées. Les utilisateurs du serious game, les “gérants”, doivent se rendre compte du travail quotidien des collaborateurs.</text>
+</dialog>
+
+<dialog id="9" idParent="8" type="C" idBat="2" end="false">
+  <text>Nous devons souligner que chacun a du travail et que le projet à réaliser est une charge de travail supplémentaire pour tout le monde mais aussi que ce nouveau projet est pour le développement de Notre entreprise. Avec la charge de travail que nous avons, certains collaborateur oublient tout intérêt pour les projets. Il faut que les manager donne clairement les enjeux du projet, implique les collaborateurs et soient reconnaissant de leur travail. </text>
+</dialog>
+
+<dialog id="10" idParent="9" type="C" idBat="2" end="false">
+  <text>Je voulais aussi proposer de développer le serious game sur Android en plus de l’ordinateur pour qu'il soit accessible depuis des tablettes ou des smartphones de fonction qui sont tous sous cet OS. </text>
+</dialog>
+
+<dialog id="11" idParent="10"  type="E" idBat="2" end="false">
+  <title>Votre réponse:</title>
+  <choix>
+    <answer id="1">
+      <text>J’irais voir le marketing pour mettre tes idées en application et nous ferons d’autres réunions,
+comme ça tu sauras comment sont adaptés tes idées. Merci beaucoup pour tes conseils en tout cas,
+j'ai été ravi de cette conversation!</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Je retiens tes idées et je verrais si je les utiliserais. Merci pour tes conseils!</text>
+      <score>-10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="12" idParent="11" type="C" idBat="2" end="false">
+  <text>D’accord! Je t'ai envoyé un résumé de mes besoins sur ton bureau. Je l’avais déjà préparé. Tous les services connaissent déjà mes requêtes, tu n’auras pas à tout ré-expliquer!
+Qui vas-tu allez voir maintenant ?</text>
+</dialog>
+
+<dialog id="13" idParent="12"  type="E" idBat="2" end="false">
+  <title>Qui vas-tu allez voir maintenant ?</title>
+  <choix>
+    <answer id="1">
+      <text>Je vais lire votre fiche puis aller voir la responsable RH pour qu’elle me donne des informations
+sur le ressenti des employés et leurs réactions face aux formations qu’elle organise.
+Je pense qu’elle a une vue d’ensemble qui peut être intéressante. </text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Je n’en ai aucune idée pour le moment!</text>
+      <score>-5</score>
+    </answer>
+    <answer id="3">
+      <text>Je vais aller à mon bureau pour lire votre fiche puis j’irais voir la MOE puis le PDG pour valider
+la possibilité de faire une application mobile en plus de celle sur ordinateur.</text>
+      <score>10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<!--back to desk-->
+<dialog id="14" idParent="13" type="F" idBat="4" end="false">
+  <content>/Ressources/Notes/chapter1-note3.rst</content>
+  <x>80</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+<dialog id="15" idParent="14" type="C" idBat="4" end="false">
+  <text>Alors qu’a tu pensé de Magalie? J’arrête de te taquiner ! Retiens bien ses conseils, elle travaille avec beaucoup de métiers et sur les projets de long en larges. Ces conseils sont précieux, il reflète le vrai besoin des tous les collaborateurs. J’ai vu son compte rendu et je t’ai fait une fiche des modes de dynamisme sur les sujets qu’elle a abordé.</text>
+</dialog>
+
+<dialog id="16" idParent="15" type="C" idBat="4" end="false">
+  <text>Je pense que tu devrais aller revoir la responsable RH, Brigitte. Elle te donnera des informations plus générales sur l’entreprise qui t’aideront aussi. Sinon tu devrais aller voir le marketing pour te présenter, c’est toi qui choisi!</text>
+</dialog>
+
+<dialog id="17" idParent="16" type="F" idBat="4" end="false">
+  <content>/Ressources/Notes/chapter1-note4.rst</content>
+  <x>100</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+<!--BRANCHE 1 : RH -->
+<dialog id="18" idParent="17" type="C" idBat="3" end="false">
+  <text>Bonjour à nouveau ! Je suppose que vous avez des questions concernant le serious game? </text>
+</dialog>
+<!--
+<dialog id="18" idParent="17" type="C" idBat="3" end="false">
+  <text></text>
+</dialog>-->
+
+<dialog id="19" idParent="18"  type="E" idBat="3" end="false">
+  <title>Vos questions ?</title>
+  <choix>
+    <answer id="1">
+      <text>Oui en effet.
+Vous avez une vue d’ensemble sur les attentes des employés, leurs problèmes mais aussi sur leur
+ouverture d’esprit grâce aux formations que vous organisez.
+Que pensez vous qu’il leur manque au quotidien dans leur travail?</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Oui, j’attends que vous me donniez le ressentis des employés.</text>
+      <score>-10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="20" idParent="19" type="C" idBat="3" end="false">
+  <text>En effet, je gère les recrutement, la mobilité au sein de l’entreprise et les formations. </text>
+</dialog>
+
+<dialog id="21" idParent="20" type="C" idBat="3" end="false">
+  <text>Les employés qui demande de changer de poste se plaignent que le transfert de compétence n’est pas suffisant ou qu’il sont parfois mal formé. Il se sentent parachutés, on leur donne des tâches mais il n’ont pas eu de vrai topo sur leur objectifs et les enjeux de leur travail. </text>
+</dialog>
+
+<dialog id="22" idParent="21"  type="E" idBat="3" end="false">
+  <title>Que répondez-vous?</title>
+  <choix>
+    <answer id="1">
+      <text>Il faut donc stimuler le joueur a organiser le transfert des compétences et éclaircir la place
+de chaque salarié surtout à son arrivée et ses enjeux.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Très bien, y a t’il autre chose?</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="23" idParent="22" type="C" idBat="3" end="false">
+  <text>Il y a autre chose qui dérange aussi la plupart des employés qui sont là depuis quelque temps. C’est que les équipes ne changent pour ainsi dire pas, et lorsque les projets n’aboutissent pas, ils sont relancés avec approximativement par les même personnes. Il n’y a pas de nouvelles idées et l’échec sur certains projets devient un cercle vicieux.</text>
+</dialog>
+
+<dialog id="24" idParent="23"  type="E" idBat="3" end="false">
+  <title>Vous me parliez de retour sur les formations. Que vouliez-vous dire?</title>
+  <choix>
+    <answer id="1">
+      <text>Oui, les employés sont-il ouvert au digital?</text>
+      <score>0</score>
+    </answer>
+    <answer id="2">
+      <text>Je voulais vous demandez si une application mobile soit bien perçue par les employés?
+Je ne sais pas si les gens sont ouvert au digital.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="25" idParent="24" type="C" idBat="3" end="false">
+  <text>Ah oui, Magalie m’a dit qu’elle voulait aussi proposer l’application mobile! Je valide cette proposition. Lors des formations nous avons pu voir que les employés étaient ouvert et il y a beaucoup de jeunes ici. </text>
+</dialog>
+
+<dialog id="26" idParent="25" type="C" idBat="3" end="false">
+  <text>Si vous n’avez plus de question, je vous laisse retourner auprès de votre manager. Au revoir.</text>
+</dialog>
+
+<!--Branche 1 suite: manager-->
+<dialog id="27" idParent="26" type="C" idBat="4" end="false">
+  <text>J’espère que tu as appris tout ce que tu voulais. J’ai parlé avec Brigitte et je t’ai fait une dernière fiche sur le dynamisme en entreprise. Elle est sur ton bureau, c’est la fiche: Dynamisme - Compte Rendu RH.</text>
+</dialog>
+
+<dialog id="28" idParent="27" type="C" idBat="4" end="false">
+  <text>Tu devrais aller voir le service marketing si tu n’y es pas encore allé, même si tu n’as pas encore fini tes recherches. Sinon Greg sera là pour tout tes questions, c’est un super manager, tu as de la chance!</text>
+</dialog>
+
+<dialog id="29" idParent="28" type="F" idBat="4" end="true">
+  <content>/Ressources/Notes/chapter1-note5.rst</content>
+  <x>120</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+<!--BRANCHE 2 : -->
+<dialog id="30" idParent="17"  type="E" idBat="5" end="false">
+  <title>Bonjour, je suis Jessica, Greg m’a déjà parlé de vous.</title>
+  <choix>
+    <answer id="1">
+      <text>Bonjour, je tenais principalement à me présenter vu que l’on va beaucoup travailler ensemble.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Bonjour, je tenais principalement à me présenter étant donné que l’on va beaucoup travailler ensemble.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="31" idParent="30" type="C" idBat="5" end="false">
+  <text>Très bien, je vous dis à bientôt alors?</text>
+</dialog>
+
+<dialog id="32" idParent="31"  type="E" idBat="5" end="false">
+  <title>Que répondez-vous ? </title>
+  <choix>
+    <answer id="1">
+      <text>Je voulais également vous demander, Magalie et la DRH sont favorable a fait une application sur
+mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>A bientôt.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="33" idParent="32" type="C" idBat="5" end="false">
+  <text>Ah oui,  je suis également favorable à l’application mobile pour le serious game. A très vite!</text>
+</dialog>
+
+<!--back to desk-->
+<dialog id="34" idParent="33" type="C" idBat="4" end="false">
+  <text>On m’a dit que tu t’intéressait de près à l’option de l’application mobile. Tu fais bien, c’est une option qui représente un gros coût, il faut le prévoir à l’avance. Tu devrais aller voir Eric de la MOE. </text>
+</dialog>
+
+<dialog id="35" idParent="34" type="C" idBat="4" end="false">
+  <text>Je t’ai laissé une fiche pour te guider.</text>
+</dialog>
+
+<dialog id="36" idParent="35" type="F" idBat="4" end="false">
+  <content>/Ressources/Notes/chapter1-note6.rst</content>
+  <x>140</x>
+  <y>31</y>
+  <image>./Images/note.png</image>
+</dialog>
+
+<!-- MOE Eric -->
+<dialog id="37" idParent="36" type="C" idBat="7" end="false">
+  <text>Bonjour, je suis Eric. Bienvenu dans la boite !
+Je suppose que vous avez commencé à réfléchir sur le jeu.</text>
+</dialog>
+
+<dialog id="38" idParent="37"  type="E" idBat="7" end="false">
+  <title>Qu'avec vous en tête ?</title>
+  <choix>
+    <answer id="1">
+      <text>Pour le moment je collecte les informations, et ensuite je réfléchirai
+à comment façonner le serious game.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>A vrai dire, je n’ai pas encore eu le temps de voir les applications, je réunis
+les informations sur l’entreprise pour le moment.</text>
+      <score>-10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="39" idParent="38" type="C" idBat="7" end="false">
+  <text>Très bien, je vous fais confiance.</text>
+</dialog>
+
+<dialog id="40" idParent="39"  type="E" idBat="7" end="false">
+  <title>Avez-vous des questions ?</title>
+  <choix>
+    <answer id="1">
+      <text>Oui je souhaiterais développer l’application sur mobile Android et je voulais savoir
+si les équipes informatiques maîtrisent ce language?</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Vos équipes maitrisent-elles Androïd?</text>
+      <score>10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="41" idParent="40" type="C" idBat="7" end="false">
+  <text>Nos équipes ne maîtrisent pas le langage Androïd. Pour un tel projet, j’estime la charge à 4 personnes sur 3 mois et un budget de formation de 5 000€. Mais je peux vous faire une estimation de coût total que je communiquerai directement à M. Alliance, notre PDG. Il gère personnellement ce projet.</text>
+</dialog>
+
+<dialog id="42" idParent="41" type="C" idBat="7" end="false">
+  <text>Tu devrais aller le voir pour confirmer cette option Android par ailleurs.
+Revenez me voir dès que vous aurez avancé.</text>
+</dialog>
+
+<!--boss-->
+<dialog id="43" idParent="42" type="C" idBat="6" end="false">
+  <text>Bonjour, je suis M.Alliance, PDG de l’entreprise. J’ai décidé d’être le chef de projet pour le nouveau serious game, car ce projet est vital pour booster la performance de mon entreprise.</text>
+</dialog>
+
+<dialog id="44" idParent="43"  type="E" idBat="6" end="false">
+  <title>Je vous écoute sur vos solutions.</title>
+  <choix>
+    <answer id="1">
+      <text>Vous connaissez déjà les objectifs du serious game qui ont pour base l'amélioration et
+la dynamisation de l'entreprise sur les postes clés ou les échanges entre services sont forts.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Je commence par la partie coût directement.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="45" idParent="44"  type="E" idBat="6" end="false">
+  <title>Parlons des fonctionnalités.</title>
+  <choix>
+    <answer id="1">
+      <text>Le serious game sera sur l’intranet donc accessible par tous les objet connectés
+au wifi de l’entreprise.
+Je veux proposer le serious game sur mobile en plus de l’application sur ordinateur,
+pour que les gens puissent faire le test en groupe et comparer leur résultat.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Je veux faire une application mobile et sur ordinateur.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="46" idParent="45" type="C" idBat="6" end="false">
+  <text>Pour développer cela, il faudra nécessairement que nous maîtrisions le langage Androïd. Que prévoyez-vous ?</text>
+</dialog>
+
+<dialog id="47" idParent="46"  type="E" idBat="6" end="false">
+  <title>Quelle est votre solution ?</title>
+  <choix>
+    <answer id="1">
+      <text>Je vous propose de prévoir une formation sur ce langage.
+J’ai fait une demande d’expertise auprès d’Eric de la MOE.
+Son estimation prévoit un besoin de 4 personnes pour un budget de formation de 5000€.
+Il vous enverra directement une estimation détaillée. </text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>Je vous propose de sous-traiter pour que cela coûte moins cher.</text>
+      <score>-10</score>
+    </answer>
+    <answer id="3">
+      <text>Mais si cela coûte trop cher, nous pouvons retirer cette option.</text>
+      <score>-10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="48" idParent="47"  type="E" idBat="6" end="false">
+  <title>Très bien, je valide votre demande de formation Androïd mais il me reste une question: Y a t’il une valeur ajouté à cette formation pour nos équipes informatique?</title>
+  <choix>
+    <answer id="1">
+      <text>Oui tout à fait, c’est aussi pour cela que je vous propose cette option.
+C’est un langage qu’ils auront besoin d’utiliser plus tard.
+Les former maintenant vous sera utile dans d’autres projets,
+vous capitaliserez ces connaissances pour des projets clients également. </text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>C’est avant tout pour ce projet.</text>
+      <score>-10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<!--back to desk-->
+<dialog id="49" idParent="48" type="C" idBat="4" end="false">
+  <text>Comment s’est passée ton entrevue ?</text>
+</dialog>
+
+<dialog id="50" idParent="49"  type="E" idBat="4" end="false">
+  <title>Votre réponse:</title>
+  <choix>
+    <answer id="1">
+      <text>Je suis très content, Monsieur Alliance m’a donné son accord pour développer l’application sur Android.</text>
+      <score>10</score>
+    </answer>
+    <answer id="2">
+      <text>M. Alliance a validé ma proposition.</text>
+      <score>0</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="51" idParent="50"  type="E" idBat="4" end="false">
+  <title>Je suis curieux, selon toi en quoi ta proposition va servir au dynamise et à l’amélioration de l’entreprise?</title>
+  <choix>
+    <answer id="1">
+      <text>J’ai juste répondu au besoin de Magalie à vrai dire.</text>
+      <score>-20</score>
+    </answer>
+    <answer id="2">
+      <text>La formation va dynamiser l’équipe informatique du projet serious game et ils se sentiront impliqué
+et motivé car on leur aura donné les bases pour maîtriser le projet. </text>
+      <score>10</score>
+    </answer>
+  </choix>
+</dialog>
+
+<dialog id="52" idParent="51" type="C" idBat="4" end="false">
+  <text>Très bien! je suis impressionné, continue comme ça!</text>
+</dialog>
+
+<dialog id="53" idParent="52" type="C" idBat="4" end="true">
+  <text>Au fait, j’espère que tu es allé voir le service RH comme je te l’avais conseillé, sinon tu devrais y aller.</text>
+</dialog>
+
+</chapter>

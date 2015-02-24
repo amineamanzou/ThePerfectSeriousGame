@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rooms>
-  <!--
-  <room id="1">
-    <name>Couloir</name>
-    <background>./Images/room_couloir.png</background>
-    <character>./Images/char_couloir.png</character>
-    <x min="0.20" max="0.75"></x>
-    <y min="0.138" max="0.95"></y>
-    <fuckDialogs>
-      <text id="1">Il n'y a rien à faire ici...</text>
-      <text id="2">C'est l'heure d'aller bosser.</text>
-    </fuckDialogs>
-  </room>-->
-  
+<rooms>  
   <room id="2">
-    <name>MOE</name>
-    <libelle>Service MOE</libelle>
-    <background>./Images/Rooms/room_moe.png</background>
-    <character>./Images/Characters/char_moe.png</character>
-    <x min="0.2" max="0.435"></x>
-    <y min="0.56" max="0.95"></y>
+    <name>MOA</name>
+    <libelle>Service MOA</libelle>
+    <background>./Images/Rooms/room_moa.png</background>
+    <character>./Images/Characters/char_moa.png</character>
+    <x min="0.7083" max="0.9"></x>
+    <y min="0.7606" max="0.9149"></y>
     <fuckDialogs>
       <text id="1">Ça sent le geek par ici.</text>
       <text id="2">Je vois le monde en noir et vert !</text>
@@ -32,8 +19,8 @@
     <libelle>Service relations humaines</libelle>
     <background>./Images/Rooms/room_rh.png</background>
     <character>./Images/Characters/char_rh.png</character>
-    <x min="0.44375" max="0.70"></x>
-    <y min="0.75" max="0.95"></y>
+    <x min="0.4667" max="0.6917"></x>
+    <y min="0.7606" max="0.9149"></y>
     <fuckDialogs>
       <text id="1">Il y a beaucoup de formulaires ici, mais rien pour moi.</text>
       <text id="2">Les mamies ne pourront rien faire pour moi ici.</text>
@@ -45,8 +32,8 @@
     <libelle>Bureau personnel</libelle>
     <background>./Images/Rooms/room_bureau.png</background>
     <character>./Images/Characters/char_bureau.png</character>
-    <x min="0.2" max="0.35"></x>
-    <y min="0.138" max="0.394"></y>
+    <x min="0.0667" max="0.3042"></x>
+    <y min="0.0638" max="0.2926"></y>
     <fuckDialogs>
     </fuckDialogs>
   </room>
@@ -56,8 +43,8 @@
     <libelle>Service marketing</libelle>
     <background>./Images/Rooms/room_marketing.png</background>
     <character>./Images/Characters/char_marketing.png</character>
-    <x min="0.34375" max="0.56875"></x>
-    <y min="0.138" max="0.394"></y>
+    <x min="0.3375" max="0.65"></x>
+    <y min="0.0638" max="0.2926"></y>
     <fuckDialogs>
       <text id="1">De la publicité partout partout partout !</text>
       <text id="2">Ce n'est pas le moment de jouer avec les formes et les couleurs.</text>
@@ -69,12 +56,26 @@
     <libelle>Bureau du patron</libelle>
     <background>./Images/Rooms/room_boss.png</background>
     <character>./Images/Characters/char_boss.png</character>
-    <x min="0.56875" max="0.75"></x>
-    <y min="0.138" max="0.577"></y>
+    <x min="0.6708" max="0.95"></x>
+    <y min="0.0638" max="0.5"></y>
     <fuckDialogs>
       <text id="1">En réunion.</text>
       <text id="2">Toujours en réunion.</text>
       <text id="3">Ce n'est pas le moment.</text>
+    </fuckDialogs>
+  </room>
+
+  <room id="7">
+    <name>MOE</name>
+    <libelle>Service MOE</libelle>
+    <background>./Images/Rooms/room_moe.png</background>
+    <character>./Images/Characters/char_moe.png</character>
+    <x min="0.1433" max="0.4417"></x>
+    <y min="0.5479" max="0.9149"></y>
+    <fuckDialogs>
+      <text id="1">Ça sent le geek par ici.</text>
+      <text id="2">Je vois le monde en noir et vert !</text>
+      <text id="3">print("Hello Worlds !");</text>
     </fuckDialogs>
   </room>
 </rooms>
