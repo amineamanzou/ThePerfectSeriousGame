@@ -100,7 +100,7 @@
   <dialog id="8" idParent="7" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter3-note2.rst</content>
     <x>40</x>
-    <y>51</y>
+    <y>31</y>
     <image>./Images/note.png</image>
   </dialog>
 
@@ -113,13 +113,13 @@
   </dialog>
 
   <!-- Deuxième branche, côté MOE -->
-  <dialog id="10" idParent="3"  type="C" idBat="2" end="false">
+  <dialog id="10" idParent="3"  type="C" idBat="7" end="false">
     <text>Bienvenue au sein de la DSI. Je suis Eric, MOE.
           Ici se trouve l'équipe qui va vous aider dans la réalisation du serious game.
     </text>
   </dialog>
 
-  <dialog id="11" idParent="10"  type="C" idBat="2" end="false">
+  <dialog id="11" idParent="10"  type="C" idBat="7" end="false">
     <text>
         Tu as commencé à travailler durement sur le sujet, les murs ont des oreilles !
         J'ai une question à te poser sur la réalisation de ce projet afin que notre travail soit optimal.
@@ -127,7 +127,7 @@
   </dialog>
 
 
-  <dialog id="12" idParent="11"  type="E" idBat="2" end="false">
+  <dialog id="12" idParent="11"  type="E" idBat="7" end="false">
     <title>Comment souhaitez-vous organiser le travail  ?</title>
     <choix>
       <answer id="1">
@@ -149,14 +149,14 @@
     </choix>
   </dialog>
 
-  <dialog id="13" idParent="12"  type="C" idBat="2" end="false">
+  <dialog id="13" idParent="12"  type="C" idBat="7" end="false">
     <text>
       Très bien, je vous fait confiance. Le principal est que cela fonctionne.
       Pendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
     </text>
   </dialog>
 
-  <dialog id="14" idParent="13"  type="E" idBat="2" end="false">
+  <dialog id="14" idParent="13"  type="E" idBat="7" end="false">
     <title>Que pensez-vous de l'utilisation du continuous quality improvement dans votre projet ?</title>
     <choix>
       <answer id="1">
@@ -171,7 +171,7 @@ notre serious game et de vérifier sa qualité !</text>
     </choix>
   </dialog>
 
-  <dialog id="15" idParent="14"  type="C" idBat="2" end="false">
+  <dialog id="15" idParent="14"  type="C" idBat="7" end="false">
     <text>
       C'est ton choix, nous te suivons.
       Nous essayerons cependant d'utiliser une méthode de lean management permettant de réduire les gaspillages en optimisant la réussite et la qualité de notre réalisation.
@@ -179,7 +179,7 @@ notre serious game et de vérifier sa qualité !</text>
     </text>
   </dialog>
 
-  <dialog id="16" idParent="15"  type="C" idBat="2" end="false">
+  <dialog id="16" idParent="15"  type="C" idBat="7" end="false">
     <text>
       Pour en savoir plus sur les méthodes dont nous avons parlé, tu peux aller lire la fiche à ton bureau.
     </text>
@@ -219,7 +219,7 @@ notre serious game et de vérifier sa qualité !</text>
   <dialog id="17" idParent="16" type="F" idBat="4" end="true">
     <content>/Ressources/Notes/chapter3-note3.rst</content>
     <x>40</x>
-    <y>71</y>
+    <y>31</y>
     <image>./Images/note.png</image>
   </dialog>
 
