@@ -31,7 +31,7 @@ class MapScreen(GameScreen):
 
         self.ids.dialog.gameManager = self.app.gameManager
         self.ids.dialog.bind(visible=self.setRoomVisible)
-        self.reloadIcons();
+        self.reloadIcons()
        
     def click(self):
         if not self.ids.dialog.visible:
@@ -68,10 +68,9 @@ class MapScreen(GameScreen):
         self.ids.map.clear_widgets()
         for room in self.rooms:
             if room.name != "bureau" and room.name != "boss":
-                slider = ScoreSlider(size=("100dp", "30dp"))
-                slider.pos = (room.xMax * self.size[0] - slider.size[0], room.yMin * self.size[1])
+                slider = ScoreSlider(size=("30dp", "30dp"), pos=(room.xMin * self.size[0], room.yMin * self.size[1] + 5), score=room.score)
                 self.ids.map.add_widget(slider)
             if(self.app.gameManager.dialogAvailableInRoom(room.id)):
                 warning = Image(source=(self.app.app.APPLICATION_PATH + os.path.normpath('/Images/warning.png')), size=("80dp", "80dp"))
-                warning.pos = (room.xMax * self.size[0] - warning.size[0], room.yMin * self.size[1])
+                warning.pos = (room.xMax * self.size[0] - warning.size[0], room.yMin * self.size[1] + 10)
                 self.ids.map.add_widget(warning)

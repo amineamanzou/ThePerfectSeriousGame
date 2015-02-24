@@ -132,6 +132,10 @@
     </Content>
     <Content Include="GameScreens\MapScreen.kv" />
     <Content Include="Images\desk.png" />
+    <Content Include="Images\Emoticons\emo-1.png" />
+    <Content Include="Images\Emoticons\emo-2.png" />
+    <Content Include="Images\Emoticons\emo-3.png" />
+    <Content Include="Images\Emoticons\emo-4.png" />
     <Content Include="Images\logo-univ-paris1.png" />
     <Content Include="Images\map.png" />
     <Content Include="Images\Characters\char_marketing.png" />
@@ -175,6 +179,7 @@
     <Folder Include="Images\" />
     <Folder Include="Data\" />
     <Folder Include="Images\Characters\" />
+    <Folder Include="Images\Emoticons\" />
     <Folder Include="Images\Rooms\" />
     <Folder Include="Models\" />
     <Folder Include="Managers\" />

@@ -2,12 +2,13 @@
 #:import kivy kivy
 
 <ScoreSlider>:
-	
-	Slider:
-		pos: root.pos
-		size: root.size
-		min: -100
-		max: 100
-		step: 0
-		value: root.score 
-		disabled: True
+	canvas:
+		Color:
+			rgba: 0.16, 0.22, 0.33, 0.85
+		Rectangle:
+			pos: self.pos
+			size: self.size
+	Image:
+		id: icon
+		size: (root.size[0] * 0.9, root.size[1] * 0.9)
+		pos: (root.pos[0] + root.size[0] * 0.05, root.pos[1] + root.size[1] * 0.05)
