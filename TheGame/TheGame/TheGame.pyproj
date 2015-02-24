@@ -142,11 +142,11 @@
     <Content Include="Images\Emoticons\emo-3.png" />
     <Content Include="Images\Emoticons\emo-4.png" />
     <Content Include="Images\logo-univ-paris1.png" />
-    <Content Include="Images\map.png" />
     <Content Include="Images\Characters\profil-test.png" />
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Images\map.png" />
     <Content Include="Images\note.png" />
     <Content Include="Images\Rooms\room_boss.png" />
     <Content Include="Images\Rooms\room_marketing.png" />

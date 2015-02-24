@@ -9,39 +9,33 @@
 			pos: root.pos
 			size: root.size
 
-	FloatLayout:
-		Scatter:
-			id: scatter
+	DynImage:
+		id: map
 
-			size: root.size
+		source: "Images/map.png"
+		size: (root.size[0] * 0.7, root.size[1] * 0.8)
+		pos: (root.pos[0] + root.size[0] * 0.15, root.pos[1] + root.size[1] * 0.1)
+		keep_ratio: False
+		allow_stretch: True
+		on_press: root.click()
 
-			DynImage:
-				id: map
+	Image:
+		id: room
 
-				source: "Images/map.png"
-				pos: scatter.pos
-				size: root.size
-				keep_ratio: False
-				allow_stretch: True
-				on_press: root.click()
+		pos: root.pos
+		size: root.size
+		keep_ratio: False
+		allow_stretch: True
+		opacity: 0
 
-			Image:
-				id: room
+	DialogWidget:
+		id: dialog
 
-				pos: scatter.pos
-				size: root.size
-				keep_ratio: False
-				allow_stretch: True
-				opacity: 0
+		size: (root.size[0], root.size[1] * 0.2)
+		pos: (root.pos[0], root.pos[1] - dialog.size[1])
+		visible: False
 
-			DialogWidget:
-				id: dialog
-
-				size: (root.size[0], root.size[1] * 0.2)
-				pos: (root.pos[0], root.pos[1] - dialog.size[1])
-				visible: False
-
-			RoomTitle:
-				id: roomLabel
-				pos: (root.pos[0], root.size[1] - self.size[1])
-				opacity: 0
+	RoomTitle:
+		id: roomLabel
+		pos: (root.pos[0], root.size[1] - self.size[1])
+		opacity: 0
