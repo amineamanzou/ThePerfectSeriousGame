@@ -3,15 +3,24 @@
 
   <!-- Deux dialogues classiques -->
   <dialog id="1" idParent="0" type="C" idBat="99" end="false">
-    <text>INTRO TEXT 1</text>
+    <text>Bonjour, Brigitte, enchanté! Bienvenue dans notre Universe !
+      Nous avons pris la décision de lancer un serious game interne, et comme vous avez dû le lire sur la fiche de poste, vous allez en être responsable!</text>
   </dialog>
 
   <dialog id="2" idParent="1"  type="C" idBat="99" end="false">
-    <text>INTRO TEXT 2</text>
+    <text>Votre mission consiste à réaliser une étude préalable de ce nouveau serious game interne. Il sera basé sur l’amélioration et la dynamisation de l’entreprise sur le domaine de la gestion de projet.</text>
   </dialog>
 
-  <dialog id="3" idParent="2"  type="C" idBat="99" end="true">
-    <text>INTRO TEXT 3</text>
+  <dialog id="3" idParent="2"  type="C" idBat="99" end="false">
+    <text>Vous devrez interroger les responsables des différentes équipes pour établir le prototype fonctionnel du serious game.
+      Vous devrez faire une analyse de terrain sur l’ambiance de travail, les compétences des équipes, etc, toujours avec, en ligne de mire, votre objectif d’amélioration et de dynamisation de l’entreprise. En conséquence, vous adapterez votre solution et vos propositions à nos besoins pour réaliser le serious game.
+    </text>
   </dialog>
-  
+
+  <dialog id="4" idParent="3"  type="C" idBat="99" end="true">
+    <text>Je vais maintenant vous laisser rejoindre votre bureau. Votre manager sera là pour vous accueillir et vous orienter. Je vous ai laissé une fiche détaillée sur la mission pour plus de précisions.
+      Au revoir et faites nous un serious game à la hauteur de notre ambition !
+    </text>
+  </dialog>
+
 </chapter>

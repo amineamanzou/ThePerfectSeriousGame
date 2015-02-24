@@ -1,12 +1,11 @@
-La communication dans l'entreprise
+[size=20]Améliorer la qualité en entreprise[/size]
 ===========================================
-Communiquer pour vivre ensemble
-----------------------------------
+[b]Pourquoi travailler ensemble[/b]
 
+Comme on a pu le voir, il est bénéfique de vivre avec respect et dans une bonne ambiance dans son environnement de travail.
+Cela permet par la suite de pouvoir travailler avec les autres et permettre à tous de s'améliorer !
 
-Dans l'entreprise, il est important de vivre en harmonie avec ses collègues.
+Travailler ensemble va permettre de partager la connaissance avec les autres employées,
+mais cela va également permettre d'améliorer les méthodes de travail afin de les rendre plus efficaces.
 
-Cela est bénéfique pour tout le monde: pour soi, pour ses collègues et pour l'entreprise.
-
-- Pour soi, cela donne un meilleur confort de travail et un certain bien être au travail.
-- Pour l'entreprise, cela donne une bonne image et l'envie de rejoindre celle-ci et de travailler dur pour elle.
+Nous allons pouvoir rencontrer des opérationnels et un chef d'équipe afin de pouvoir en savoir plus là-dessus

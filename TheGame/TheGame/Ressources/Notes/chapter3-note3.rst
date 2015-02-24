@@ -1,7 +1,6 @@
-Les méthodes d'améliorations de la qualité
+[size=20]Les méthodes d'améliorations de la qualité[/size]
 ===========================================
-Le continuous quality improvement
-----------------------------------
+[b]Le continuous quality improvement[/b]
 
 Le continuous quality improvement, c'est un modèle d'amélioration de la qualité qui repose sur de petites améliorations au quotidien, mais constemment.
 Chaque acteur peut proposer des améliorations.
@@ -13,8 +12,8 @@ Le cycle est basé sur la roue de Deming et se repète indefiniment pour apporte
 • To act, réagir pour améliorer de manière continue les performances du système de management de la qualité.
 
 
-Le total quality management
-----------------------------------
+[b]Le total quality management[/b]
+
 Le total quality management, également appelé qualité totale, est la démarche qui vise à reduire au maximum les gaspillages, tout en améliorant continuellement la qualité de sortie du produit.
 Cette démarche ne s'applique pas simplement à une chaine de production, elle peut être appliquée à la gestion de projet; en effet, dans un projet les tâches sont en interaction et liées et l'objectif de qualité s'applique également aux documents du projet, aux études ainsi qu'a l'équipe elle-même.
 

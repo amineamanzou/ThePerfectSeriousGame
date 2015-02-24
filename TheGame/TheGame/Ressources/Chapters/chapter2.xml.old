@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<chapter>
+
+  <!-- on commence un chapitre par un dialog (id = 1)-->
+  <!-- il peut ensuite y avoir des embranchements, il faut donc se référencer aux idParent-->
+  <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
+
+  <!-- Deux dialogues classiques -->
+  <dialog id="1" idParent="0" type="C" idBat="4" end="false">
+    <text>
+      Dialogue classique
+    </text>
+    <!-- un dialog a aussi un attribut done, une variable dans le code, pour savoir si il est lu-->
+  </dialog>
+
+  <dialog id="2" idParent="1" type="C" idBat="4" end="false">
+    <text>
+      Dialogue avant fiche
+    </text>
+  </dialog>
+
+  <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
+  <dialog id="3" idParent="2" type="F" idBat="4" end="false">
+    <content>/Ressources/Notes/chapter2-note1.rst</content>
+    <x>65</x>
+    <y>32</y>
+    <image>./Images/note.png</image>
+  </dialog>
+
+  <!-- Première branche : marketing -->
+  <dialog id="4" idParent="3" type="C" idBat="5" end="false">
+    <text>
+      Dialogue classique branche 1 (marketing)
+    </text>
+  </dialog>
+
+  <dialog id="5" idParent="4" type="C" idBat="5" end="false">
+    <text>
+      Je vous ai déposé une fiche dans votre bureau : dialogue bloquant avant la suite.
+    </text>
+  </dialog>
+
+  <dialog id="6" idParent="5" type="F" idBat="4" end="false">
+    <content>/Ressources/Notes/chapter2-note2.rst</content>
+    <x>55</x>
+    <y>35</y>
+    <image>./Images/note.png</image>
+  </dialog>
+
+  <dialog id="7" idParent="6" type="C" idBat="5" end="false">
+    <text>
+      Je vous ai déposé une fiche dans votre bureau : dialogue bloquant avant la suite.
+    </text>
+  </dialog>
+
+  <dialog id="8" idParent="7"  type="E" idBat="5" end="false">
+    <title>Question ?</title>
+    <choix>
+      <answer id="1">
+        <text>Rep 1 OK</text>
+        <score>3</score>
+      </answer>
+      <answer id="2">
+        <text>Rep 2</text>
+        <score>-3</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="9" idParent="8" type="C" idBat="5" end="false">
+    <text>
+      Transition question  suivante
+    </text>
+  </dialog>
+
+  <dialog id="10" idParent="9"  type="E" idBat="5" end="false">
+    <title>Question ?</title>
+    <choix>
+      <answer id="1">
+        <text>Rep 1 OK</text>
+        <score>3</score>
+      </answer>
+      <answer id="2">
+        <text>Rep 2</text>
+        <score>-3</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="11" idParent="10" type="C" idBat="5" end="true">
+    <text>
+      Fin branche 1
+    </text>
+  </dialog>
+
+  <!-- Deuxième branche, côté rh -->
+
+  <dialog id="12" idParent="3" type="C" idBat="3" end="false">
+    <text>
+      Dialogue classique debut branche 2 (rh)
+    </text>
+  </dialog>
+
+  <dialog id="13" idParent="12" type="C" idBat="3" end="false">
+    <text>
+      Dialogue avant fiche
+    </text>
+  </dialog>
+
+  <dialog id="14" idParent="13"  type="E" idBat="3" end="false">
+    <title>Question ?</title>
+    <choix>
+      <answer id="1">
+        <text>Rep 1 OK</text>
+        <score>3</score>
+      </answer>
+      <answer id="2">
+        <text>Rep 2</text>
+        <score>-3</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="15" idParent="14" type="C" idBat="3" end="true">
+    <text>
+      Fin dialogue 2
+    </text>
+  </dialog>
+
+</chapter>

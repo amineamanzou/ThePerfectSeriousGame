@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<chapter>
+  
+  <!-- on commence un chapitre par un dialog (id = 1)-->
+  <!-- il peut ensuite y avoir des embranchements, il faut donc se référencer aux idParent-->
+  <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
+
+  <!-- Deux dialogues classiques -->
+  <dialog id="1" idParent="0" type="C" idBat="4" end="false">
+    <text>Bonjour, voici votre bureau. Vous y trouverez vos comptes rendus et différents notes. Je vous rappelle que votre mission conciste en la mise en place d'une serious game au sein de l'entreprise.</text>
+    <!-- un dialog a aussi un attribut done, une variable dans le code, pour savoir si il est lu-->
+  </dialog>
+
+  <dialog id="2" idParent="1"  type="C" idBat="4" end="false">
+    <text> Vous trouverez des informations complémentaires sur le sujet dans le document posé sur votre bureau. A bientôt.</text>
+  </dialog>
+
+  <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
+  <dialog id="3" idParent="2" type="F" idBat="4" end="false">
+    <content>/Ressources/Notes/chapter1-note1.rst</content>
+    <x>40</x>
+    <y>31</y>
+    <image>./Images/note.png</image>
+  </dialog>
+  
+  <!-- la fiche debloque deux branches ici, ce sont des dialogues et des evaluations qui peuvent être traitées séparemment jusqu'à la fin des deux-->
+  
+  <!-- Prelière branche, côté RH -->
+  <dialog id="4" idParent="3"  type="C" idBat="3" end="false">
+    <text> Bonjour, je suis madame Piépa, manager des RH. Vous devez mettre en place un serious game c'est bien ça... 
+    Les employés au département RH ont besoin de motivation quotidiennement. 
+    Vous devez faire en sorte de renforcer ce lien entre nos employés et l'entreprise.</text>
+  </dialog>
+
+  <dialog id="5" idParent="4"  type="C" idBat="3" end="false">
+    <text>
+      Mettre en avant l'image des RH auprès des autres employés pourrait également faciliter les futurs échanges entre les entités.
+    </text>
+  </dialog>
+  
+  <!-- un dialogue d'evaluation pour repondre à la RH -->
+  <dialog id="6" idParent="5"  type="E" idBat="3" end="false">
+    <title>Que répondez vous à Mme Piépa ?</title>
+    <!-- les différents choix -->
+    <choix>
+      <answer id="1">
+        <text>Retournez à vos papiers Mme Piépa...</text>
+        <score>-5</score>
+      </answer>
+      <answer id="2">
+        <text>Je comprends, votre image sera améliorée auprès des autres entités.</text>
+        <score>5</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="7" idParent="6"  type="C" idBat="3" end="false">
+    <text>
+      Juste par curiosité... quelle image avez vous des RH au jour d'aujourd'hui ?
+    </text>
+  </dialog>
+
+  <dialog id="8" idParent="7"  type="E" idBat="3" end="false">
+    <title>Votre avis sur les RH ?</title>
+    <choix>
+      <answer id="1">
+        <text>Elles sont utiles au bon fonctionnement de l'entreprise.</text>
+        <score>3</score>
+      </answer>
+      <answer id="2">
+        <text>Je ne préfère pas vous donner mon avis sur la question...</text>
+        <score>-3</score>
+      </answer>
+      <answer id="3">
+        <text>Ca augmente la moyenne homme femme, que du bon !</text>
+        <score>0</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="9" idParent="8"  type="C" idBat="3" end="true">
+    <text>Très bien, merci pour votre avis. Je n'ai pas plus d'informations à vous fournir. A bientôt.</text>
+  </dialog>
+
+  <!-- Deuxième branche, côté MOE -->
+  <dialog id="10" idParent="3"  type="C" idBat="2" end="false">
+    <text>Bienvenue au sein de la DSI. Je suis C.Tonpy, Directeur de ce département.
+          Nous sommes l'équipe qui va vous aider dans la réalisation du serious game.
+    </text>
+  </dialog>
+
+  <dialog id="11" idParent="10"  type="C" idBat="2" end="false">
+    <text>
+      J'ai quelques questions à vous poser.
+      Vous avez déjà eu des instructions sur le projet.
+    </text>
+  </dialog>
+
+  <dialog id="12" idParent="11"  type="C" idBat="2" end="false">
+    <text>
+      Pouvez vous me rappeler la technologie à utiliser pour ce projet ?
+    </text>
+  </dialog>
+
+  <dialog id="13" idParent="12"  type="E" idBat="2" end="false">
+    <title>Quelle technologie doit être utilisée pour le développement ?</title>
+    <choix>
+      <answer id="1">
+        <text>Le serious game doit être développé pour smartphone et tablettes Android.</text>
+        <score>-5</score>
+      </answer>
+      <answer id="2">
+        <text>Le jeu doit être accessible de l'intranet, donc via une technologie web.</text>
+        <score>5</score>
+      </answer>
+      <answer id="3">
+        <text>Un développement en COBOL, y a que ça de vrai !</text>
+        <score>-5</score>
+      </answer>
+      <answer id="4">
+        <text>Une application Widows, compatible avec les postes de travail acutels devrait suffire.</text>
+        <score>-5</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="14" idParent="13"  type="C" idBat="2" end="false">
+    <text>
+      Très bien, je vous fait confiance. "Tant que ça fonctionne" comme on dit souvent...
+      Pendant que vous êtes là, si vous pouvez dire aux ressources humaines de traiter 
+      nos demandes sur l'intranet, ça nous avancerait dans notre travail.
+    </text>
+  </dialog>
+
+  <dialog id="15" idParent="14"  type="E" idBat="2" end="false">
+    <title>Vous répondez à Tonpy ?</title>
+    <choix>
+      <answer id="1">
+        <text>Voyez avec elles, je n'ai pas de temps à perdre.</text>
+        <score>-2</score>
+      </answer>
+      <answer id="2">
+        <text>Je tenterai de faire passer le message.</text>
+        <score>2</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="16" idParent="15"  type="C" idBat="2" end="true">
+    <text>
+      C'est tout du côté de la MOE, merci de m'avoir écouté. Bon courage.
+    </text>
+  </dialog>
+  
+</chapter>

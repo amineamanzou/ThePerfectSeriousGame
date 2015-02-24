@@ -1,78 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <chapter>
-
   <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
 
-<!--END 9 & 15-->
+<!--END 9 & 17-->
 
-  <!-- Deux dialogues classiques -->
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
-    <text>Je crois que la communication est important au sein d'une entreprise. Grâce à elle, on peut rendre les choses meilleures.
-          On ne va pas négliger notre communication quand même !</text>
+    <text>Je pense qu'en ayant une meilleure ambiance, la qualité de vie au travail est meilleure, mais qu'en est il de l'efficacité du travail ?
+      Nous devrions utiliser notre serious game pour donner aux employés les méthodes pour être plus efficace !
+      Tu peux aller voir la fiche pour ce sujet.</text>
   </dialog>
 
-  <dialog id="2" idParent="1"  type="C" idBat="4" end="false">
-    <text> Voyons voir la fiche nous permettant d'en savoir plus sur le sujet.</text>
-  </dialog>
+<!--  <dialog id="2" idParent="1" type="F" idBat="4" end="false">
+    <content>[size=20]Améliorer la qualité en entreprise[/size]
 
-  <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
-<!--  <dialog id="3" idParent="2" type="F" idBat="4" end="false">
-    <content>[size=20]La communication dans l'entreprise[/size]
+      [size=16]Pourquoi travailler ensemble[/size]
 
-      [size=16]Communiquer pour vivre ensemble[/size]
+            [size=12]\nDans comme on a pu le voir, il est bénéfique de vivre avec respect et dans une bonne ambiance dans son environnement de travail.
+            \nCela permet par la suite de pouvoir travailler avec les autres et permettre à tous de s'améliorer !
 
-            [size=12]\nDans l'entreprise, il est important de vivre en harmonie avec ses collègues.
-            \nCela est bénéfique pour tout le monde: pour soi, pour ses collègues et pour l'entreprise
-            \nPour soi, cela donne un meilleur confort de travail et un certain bien être au travail.
-            \nPour l'entreprise, cela donne une bonne image et l'envie de rejoindre celle-ci et de travailler dur pour elle.[/size]
+            \nTravailler ensemble va permettre de partager la connaissance avec les autres employées,
+            \nmais cela va également permettre d'améliorer les méthodes de travail afin de les rendre plus efficaces.
 
+            \nNous allons pouvoir rencontrer des opérationnels et un chef d'équipe afin de pouvoir en savoir plus là-dessus
+            [/size]
 
     </content>
     <x>600</x>
     <y>600</y>
     <image>./Images/fiche.png</image>
   </dialog>-->
-
-  <dialog id="3" idParent="2" type="F" idBat="4" end="false">
+  <dialog id="2" idParent="1" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter3-note1.rst</content>
     <x>40</x>
     <y>31</y>
     <image>./Images/note.png</image>
   </dialog>
 
-  <!-- la fiche debloque deux branches-->
+  <dialog id="3" idParent="2" type="C" idBat="4" end="false">
+    <text>Peut-être devrais-tu passer voir M, Alliance pour savoir ce qu’il pense de ce sujet. Mais si tu as du temps, passes également voir Eric afin de vous organiser dans votre travail.</text>
+  </dialog>
 
-  <!-- Première branche, côté BOSS -->
+  <!-- Première branche, côté Boss -->
   <dialog id="4" idParent="3"  type="C" idBat="6" end="false">
-    <text> Bonjour, je suis monsieur Alliance, PDG de cette entreprise. J'ai entendu parler de votre travail et de vos recherches.
-    Je suis en faveur d'une bonne ambiance au travail. J'aime à croire que les employés sont heureux dans leur environnement de travail et qu'ils entretiennent de bonnes relations avec leurs collègues.
-    Cependant, j'espère que grâce à ce travail, nous pourrons inspirer d'avantage cet esprit d'harmonie à nos collaborateurs.</text>
+    <text> Bonjour, je suis monsieur Alliance. Oups, j'ai oublié qu'on s'est déjà rencontré, j'ai parfois la tête ailleurs excusez-moi.
+    J'espère que votre travail a bien commencé, j'espère que l'équipe sera efficace !</text>
   </dialog>
 
   <dialog id="5" idParent="4"  type="C" idBat="6" end="false">
     <text>
-      Et vous, pensez-vous que la bonne entente entre les collaborateurs rend l'entreprise plus vivable et plus efficace ?
+      Mais d'abord, j'aimerais savoir ce que vous attendez du travail d'équipe ?
     </text>
   </dialog>
 
-  <!-- Eval pour repondre au boss -->
   <dialog id="6" idParent="5"  type="E" idBat="6" end="false">
-    <title>Que répondez vous à Mr Alliance ?</title>
+    <title>Quelle est votre réponse ?</title>
     <!-- les différents choix -->
     <choix>
       <answer id="1">
-        <text>Je pense que vous avez raison. En entretenant de bonnes relations avec mes collègues,
-          je suis content de venir travailler le matin et je pense que cela me rend plus productif</text>
-        <score>5</score>
+        <text>Le travail d'équipe ?
+        Tant que chaque personne est compétente, le projet fonctionnera !</text>
+        <score>0</score>
       </answer>
       <answer id="2">
-        <text>Qu'importe les relations entre collègues? Je vais au bureau le matin et fait ma journée de travail.
-          Les relations avec mes collègues ne sont pas importantes.</text>
-        <score>-5</score>
+        <text>En équipe, on peut s'entraider, combler nos lacunes et être plus efficace ensemble,
+        cela améliore nos chances de succès.</text>
+        <score>20</score>
       </answer>
       <answer id="3">
-        <text>Je ne sais pas trop..
-        Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au travail.</text>
+        <text>Le travail d'équipe c'est important, si on fait une erreur ça permet d'accuser les autres</text>
         <score>0</score>
       </answer>
     </choix>
@@ -80,79 +75,152 @@
 
   <dialog id="7" idParent="6"  type="C" idBat="6" end="false">
     <text>
-      J'ai une petite question, avez-vous déjà rencontrer les autres parties du projet ?
+      C'est votre point de vue. Pour ma part, les personnes qui nous entourent sont importantes car elles possèdent des connaissances que nous avons pas tous nécessairement.
+      Allez donc lire la fiche sur ce sujet et revenez me voir !
     </text>
   </dialog>
 
-  <dialog id="8" idParent="7"  type="E" idBat="6" end="false">
-    <title>La rencontre avec les autres parties du projet</title>
+<!--  <dialog id="7" idParent="6" type="F" idBat="4" end="false">
+    <content>[size=20]Le partage de connaissances[/size]
+
+
+            [size=12]
+            Le partage de connaissance, le knowledge management, est important au sein d'une entreprise.
+            \nCe partage permet de conserver les connaissances dans l'entreprise au fil du temps et des départs,
+            \nmais il permet également aux employés de s'entraider et d'apprendre les uns des autres dans le but d'être plus efficace.
+            \n\nCette méthode est très employée et peut se faire via des formations ou des documentations, mais permet en effet d'améliorer la productivité de l'entreprise.
+            \nDe plus, cela développe une cohésion et un dynamisme au sein d'une équipe car les membres s'entraident, crées des liens et sont à l'écoute les uns des autres.
+            [/size]
+
+    </content>
+    <x>600</x>
+    <y>600</y>
+    <image>./Images/fiche.png</image>
+  </dialog>-->
+  <dialog id="8" idParent="7" type="F" idBat="4" end="false">
+    <content>/Ressources/Notes/chapter3-note2.rst</content>
+    <x>40</x>
+    <y>31</y>
+    <image>./Images/note.png</image>
+  </dialog>
+
+  <dialog id="9" idParent="8"  type="C" idBat="6" end="true">
+    <text>
+      J'espère que votre serious game donnera l'envie et la motivation aux employés de partager leurs connaissances !
+      Cela améliorera l'efficacité de l'entreprise et permettrait aux employés une bien meilleure communication.
+      N'hésitez pas à repasser me voir pour discuter de votre travail et a bientot.
+    </text>
+  </dialog>
+
+  <!-- Deuxième branche, côté MOE -->
+  <dialog id="10" idParent="3"  type="C" idBat="7" end="false">
+    <text>Bienvenue au sein de la DSI. Je suis Eric, MOE.
+          Ici se trouve l'équipe qui va vous aider dans la réalisation du serious game.
+    </text>
+  </dialog>
+
+  <dialog id="11" idParent="10"  type="C" idBat="7" end="false">
+    <text>
+        Tu as commencé à travailler durement sur le sujet, les murs ont des oreilles !
+        J'ai une question à te poser sur la réalisation de ce projet afin que notre travail soit optimal.
+    </text>
+  </dialog>
+
+
+  <dialog id="12" idParent="11"  type="E" idBat="7" end="false">
+    <title>Comment souhaitez-vous organiser le travail  ?</title>
     <choix>
       <answer id="1">
-        <text>Pas encore, mais j'ai hâte de les rencontrer !</text>
-        <score>3</score>
+        <text>De manière naturelle, je vous fais confiance.</text>
+        <score>-10</score>
       </answer>
       <answer id="2">
-        <text>Chaque chose en son temps, cela arrivera.</text>
-        <score>0</score>
+        <text>J'aimerai travailler de manière bien définie, et délivrer un serious game de qualité.</text>
+        <score>20</score>
       </answer>
       <answer id="3">
-        <text>Non, j'appréhende toujours le moment de rencontrer de nouveaux collaborateurs..</text>
-        <score>-3</score>
+        <text>On développe, et on verra par la suite les modifications à réaliser.</text>
+        <score>-20</score>
+      </answer>
+      <answer id="4">
+        <text>On fixe notre plan de travail, on le suit, et on verra bien le résultat !</text>
+        <score>0</score>
       </answer>
     </choix>
   </dialog>
 
-  <dialog id="9" idParent="8"  type="C" idBat="6" end="true">
-    <text>Ah, je concois bien votre avis. Cependant, je suis ravi de vous avoir enfin rencontrer. A bientot.</text>
-  </dialog>
-
-  <!-- Deuxième branche, côté RH -->
-  <dialog id="10" idParent="3"  type="C" idBat="3" end="false">
-    <text>Bienvenue au sein de la DRH. C'est moi, Brigitte.
-          Je vous attendais avec impatience.
-    </text>
-  </dialog>
-
-  <dialog id="11" idParent="10"  type="C" idBat="3" end="false">
-    <text>Vous savez à quoi vous attendre avec les RH ?
-    </text>
-  </dialog>
-
-    <dialog id="12" idParent="11"  type="E" idBat="3" end="false">
-      <title>Votre vision des RH ?</title>
-      <choix>
-        <answer id="1">
-          <text>Elles sont utiles à l'organisation de l'entreprise.</text>
-          <score>10</score>
-        </answer>
-        <answer id="2">
-          <text>Je ne préfère pas vous donner mon avis sur la question...</text>
-          <score>-10</score>
-        </answer>
-        <answer id="3">
-          <text>Ca augmente la moyenne homme femme, que du bon !</text>
-          <score>0</score>
-        </answer>
-      </choix>
-    </dialog>
-
-  <dialog id="13" idParent="12"  type="C" idBat="3" end="false">
+  <dialog id="13" idParent="12"  type="C" idBat="7" end="false">
     <text>
-      Chacun son point de vue, en ce qui me concerne je suis ravie qu'il n'y aie pas que des femmes dans les RH !
+      Très bien, je vous fait confiance. Le principal est que cela fonctionne.
+      Pendant la réalisation de ce serious game, pensez-vous que l'on puisse utiliser le continuous quality improvement ?
     </text>
   </dialog>
 
-  <dialog id="14" idParent="13"  type="C" idBat="3" end="false">
+  <dialog id="14" idParent="13"  type="E" idBat="7" end="false">
+    <title>Que pensez-vous de l'utilisation du continuous quality improvement dans votre projet ?</title>
+    <choix>
+      <answer id="1">
+        <text>Ca peut être une très bonne idée, cela nous permettra à chaque cycle de proposer des améliorations à
+notre serious game et de vérifier sa qualité !</text>
+        <score>10</score>
+      </answer>
+      <answer id="2">
+        <text>Réalisons déjà le projet avant de nous attarder sur la qualité...</text>
+        <score>-10</score>
+      </answer>
+    </choix>
+  </dialog>
+
+  <dialog id="15" idParent="14"  type="C" idBat="7" end="false">
     <text>
-      Nous allons essayer de vous aider afin de promouvoir votre serious game au sein de l'organisation, mais également préparer le terrain afin de l'intégrer au processus de formation d'un employé!
-      Mais avant ça, il va vous falloir collaborer avec les personnes en charge de la réalisation.
+      C'est ton choix, nous te suivons.
+      Nous essayerons cependant d'utiliser une méthode de lean management permettant de réduire les gaspillages en optimisant la réussite et la qualité de notre réalisation.
+      Merci d'être passé nous voir, à plus tard !
     </text>
   </dialog>
 
-  <dialog id="15" idParent="14"  type="C" idBat="3" end="true">
+  <dialog id="16" idParent="15"  type="C" idBat="7" end="false">
     <text>
-      C'est tout du côté de la DRH, au plaisir de vous revoir. Bon courage.
+      Pour en savoir plus sur les méthodes dont nous avons parlé, tu peux aller lire la fiche à ton bureau.
     </text>
+  </dialog>
+
+  <!--<dialog id="16" idParent="15" type="F" idBat="4" end="true">
+    <content>[size=20]Les méthodes d'améliorations de la qualité[/size]
+
+            [size=16]Le continuous quality improvement[/size]
+            [size=12]
+            Le continuous quality improvement, c'est un modèle d'amélioration de la qualité qui repose sur de petites améliorations au quotidien, mais constemment.
+            \nChaque acteur peut proposer des améliorations.
+            \n\nLe cycle est basé sur la roue de Deming et se repète indefiniment pour apporter de petites améliorations au projet.
+            \n• To plan, pour planifier quelle amélioration on veut mettre en avant.
+            \n• To do, pour mettre en oeuvre le processus d'amélioration.
+            \n• To check, pour vérifier et analyser les résultats et la qualité du produit délivré.
+            \n• To act, réagir pour améliorer de manière continue les performances du système de management de la qualité.
+            [/size]
+
+            [size=16]Le total quality management[/size]
+            [size=12]
+            Le total quality management, également appelé qualité totale, est la démarche qui vise à reduire au maximum les gaspillages, tout en améliorant continuellement la qualité de sortie du produit.
+            \nCette démarche ne s'applique pas simplement à une chaine de production, elle peut être appliquée à la gestion de projet; en effet, dans un projet les tâches sont en interaction et liées et l'objectif de qualité s'applique également aux documents du projet, aux études ainsi qu'a l'équipe elle-même.
+
+            \n\nInfo historique
+            \nCe concept date du Japon en 1949 après la 2nde guerre mondiale, quand le Japon déjà menacé par la famine est sensibilisé au gaspillage dans un soucis d'économie.
+            \nLe TQM, c'est le moyen trouvé pour améliorer la qualité tout en évitant le gaspillage, et donc en économisant des ressources.
+            \nCette méthode a par la suite inspiré et fait ses preuves sous le nom de Toyotisme.
+
+            [/size]
+    </content>
+    <x>600</x>
+    <y>600</y>
+    <image>./Images/fiche.png</image>
+  </dialog>-->
+
+  <dialog id="17" idParent="16" type="F" idBat="4" end="true">
+    <content>/Ressources/Notes/chapter3-note3.rst</content>
+    <x>40</x>
+    <y>31</y>
+    <image>./Images/note.png</image>
   </dialog>
 
 </chapter>

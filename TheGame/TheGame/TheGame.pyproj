@@ -131,6 +131,11 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="GameScreens\MapScreen.kv" />
+    <Content Include="Images\Characters\char_boss.png" />
+    <Content Include="Images\Characters\char_moa.png" />
+    <Content Include="Images\Characters\char_moe.png" />
+    <Content Include="Images\Characters\char_marketing.png" />
+    <Content Include="Images\Characters\char_rh.png" />
     <Content Include="Images\desk.png" />
     <Content Include="Images\Emoticons\emo-1.png" />
     <Content Include="Images\Emoticons\emo-2.png" />
@@ -138,7 +143,6 @@
     <Content Include="Images\Emoticons\emo-4.png" />
     <Content Include="Images\logo-univ-paris1.png" />
     <Content Include="Images\map.png" />
-    <Content Include="Images\Characters\char_marketing.png" />
     <Content Include="Images\Characters\profil-test.png" />
     <Content Include="GameScreens\DeskScreen.kv">
       <SubType>Code</SubType>
@@ -152,22 +156,13 @@
     <Content Include="Ressources\Chapters\chapter1.xml" />
     <Content Include="Ressources\Chapters\chapter2.xml" />
     <Content Include="Ressources\Chapters\chapter3.xml" />
-    <Content Include="Ressources\Chapters\chapter4.xml" />
-    <Content Include="Ressources\Chapters\chapter5.xml" />
     <Content Include="Ressources\Notes\chapter1-note1.rst">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Ressources\Notes\chapter2-note1.rst">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Ressources\Notes\chapter2-note2.rst">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="Ressources\Notes\chapter3-note1.rst" />
-    <Content Include="Ressources\Notes\chapter4-note1.rst" />
-    <Content Include="Ressources\Notes\chapter4-note2.rst" />
-    <Content Include="Ressources\Notes\chapter4-note3.rst" />
-    <Content Include="Ressources\Notes\chapter5-note1.rst" />
     <Content Include="Ressources\rooms.xml" />
     <Content Include="Ressources\story-dev.xml" />
     <Content Include="Ressources\story.xml" />
