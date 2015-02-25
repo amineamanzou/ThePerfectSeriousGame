@@ -3,7 +3,7 @@
   <room id="2">
     <name>MOA</name>
     <libelle>Service MOA</libelle>
-    <background>./Images/Rooms/room_moa.png</background>
+    <background>./Images/Rooms/room_marketing.png</background>
     <character>./Images/Characters/char_moa.png</character>
     <x min="0.7083" max="0.9"></x>
     <y min="0.7606" max="0.9149"></y>
@@ -17,7 +17,7 @@
   <room id="3">
     <name>RH</name>
     <libelle>Service relations humaines</libelle>
-    <background>./Images/Rooms/room_rh.png</background>
+    <background>./Images/Rooms/room_marketing.png</background>
     <character>./Images/Characters/char_rh.png</character>
     <x min="0.4667" max="0.6917"></x>
     <y min="0.7606" max="0.9149"></y>
@@ -68,7 +68,7 @@
   <room id="7">
     <name>MOE</name>
     <libelle>Service MOE</libelle>
-    <background>./Images/Rooms/room_moe.png</background>
+    <background>./Images/Rooms/room_marketing.png</background>
     <character>./Images/Characters/char_moe.png</character>
     <x min="0.1433" max="0.4417"></x>
     <y min="0.5479" max="0.9149"></y>
