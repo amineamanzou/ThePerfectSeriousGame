@@ -120,7 +120,7 @@
     <Content Include="Game.kv">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="icon.png" />
+    <Content Include="icon.ico" />
     <Content Include="GameScreens\CreditsScreen.kv" />
     <Content Include="GameScreens\BossScreen.kv" />
     <Content Include="GameScreens\StartScreen.kv" />
