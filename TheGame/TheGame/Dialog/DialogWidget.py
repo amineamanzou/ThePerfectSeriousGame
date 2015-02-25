@@ -78,6 +78,7 @@ class DialogWidget(Widget):
 
     def changeElement(self, element):
         self.ids.elementContainer.clear_widgets()
+        element.pos = self.ids.elementContainer.pos
         self.ids.elementContainer.add_widget(element)
 
     def closeElement(self, obj, val):

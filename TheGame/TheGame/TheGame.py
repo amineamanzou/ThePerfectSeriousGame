@@ -8,9 +8,11 @@ from kivy.app import App
 from kivy.core.window import Window
 from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
+from kivy import platform
 
 import os
-from win32api import GetSystemMetrics
+if platform == 'win':
+    from win32api import GetSystemMetrics
 
 from GameScreens.StartScreen import StartScreen
 from GameScreens.MapScreen import MapScreen
@@ -37,12 +39,15 @@ class GameApp(App):
         self.root.keyboard.bind(on_key_down=self.on_keyboard_down)
 
     def configure(self):
-        self.APPLICATION_ENV = "DEV"
+        self.APPLICATION_ENV = "PROD"
 
         if self.APPLICATION_ENV == "DEV":
             self.window.size = (1200, 800)
         else:
-            self.window.size = (GetSystemMetrics(0), GetSystemMetrics(1))
+            if platform == 'win':
+                self.window.size = (GetSystemMetrics(0), GetSystemMetrics(1))
+            elif platform == 'macosx':
+                self.window.size = (1920, 1080)
             self.window.fullscreen = True
         
         self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
