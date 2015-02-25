@@ -48,7 +48,8 @@ class GameApp(App):
                 self.window.size = (GetSystemMetrics(0), GetSystemMetrics(1))
             elif platform == 'macosx':
                 self.window.size = (1920, 1080)
-            self.window.fullscreen = True
+                self.window.fullscreen = True
+
         
         self.APPLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
 
