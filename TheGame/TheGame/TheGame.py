@@ -42,7 +42,7 @@ class GameApp(App):
         self.APPLICATION_ENV = "PROD"
 
         if self.APPLICATION_ENV == "DEV":
-            self.window.size = (1200, 800)
+            self.window.size = (1280, 800)
         else:
             if platform == 'win':
                 self.window.size = (min(GetSystemMetrics(0), 1920), min(GetSystemMetrics(1), 1080))
