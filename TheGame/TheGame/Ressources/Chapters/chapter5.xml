@@ -78,7 +78,7 @@ transmises à nos utilisateurs et recentrer leur place dans notre entreprise.
 <choix>
 <answer id="1">
 <text>
-- Je suis d’accord, en tout cas merci pour ton aide et ta collaboration. J’espère que j'obtiendrais
+Je suis d’accord, en tout cas merci pour ton aide et ta collaboration. J’espère que j'obtiendrais
 le go pour ce projet, nous avons tout fait pour donc je penses que l’on se reverra très vite!
 </text>
 <score>10</score>
@@ -86,7 +86,7 @@ le go pour ce projet, nous avons tout fait pour donc je penses que l’on se rev
 
 <answer id="2">
 <text>
-- Je suis d’accord, je te tiens au courant si j’obtiens le go!
+Je suis d’accord, je te tiens au courant si j’obtiens le go!
 </text>
 <score>-10</score>
 </answer>
@@ -97,7 +97,7 @@ le go pour ce projet, nous avons tout fait pour donc je penses que l’on se rev
 <text>Tu as pu en apprendre plus sur tes objectifs ?</text>
 </dialog>
 
-<dialog id="10" idParent="9" type="E" idBat="4" end="false">
+<dialog id="12" idParent="11" type="E" idBat="4" end="false">
 <title>Qu'as tu appris ?</title>
 <choix>
 <answer id="1">
@@ -115,24 +115,24 @@ aspects à prendre en compte pour que notre serious game apporte le plus à l'en
 </choix>
 </dialog>
 
-<dialog id="11" idParent="10" type="C" idBat="4" end="false">
+<dialog id="13" idParent="12" type="C" idBat="4" end="false">
 <text>D'accord. J'ai eu des retours et je t'ai laissé une fiche te permettant d'avoir une synthèse
 et des informations complémentaires sur ce sujet.
 </text>
 </dialog>
 
-<dialog id="12" idParent="11" type="F" idBat="4" end="false">
+<dialog id="14" idParent="13" type="F" idBat="4" end="false">
 <content>/Ressources/Notes/chapter5-note2.rst</content>
   <x>70</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
 
-<dialog id="13" idParent="12" type="C" idBat="4" end="false">
+<dialog id="15" idParent="14" type="C" idBat="4" end="false">
 Tu devrais aller voir la MOE maintenant pour parler plus technique.
 Voici une fiche avec une introduction au game play et aux critères ergonomiques.
 
-<dialog id="14" idParent="13" type="F" idBat="4" end="false">
+<dialog id="16" idParent="15" type="F" idBat="4" end="false">
 
 <content>/Ressources/Notes/chapter5-note3.rst</content>
   <x>100</x>
@@ -140,12 +140,12 @@ Voici une fiche avec une introduction au game play et aux critères ergonomiques
   <image>./Images/note.png</image>
 </dialog>
 
-<dialog id="15" idParent="14" type="C" idBat="7" end="false">
+<dialog id="17" idParent="16" type="C" idBat="7" end="false">
 <text>Bonjour, nous arrivons à la fin de l’étude préalable et je suppose que vous avez encore quelques questions à me poser et besoin de réponses. Je vous écoute.
 </text>
 </dialog>
 
-<dialog id="16" idParent="15" type="E" idBat="7" end="false">
+<dialog id="18" idParent="17" type="E" idBat="7" end="false">
 <title>Qu'elle est ta réponse ?</title>
 <choix>
 <answer id="1">
@@ -165,12 +165,12 @@ erreurs du quotidien en les expérimentant dans le jeu.
 </choix>
 </dialog>
 
-<dialog id="17" idParent="16" type="C" idBat="7" end="false">
+<dialog id="19" idParent="18" type="C" idBat="7" end="false">
 <text>Et concernant le but du jeu. Comment pensez-vous le Game flow et le Game Play?
 </text>
 </dialog>
 
-<dialog id="18" idParent="17" type="E" idBat="7" end="false">
+<dialog id="20" idParent="19" type="E" idBat="7" end="false">
 <title>Qu'elle est ta réponse ?</title>
 <choix>
 <answer id="1">
@@ -191,12 +191,12 @@ si j’ai bien le go pour le projet.
 </choix>
 </dialog>
 
-<dialog id="19" idParent="18" type="C" idBat="7" end="false">
+<dialog id="21" idParent="20" type="C" idBat="7" end="false">
 <text>Si vous n’avez plus de questions, je vous souhaite bon courage et j’espère à bientôt!
 </text>
 </dialog>
 
-<dialog id="20" idParent="19" type="C" idBat="4" end="true">
+<dialog id="22" idParent="21" type="C" idBat="4" end="true">
 <text>Nous voilà à la fin de ton premier travail d’étude préalable. Je te laisse aller voir le PDG pour qu’il te dise s’il met un go ou un no go sur le projet. Il a déjà eu le retour de toutes les équipes avec qui tu as pu travailler et te donnera donc sa décision. Bonne chance!
 </text>
 </dialog>
