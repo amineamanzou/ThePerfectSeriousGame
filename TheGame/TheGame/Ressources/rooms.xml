@@ -31,7 +31,7 @@
     <name>bureau</name>
     <libelle>Bureau personnel</libelle>
     <background>./Images/Rooms/room_bureau.png</background>
-    <character>./Images/Characters/char_bureau.png</character>
+    <character>./Images/Characters/char_manager.png</character>
     <x min="0.0667" max="0.3042"></x>
     <y min="0.0638" max="0.2926"></y>
     <fuckDialogs>
