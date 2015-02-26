@@ -68,11 +68,22 @@ class MapScreen(GameScreen):
 
     def reloadIcons(self):
         self.ids.map.clear_widgets()
-        for room in self.rooms:
-            if room.name != "bureau" and room.name != "boss":
-                slider = ScoreSlider(size=("30dp", "30dp"), pos=(room.xMin * self.ids.map.size[0] + self.ids.map.pos[0] + 10, room.yMin * self.ids.map.size[1] + self.ids.map.pos[1]), score=room.score)
-                self.ids.map.add_widget(slider)
-            if(self.app.gameManager.dialogAvailableInRoom(room.id)):
-                warning = Image(source=(self.app.app.APPLICATION_PATH + os.path.normpath('/Images/warning.png')), size=("60dp", "80dp"), keep_ratio = False, allow_stretch = True)
-                warning.pos = (room.xMax * self.ids.map.size[0] + self.ids.map.pos[0] - warning.size[0], room.yMin * self.ids.map.size[1] + self.ids.map.pos[1] + 10)
-                self.ids.map.add_widget(warning)
+        
+        if self.app.gameManager != object and self.app.gameManager.end:
+            for room in self.rooms:
+                if room.name == "boss":
+                    warning = Image(source=(self.app.app.APPLICATION_PATH + os.path.normpath('/Images/warning.png')), size=("60dp", "80dp"), keep_ratio = False, allow_stretch = True)
+                    warning.pos = (room.xMax * self.ids.map.size[0] + self.ids.map.pos[0] - warning.size[0], room.yMin * self.ids.map.size[1] + self.ids.map.pos[1] + 10)
+                    self.ids.map.add_widget(warning)
+                    break
+        else:
+            for room in self.rooms:
+                if room.name != "bureau" and room.name != "boss":
+                    slider = ScoreSlider(size=("30dp", "30dp"), pos=(room.xMin * self.ids.map.size[0] + self.ids.map.pos[0] + 10, room.yMin * self.ids.map.size[1] + self.ids.map.pos[1]), score=room.score)
+                    self.ids.map.add_widget(slider)
+                if(self.app.gameManager.dialogAvailableInRoom(room.id)):
+                    warning = Image(source=(self.app.app.APPLICATION_PATH + os.path.normpath('/Images/warning.png')), size=("60dp", "80dp"), keep_ratio = False, allow_stretch = True)
+                    warning.pos = (room.xMax * self.ids.map.size[0] + self.ids.map.pos[0] - warning.size[0], room.yMin * self.ids.map.size[1] + self.ids.map.pos[1] + 10)
+                    self.ids.map.add_widget(warning)
+
+        

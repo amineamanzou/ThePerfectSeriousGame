@@ -4,6 +4,8 @@
 import kivy
 kivy.require('1.8.0')
 
+from kivy import platform
+
 from kivy.uix.widget import Widget, Builder
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
@@ -34,5 +36,8 @@ class CreditsScreen(GameScreen):
             
         self.ids.creditContainer.add_widget(Image(source=os.path.normpath("Images/logo-univ-paris1.png")))
      
-        anim = Animation(pos=(0, self.size[1] - 200 - self.ids.creditContainer.size[1]), duration=700, t='linear')
+        if platform == "win":
+            anim = Animation(pos=(0, self.size[1] - 200 - self.ids.creditContainer.size[1]), duration=1000, t='linear')
+        else:
+            anim = Animation(pos=(0, self.size[1] - 200 - self.ids.creditContainer.size[1]), duration=10, t='linear')
         anim.start(self.ids.creditContainer)

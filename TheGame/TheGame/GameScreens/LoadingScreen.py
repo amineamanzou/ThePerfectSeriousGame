@@ -11,5 +11,4 @@ from GameScreen import GameScreen
 Builder.load_file("GameScreens/LoadingScreen.kv")
 
 class LoadingScreen(GameScreen):
-    def __init__(self, **kwargs):
-        super(GameScreen, self).__init__(**kwargs)
+    pass
