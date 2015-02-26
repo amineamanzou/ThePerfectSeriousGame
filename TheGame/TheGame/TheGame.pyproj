@@ -165,6 +165,8 @@
     <Content Include="Ressources\Chapters\chapter1.xml" />
     <Content Include="Ressources\Chapters\chapter2.xml" />
     <Content Include="Ressources\Chapters\chapter3.xml" />
+    <Content Include="Ressources\Chapters\chapter4.xml" />
+    <Content Include="Ressources\Chapters\chapter5.xml" />
     <Content Include="Ressources\Notes\chapter1-note1.rst">
       <SubType>Code</SubType>
     </Content>

@@ -25,7 +25,7 @@
 <dialog id="5" idParent="4" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note2.rst</content>
   <x>50</x>
-  <y>31</y>
+  <y>35</y>
   <image>./Images/note.png</image>
 </dialog>
 
@@ -96,8 +96,8 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 <!--back to desk-->
 <dialog id="14" idParent="13" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note3.rst</content>
-  <x>60</x>
-  <y>31</y>
+  <x>55</x>
+  <y>32</y>
   <image>./Images/note.png</image>
 </dialog>
 
@@ -111,9 +111,9 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 
 <dialog id="17" idParent="16" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note4.rst</content>
-  <x>70</x>
-  <y>31</y>
-  <image>./Images/note.png</image>
+  <x>60</x>
+  <y>60</y>
+  <image>./Images/pin-note.png</image>
 </dialog>
 
 <!--BRANCHE 1 : RH -->
@@ -203,9 +203,9 @@ Je ne sais pas si les gens sont ouvert au digital.</text>
 
 <dialog id="29" idParent="28" type="F" idBat="4" end="true">
   <content>/Ressources/Notes/chapter1-note5.rst</content>
-  <x>80</x>
-  <y>31</y>
-  <image>./Images/note.png</image>
+  <x>35</x>
+  <y>70</y>
+  <image>./Images/pint-note.png</image>
 </dialog>
 
 <!--BRANCHE 2 : -->
@@ -257,7 +257,7 @@ mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?
 
 <dialog id="36" idParent="35" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note6.rst</content>
-  <x>90</x>
+  <x>72</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>

@@ -34,9 +34,9 @@
 
   <dialog id="3" idParent="2" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter2-note1.rst</content>
-    <x>40</x>
-    <y>31</y>
-    <image>./Images/note.png</image>
+    <x>45</x>
+    <y>50</y>
+    <image>./Images/pin-note.png</image>
   </dialog>
 
   <dialog id="4" idParent="3"  type="C" idBat="4" end="false">
