@@ -41,7 +41,7 @@ class GameScreen(Widget):
     def showError(self, ex):
         x = itertools.count(0)
         message = "Une erreur est survenue lors de l'execution de l'ecran : " + type(self).__name__
-        message += "\n" + ex
+        message += "\n" + str(ex)
 
         error = ErrorScreen(size=self.size, app=self.app)
         error.setDebugMessage(message)
