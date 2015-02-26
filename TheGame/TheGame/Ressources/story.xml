@@ -8,7 +8,7 @@
       <id>4</id>
     </mustBeRead>
   </chapter>
-
+    
   <chapter id="1">
     <file>/Ressources/Chapters/chapter1.xml</file>
     <nextChapter>2</nextChapter>
@@ -27,15 +27,15 @@
     </mustBeRead>
   </chapter>
 
-  <chapter id="3"> 
-    <file>/Ressources/Chapters/chapter3.xml</file> <!-- le fichier associé au chapitre-->
+  <chapter id="3">
+    <file>/Ressources/Chapters/chapter3.xml</file> --><!-- le fichier associé au chapitre-->
     <nextChapter>4</nextChapter> <!-- l'id du chapitre suivant à charger-->
     <mustBeRead> <!-- les ids des dialogues qui doivent etre lus dans le chapitre 1 pour passer à la suite-->
       <id>9</id>
       <id>17</id>
     </mustBeRead>
   </chapter>
-  
+
   <!-- on commence toujours par dialogue avec l'id 1 (premier parse)-->
   <chapter id="4">
     <file>/Ressources/Chapters/chapter4.xml</file>
@@ -53,4 +53,5 @@
       <id>22</id>
     </mustBeRead>
   </chapter>
+
 </story>
