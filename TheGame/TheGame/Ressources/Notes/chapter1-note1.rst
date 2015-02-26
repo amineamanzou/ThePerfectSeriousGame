@@ -17,10 +17,18 @@ Nous souhaitons un serious game qui soit adapté aux profils au cœur de la gest
 Le serious game doit entrainer le collaborateur à:
 
 - Respecter les autres et leur travail
+
 - Respecter la méthodologie et les étapes projet
+
+
 - Développer son aptitude à aller chercher les informations dont il a besoin
+
 - Intégrer les connaissances et trouver des solutions
+
 - S’adapter aux besoins mais aussi aux contraintes technique et budgétaire.
+
 - Savoir déléguer
+
 - Savoir faire des choix judicieux pour le bon déroulement du projet
+
 - Bonnes pratiques dans un projet

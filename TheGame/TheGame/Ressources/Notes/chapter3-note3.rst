@@ -6,9 +6,13 @@ Le continuous quality improvement, c'est un modèle d'amélioration de la qualit
 Chaque acteur peut proposer des améliorations.
 
 Le cycle est basé sur la roue de Deming et se repète indefiniment pour apporter de petites améliorations au projet.
+
 • To plan, pour planifier quelle amélioration on veut mettre en avant.
+
 • To do, pour mettre en oeuvre le processus d'amélioration.
+
 • To check, pour vérifier et analyser les résultats et la qualité du produit délivré.
+
 • To act, réagir pour améliorer de manière continue les performances du système de management de la qualité.
 
 

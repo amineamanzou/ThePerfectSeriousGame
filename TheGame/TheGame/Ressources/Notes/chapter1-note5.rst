@@ -6,8 +6,11 @@ Dynamisme, c’est communiquer à quelqu'un l'énergie nécessaire à son effica
 [b]Dynamiser l’activité (vente, service)[/b]
 
 Pour offrir une meilleure perception du métier par les employés et dynamiser leur activité il faut :
+
 -  Organiser des réflexions sur le métier des salariés et de l’entreprise
+
 -  Organiser le transfert des compétences
+
 Ainsi les objectifs de chacun sont clairs et la personne se sent responsabilisée et est plus impliquée dans son travail.
 
 [b]Dynamiser les projets[/b]
