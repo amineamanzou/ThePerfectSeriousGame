@@ -1,5 +1,5 @@
 [size=20]Le partage de connaissances[/size]
-===========================================
+============================================
 
 
 Le partage de connaissance, le **knowledge management**, est important au sein d'une entreprise.

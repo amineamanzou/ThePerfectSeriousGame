@@ -1,5 +1,5 @@
 [size=20]Les méthodes d'améliorations de la qualité[/size]
-===========================================
+============================================================
 [b]Le continuous quality improvement[/b]
 
 Le continuous quality improvement, c'est un modèle d'amélioration de la qualité qui repose sur de petites améliorations au quotidien, mais constemment.

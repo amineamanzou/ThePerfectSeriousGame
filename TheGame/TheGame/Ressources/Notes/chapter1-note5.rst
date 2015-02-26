@@ -1,5 +1,5 @@
 [size=20]Dynamiser l’entreprise : besoin RH[/size]
-==================================================
+===================================================
 
 Dynamisme, c’est communiquer à quelqu'un l'énergie nécessaire à son efficacité.
 

@@ -1,5 +1,5 @@
 [size=20]Améliorer la qualité en entreprise[/size]
-===========================================
+===================================================
 [b]Pourquoi travailler ensemble[/b]
 
 Comme on a pu le voir, il est bénéfique de vivre avec respect et dans une bonne ambiance dans son environnement de travail.

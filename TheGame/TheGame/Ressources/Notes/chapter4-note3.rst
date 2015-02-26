@@ -9,7 +9,7 @@ Selon Chen et Ringel il existe trois approches ou typologies: associative, illus
 
 
 
- [b]Facteurs de succès et de durabilité[/b]
+[b]Facteurs de succès et de durabilité[/b]
 - [b]Fraîcheur[/b] : Le sujet doit être innovant ou amusant, attrayant autant au niveau du game play du jeu qu’au niveau du design graphique. Les jeux innovants même assez simples ont souvent beaucoup de succès comme Angry bird.
 - [b]Intérêt[/b] : Le sujet doit être actuels et attirer l’utilisateur par son contenu. Le contenu dépendra de la cible visée.
 - [b]Richesse[/b] : L’application doit être quantitative et qualitative. Il est important de proposer des options et d’avoir un scénario qui ne lasse pas l’utilisateur.

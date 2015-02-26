@@ -1,5 +1,5 @@
 ﻿[size=20]La communication dans l'entreprise[/size]
-==================================================
+===================================================
 
 [b]Communiquer pour vivre ensemble[/b]
 

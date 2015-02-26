@@ -1,5 +1,5 @@
 [size=20]Type de serious game[/size]
-===========================================
+=====================================
 
 Il est vital de définir quel est l’objectif du serious game et donc le type de Serious Games. Ils sont répartis sous trois catégories :
 
