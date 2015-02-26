@@ -25,7 +25,6 @@
       </answer>
     </choix>
   </dialog>
-</chapter>
 
 <dialog id="3" idParent="2" type="C" idBat="4" end="false">
   <text>D'accord, bon, maintenant que tu connais le but de ce projet, il va falloir être plus précis pour avancer.</text>
@@ -58,7 +57,7 @@
     <answer id="2">
       <text>Bonjour, je voulais savoir si tu serais d’accord pour t’impliquer réellement
         dans le projet et en faire la promotion? </text>
-      <score>10</score>
+      <score>20</score>
     </answer>
   </choix>
 </dialog>
@@ -76,11 +75,11 @@
   <choix>
     <answer id="1">
       <text>Je comptais justement vous posez cette question.</text>
-      <score>0</score>
+      <score>10</score>
     </answer>
     <answer id="2">
       <text>Non pas encore effectivement.</text>
-      <score>0</score>
+      <score>10</score>
     </answer>
   </choix>
 </dialog>
@@ -147,13 +146,13 @@
     <answer id="1">
       <text>Il faut représenter au mieux l’environnement de l’utilisateur pour
         qu’il puisse retrouver une expérience qui soit réaliste.</text>
-      <score>20</score>
+      <score>10</score>
     </answer>
     <answer id="2">
       <text>Déjà notre cible a un vocabulaire technique, il faudra que l’on respecte
         son environnement pour qu’il soit en immersion.
         Le jeu doit être un challenge pour lui, il doit représenter une expérience réaliste. </text>
-      <score>10</score>
+      <score>20</score>
     </answer>
   </choix>
 </dialog>
@@ -199,7 +198,7 @@
     <answer id="3">
       <text>Un serious game de simulation ou dit serious play.
         Le jeu évolue dans le temps en fonction des réponses du joueur. </text>
-      <score>0</score>
+      <score>10</score>
     </answer>
   </choix>
 </dialog>
@@ -230,11 +229,11 @@
 </dialog>
 
 <!--back to marketing-->
-<dialog id="24" idParent="23" type="C" idBat="5" end="true">
+<dialog id="28" idParent="27" type="C" idBat="5" end="true">
   <text>Je suppose que tu as lu la fiche de Brigitte. Quelle approche souhaites tu utiliser?</text>
 </dialog>
 
-<dialog id="25" idParent="24"  type="E" idBat="5" end="false">
+<dialog id="29" idParent="28"  type="E" idBat="5" end="false">
   <title>Quelle approche ? </title>
   <choix>
     <answer id="1">
@@ -253,15 +252,15 @@
   </choix>
 </dialog>
 
-<dialog id="26" idParent="25" type="C" idBat="5" end="true">
+<dialog id="30" idParent="29" type="C" idBat="5" end="true">
   <text>Quand la MOA, Magalie, te parlait de ses besoins, elle te disait qu’il y avait des problèmes de communication et que le joueurs devait apprendre à téléphoner et pas toujours envoyer des mails. Si j’ai bien compris la fiche de Brigitte, offrir ce genre d’option revient à utiliser l’approche illustrative. Je suis donc favorable à l’utilisation de toutes les approches possibles si elle nous permettent d’avoir plus de possibilité d’atteindre notre joueur sur les bonnes pratiques.</text>
 </dialog>
 
-<dialog id="27" idParent="26" type="C" idBat="5" end="true">
+<dialog id="31" idParent="30" type="C" idBat="5" end="true">
   <text>Tout à l'heure tu me parlais d’un jeu abouti, quels sont les critères sur lesquels tu te bases?</text>
 </dialog>
 
-<dialog id="28" idParent="27"  type="E" idBat="5" end="true">
+<dialog id="32" idParent="31"  type="E" idBat="5" end="true">
   <title>Les critères: </title>
   <choix>
     <answer id="1">
