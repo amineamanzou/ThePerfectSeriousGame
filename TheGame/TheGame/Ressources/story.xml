@@ -3,18 +3,36 @@
   
   <chapter id="0"> 
     <file>/Ressources/Chapters/chapter0.xml</file>
-    <nextChapter>3</nextChapter>
+    <nextChapter>1</nextChapter>
     <mustBeRead>
-      <id>3</id>
+      <id>4</id>
     </mustBeRead>
   </chapter>
-  
+
+  <chapter id="1">
+    <file>/Ressources/Chapters/chapter1.xml</file>
+    <nextChapter>2</nextChapter>
+    <mustBeRead>
+        <id>29</id>
+        <id>53</id>
+    </mustBeRead>
+  </chapter>
+
+  <chapter id="2">
+    <file>/Ressources/Chapters/chapter2.xml</file>
+    <nextChapter>3</nextChapter>
+    <mustBeRead>
+        <id>10</id>
+        <id>16</id>
+    </mustBeRead>
+  </chapter>
+
   <chapter id="3"> 
     <file>/Ressources/Chapters/chapter3.xml</file> <!-- le fichier associé au chapitre-->
     <nextChapter>4</nextChapter> <!-- l'id du chapitre suivant à charger-->
     <mustBeRead> <!-- les ids des dialogues qui doivent etre lus dans le chapitre 1 pour passer à la suite-->
       <id>9</id>
-      <id>16</id>
+      <id>17</id>
     </mustBeRead>
   </chapter>
   
@@ -23,8 +41,8 @@
     <file>/Ressources/Chapters/chapter4.xml</file>
     <nextChapter>5</nextChapter> <!-- pas de chapiter suivant : c'est la fin-->
     <mustBeRead>
-      <id>11</id>
-      <id>15</id>
+      <id>20</id>
+      <id>32</id>
     </mustBeRead>
   </chapter>
 
@@ -32,8 +50,7 @@
     <file>/Ressources/Chapters/chapter5.xml</file>
     <nextChapter>-1</nextChapter><!-- pas de chapiter suivant : c'est la fin-->
     <mustBeRead>
-      <id>11</id>
-      <id>15</id>
+      <id>22</id>
     </mustBeRead>
   </chapter>
 </story>
