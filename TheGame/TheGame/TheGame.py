@@ -39,7 +39,7 @@ class GameApp(App):
         self.root.keyboard.bind(on_key_down=self.on_keyboard_down)
 
     def configure(self):
-        self.APPLICATION_ENV = "PROD"
+        self.APPLICATION_ENV = "DEBUG"
 
         if self.APPLICATION_ENV == "DEV":
             self.window.size = (1280, 800)
