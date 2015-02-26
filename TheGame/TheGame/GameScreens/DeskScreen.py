@@ -28,7 +28,6 @@ class DeskScreen(GameScreen):
         super(GameScreen, self).__init__(**kwargs)
         self.ids.dialog.gameManager = self.app.gameManager
         self.ids.dialog.bind(visible=self.reloadNotes)
-        self.ids.dialog.startDialog(self.app.gameManager.roomsManager.getRoomById(4))
         self.reloadNotes()
 
     def addNote(self, fiche):
@@ -49,12 +48,19 @@ class DeskScreen(GameScreen):
         slide = Animation(pos=(self.ids.note.pos[0], self.size[1]))
         slide.start(self.ids.note)
         self.ids.shadow.size = (0, 0)
+        self.reloadNotes()
 
     def backToMap(self):
         if not self.ids.dialog.visible:
             self.app.changeScreen("MapScreen")
 
     def reloadNotes(self, opt1=None, opt2=None):
+        if self.ids.dialog.visible == False:
+            haveDialog = self.ids.dialog.startDialog(self.app.gameManager.roomsManager.getRoomById(4))
+
+            if not (haveDialog is None):
+                self.ids.dialog.show()
+
         self.ids.ficheContainer.clear_widgets()
         self.fiches = self.app.gameManager.fiches
         for fiche in self.fiches:

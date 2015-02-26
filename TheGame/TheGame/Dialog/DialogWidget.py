@@ -48,7 +48,8 @@ class DialogWidget(Widget):
                 dialog = self.currentRoom.fuckDialogs[random.randint(0, len(self.currentRoom.fuckDialogs) - 1)]
                 element = DialogTextElement(text=dialog, isEnd=True)
             else:
-                self.hide()
+                if self.visible:
+                    self.hide()
                 return None
         elif self.dialog.type == "C":
             element = DialogTextElement(text=self.dialog.text, isEnd=not self.gameManager.chapterManager.haveNext(self.dialog.id))
@@ -60,6 +61,8 @@ class DialogWidget(Widget):
         element.bind(close=self.closeElement)
         
         self.changeElement(element)
+
+        return True
 
     def startDialogCustom(self):
         if len(self.dialogsCustom) > 0:

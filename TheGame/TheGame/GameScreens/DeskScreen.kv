@@ -15,6 +15,8 @@
 		DialogWidget:
 			id: dialog
 			size: (root.width, root.height * 0.2)
+			pos: (root.pos[0], root.pos[1] - dialog.size[1])
+			visible: False
 
         DynImage:
 		    source: "Images/exit.png"
