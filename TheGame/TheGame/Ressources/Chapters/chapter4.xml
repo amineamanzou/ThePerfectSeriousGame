@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <chapter>
 
 <!--end 20 & 28 -->
 
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>Ah, tu es là, je me demandais quand tu passerais voir ton manager préféré !
-    Alors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes objectifs ?</text>
+Alors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes objectifs ?</text>
   </dialog>
 
   <dialog id="2" idParent="1"  type="E" idBat="4" end="false">
@@ -277,5 +277,256 @@
 </dialog>
 
 
+=======
+>>>>>>> origin/master
 
+	<dialog id="3" idParent="2" type="C" idBat="4" end="false">
+	  <text>D'accord, bon, maintenant que tu connais le but de ce projet, il va falloir être plus précis pour avancer.</text>
+	</dialog>
+
+	<dialog id="4" idParent="3" type="C" idBat="4" end="false">
+	  <text>Eric m'a donné une fiche pour toi sur les serious game.</text>
+	</dialog>
+
+	<dialog id="5" idParent="4" type="F" idBat="4" end="false">
+	  <content>/Ressources/Notes/chapter4-note1.rst</content>
+	  <x>40</x>
+	  <y>31</y>
+	  <image>./Images/note.png</image>
+	</dialog>
+
+	<dialog id="6" idParent="5" type="C" idBat="4" end="false">
+	  <text>Te revoilà! J’ai lu la fiche d'Eric, je pense que tu devrais exposer ton choix de type de serious game au Marketing. Cependant, tu peux aussi aller voir la RH pour mieux définir la cible.</text>
+	</dialog>
+
+	<!--BRANCHE 1 : debut RH -->
+	<dialog id="7" idParent="6"  type="E" idBat="3" end="false">
+	  <title>Bonjour à nouveau! Quel bon vent t’amène?</title>
+	  <choix>
+		<answer id="1">
+		  <text>Bonjour, je voulais te prévenir que j’aurais besoin que tu fasse la promotion du serious game avant
+sa sortie.</text>
+		  <score>-10</score>
+		</answer>
+		<answer id="2">
+		  <text>Bonjour, je voulais savoir si tu serais d’accord pour t’impliquer réellement
+dans le projet et en faire la promotion? </text>
+		  <score>10</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="8" idParent="7" type="C" idBat="3" end="false">
+	  <text>Très bien! Je m’occuperais des affiches et des posts sur le site de l’intranet. J’enverrais également un mail aux utilisateurs concernés avec le lien vers le jeu.</text>
+	</dialog>
+
+	<dialog id="9" idParent="8" type="C" idBat="3" end="false">
+	  <text>A propos des utilisateurs concernés, as-tu vu avec le marketing quelle était la cible?</text>
+	</dialog>
+
+	<dialog id="10" idParent="9"  type="E" idBat="3" end="false">
+	  <title>Quelle est la cible ?</title>
+	  <choix>
+		<answer id="1">
+		  <text>Je comptais justement vous posez cette question.</text>
+		  <score>0</score>
+		</answer>
+		<answer id="2">
+		  <text>Non pas encore effectivement.</text>
+		  <score>0</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="11" idParent="10" type="C" idBat="3" end="false">
+	  <text>Bien, je peux y répondre si cela t’arrange.</text>
+	</dialog>
+
+	<dialog id="12" idParent="11"  type="E" idBat="3" end="false">
+	  <title>Votre réponse:</title>
+	  <choix>
+		<answer id="1">
+		  <text>Merci, je voulais savoir quelle est la moyenne d’âge des personnes ayant un poste avec du management
+ou de la délégation de tâches comme les managers ou les MOA et MOE.</text>
+		  <score>0</score>
+		</answer>
+		<answer id="2">
+		  <text>Oui! Je n’ai pas d’idée de la moyenne d’âge des employés en général? </text>
+		  <score>0</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="13" idParent="12" type="C" idBat="3" end="false">
+	  <text>La majorité des personnes sur les postes à responsabilité, car c’est notre cible, est tout de même assez jeune. Il ont a peu près 30 ans mais sont très sensible aux nouvelles technologies comme s’ils en avait 20-25. Je te laisse voir le reste avec le marketing. </text>
+	</dialog>
+
+	<dialog id="14" idParent="13" type="C" idBat="3" end="false">
+	  <text>Je vais te pose une fiche sur ton bureau sur les serious game et leurs cibles. J’ai gardé cette fiche d’une formation récente. Vas la lire avant de voir le service Marketing.</text>
+	</dialog>
+
+	<!--fiche sur bureau-->
+	<dialog id="15" idParent="14" type="F" idBat="4" end="false">
+	  <content>/Ressources/Notes/chapter4-note2.rst</content>
+	  <x>70</x>
+	  <y>31</y>
+	  <image>./Images/note.png</image>
+	</dialog>
+
+	<!--marketing(5)-->
+	<dialog id="16" idParent="15" type="C" idBat="5" end="false">
+	  <text>Bonjour! Brigitte m’a dit que tu étais passé lui parler de notre cible. Elle m’a envoyé un compte rendu de votre réunion. Que me proposes-tu?</text>
+	</dialog>
+
+	<dialog id="17" idParent="16"  type="E" idBat="5" end="false">
+	  <title>Que me proposes-tu ?</title>
+	  <choix>
+		<answer id="1">
+		  <text>Je pense que le jeu doit être très abouti car la cible est très jeune et exigeante.</text>
+		  <score>0</score>
+		</answer>
+		<answer id="2">
+		  <text>Je pense que la cible est une cible exigeante car les employés que l’on vise sont habitués
+aux nouvelles technologies. Ils sont aussi d’une tranche d’âge qui cherche un besoin utilitaire.
+Je propose donc un jeu assez abouti.  </text>
+		  <score>0</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="18" idParent="17"  type="E" idBat="5" end="false">
+	  <title>Comment veux-tu adapter le jeux?</title>
+	  <choix>
+		<answer id="1">
+		  <text>Il faut représenter au mieux l’environnement de l’utilisateur pour
+qu’il puisse retrouver une expérience qui soit réaliste.</text>
+		  <score>20</score>
+		</answer>
+		<answer id="2">
+		  <text>Déjà notre cible a un vocabulaire technique, il faudra que l’on respecte
+son environnement pour qu’il soit en immersion.
+Le jeu doit être un challenge pour lui, il doit représenter une expérience réaliste. </text>
+		  <score>10</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="19" idParent="18"  type="E" idBat="5" end="false">
+	  <title>Très bien, et qu’en est t-il du mode multi-joueur?</title>
+	  <choix>
+		<answer id="1">
+		  <text>C’est une option intéressante, les joueurs pourraient effectivement expérimenter le travail
+en équipe.</text>
+		  <score>10</score>
+		</answer>
+		<answer id="2">
+		  <text>C’est un jeu à un joueur. Nous ne devons pas apprendre à notre cible à travailler en équipe mais
+surtout la manager et déléguer. C’est un travail personnel et sur soit d’apprendre a bien le faire
+et travailler sur ces failles ou mauvaises habitudes.</text>
+		  <score>0</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="20" idParent="19" type="C" idBat="5" end="true">
+	  <text>Très bien! Repasses me voir quand tu en as besoin.</text>
+	</dialog>
+
+	<!--BRANCHE 2 id parent 6-->
+	<dialog id="21" idParent="6" type="C" idBat="5" end="true">
+	  <text>Greg m’a dit qu’il t’avait envoyé une fiche concernant le type de serious game. Alors quel est ton choix?</text>
+	</dialog>
+
+	<dialog id="22" idParent="21"  type="E" idBat="5" end="false">
+	  <title>Ton choix ? </title>
+	  <choix>
+		<answer id="1">
+		  <text>Un serious game plus basé sur le ludique,
+il faut avant tout que ce soit attrayant pour les "joueurs".</text>
+		  <score>0</score>
+		</answer>
+		<answer id="2">
+		  <text>Un serious game à message. Il faut faire passer nos messages au joueur.</text>
+		  <score>0</score>
+		</answer>
+		<answer id="3">
+		  <text>Un serious game de simulation ou dit serious play.
+Le jeu évolue dans le temps en fonction des réponses du joueur. </text>
+		  <score>0</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="23" idParent="22" type="C" idBat="5" end="true">
+	  <text>Les utilisateurs doivent vivre une expérience dans notre serious game. Il doit apprendre de ses échecs, s’améliorer et trouveur de la satisfaction dans son travail. La solution de la simulation me paraît la plus adaptée.</text>
+	</dialog>
+
+	<dialog id="24" idParent="23" type="C" idBat="5" end="true">
+	  <text>Brigitte veut te voir elle a un document pour toi. Reviens me voir tout à l’heure.</text>
+	</dialog>
+
+	<!--rh 3-->
+	<dialog id="25" idParent="24" type="C" idBat="3" end="true">
+	  <text>Bonjour à nouveau! J’ai une fiche qui est très intéressante, je voulais te la donner avant que tu travailles plus avec le marketing.</text>
+	</dialog>
+
+	<dialog id="26" idParent="25" type="C" idBat="3" end="true">
+	  <text>Bon courage, je te laisse lire ça avant d’aller revoir Magalie.</text>
+	</dialog>
+
+	<!--fiche au bureau-->
+	<dialog id="27" idParent="26" type="F" idBat="4" end="false">
+	  <content>/Ressources/Notes/chapter4-note3.rst</content>
+	  <x>100</x>
+	  <y>31</y>
+	  <image>./Images/note.png</image>
+	</dialog>
+
+	<!--back to marketing-->
+	<dialog id="24" idParent="23" type="C" idBat="5" end="true">
+	  <text>Je suppose que tu as lu la fiche de Brigitte. Quelle approche souhaites tu utiliser?</text>
+	</dialog>
+
+	<dialog id="25" idParent="24"  type="E" idBat="5" end="false">
+	  <title>Quelle approche ? </title>
+	  <choix>
+		<answer id="1">
+		  <text>Je souhaite utiliser une approche principalement démonstrative, c’est à dire que l’utilisateur va
+			expérimenter une situation et essayer de faire les meilleurs choix.
+			Les autres méthodes ne sont pas compatibles.</text>
+		  <score>0</score>
+		</answer>
+		<answer id="2">
+		  <text>Je souhaite utiliser les approches associative, illustrative mais surtout démonstrative.
+L’approche démonstrative où le joueur expérimente par lui même est la plus importante.
+Cependant utiliser également les autres approches permet d’offrir plus d'interactions
+avec le joueur et d’apporter une touche de “game” nécessaire.</text>
+		  <score>10</score>
+		</answer>
+	  </choix>
+	</dialog>
+
+	<dialog id="26" idParent="25" type="C" idBat="5" end="true">
+	  <text>Quand la MOA, Magalie, te parlait de ses besoins, elle te disait qu’il y avait des problèmes de communication et que le joueurs devait apprendre à téléphoner et pas toujours envoyer des mails. Si j’ai bien compris la fiche de Brigitte, offrir ce genre d’option revient à utiliser l’approche illustrative. Je suis donc favorable à l’utilisation de toutes les approches possibles si elle nous permettent d’avoir plus de possibilité d’atteindre notre joueur sur les bonnes pratiques.</text>
+	</dialog>
+
+	<dialog id="27" idParent="26" type="C" idBat="5" end="true">
+	  <text>Tout à l'heure tu me parlais d’un jeu abouti, quels sont les critères sur lesquels tu te bases?</text>
+	</dialog>
+
+	<dialog id="28" idParent="27"  type="E" idBat="5" end="true">
+	  <title>Les critères: </title>
+	  <choix>
+		<answer id="1">
+		  <text>Le jeu devra être principalement amusant et apprendre de bonnes habitudes à l’utilisateur.</text>
+		  <score>-10</score>
+		</answer>
+		<answer id="2">
+		  <text>Il devra réunir les critères de succès: un graphisme soigné, il devra être intéressant pour notre
+cible et assez riche au niveau de la qualité des informations liés à l’apprentissage comme
+les bonnes habitudes et méthodes. </text>
+		  <score>10</score>
+		</answer>
+	  </choix>
+	</dialog>
 </chapter>

@@ -24,7 +24,7 @@
 
 <dialog id="5" idParent="4" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note2.rst</content>
-  <x>60</x>
+  <x>50</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -36,7 +36,7 @@ Maintenant, c'est à toi de jouer!</text>
 
 <!--MOA MAGALIE -->
 <dialog id="7" idParent="6" type="C" idBat="2" end="false">
-  <text>Bonjour Steve, ravie ! Greg m'a prévenu de ton arrivée. J'ai quelques idées et je voudrais que tu me confirme par la suite si elles sont adaptées.</text>
+  <text>Bonjour, ravie ! Greg m'a prévenu de ton arrivée. J'ai quelques idées et je voudrais que tu me confirme par la suite si elles sont adaptées.</text>
 </dialog>
 
 <dialog id="8" idParent="7" type="C" idBat="2" end="false">
@@ -96,7 +96,7 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 <!--back to desk-->
 <dialog id="14" idParent="13" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note3.rst</content>
-  <x>80</x>
+  <x>60</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -111,7 +111,7 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 
 <dialog id="17" idParent="16" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note4.rst</content>
-  <x>100</x>
+  <x>70</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -203,7 +203,7 @@ Je ne sais pas si les gens sont ouvert au digital.</text>
 
 <dialog id="29" idParent="28" type="F" idBat="4" end="true">
   <content>/Ressources/Notes/chapter1-note5.rst</content>
-  <x>120</x>
+  <x>80</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -257,7 +257,7 @@ mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?
 
 <dialog id="36" idParent="35" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note6.rst</content>
-  <x>140</x>
+  <x>90</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
