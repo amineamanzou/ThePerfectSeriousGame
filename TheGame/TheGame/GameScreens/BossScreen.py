@@ -28,6 +28,11 @@ class BossScreen(GameScreen):
         self.ids.dialog.bind(visible=self.end)
 
     def bossDecision(self):
+        dialog = DialogTextElement()
+        dialog.type = "C"
+        dialog.text = "Bien, je pense qu'il est temps de faire un point à propos de l'étude préalable à la création de notre sérious game."
+        self.dialogs.append(dialog)
+
         rooms = self.app.gameManager.roomsManager.getRooms()
         globalscore = 0
         for room in rooms:

@@ -8,9 +8,8 @@
     <x min="0.7083" max="0.9"></x>
     <y min="0.7606" max="0.9149"></y>
     <fuckDialogs>
-      <text id="1">Ça sent le geek par ici.</text>
-      <text id="2">Je vois le monde en noir et vert !</text>
-      <text id="3">print("Hello Worlds !");</text>
+      <text id="1">Je n'ai pas de nouvelles informations, reviens me voir plus tard.</text>
+      <text id="2">Excuse moi, je suis occupée</text>
     </fuckDialogs>
   </room>
   
@@ -22,8 +21,8 @@
     <x min="0.4667" max="0.6917"></x>
     <y min="0.7606" max="0.9149"></y>
     <fuckDialogs>
-      <text id="1">Il y a beaucoup de formulaires ici, mais rien pour moi.</text>
-      <text id="2">Les mamies ne pourront rien faire pour moi ici.</text>
+      <text id="1">Tout le monde à l'air très occupé ici, je repasserait plus tard.</text>
+      <text id="2">Je dois faire passer un entretient dans 5 minutes, tu peux repasser un peu plus tard si tu veux.</text>
     </fuckDialogs>
   </room>
   
@@ -47,7 +46,7 @@
     <y min="0.0638" max="0.2926"></y>
     <fuckDialogs>
       <text id="1">De la publicité partout partout partout !</text>
-      <text id="2">Ce n'est pas le moment de jouer avec les formes et les couleurs.</text>
+      <text id="2">Désolé, je n'ai vraiment pas le temps aujourd'hui</text>
     </fuckDialogs>
   </room>
   
@@ -73,9 +72,8 @@
     <x min="0.1433" max="0.4417"></x>
     <y min="0.5479" max="0.9149"></y>
     <fuckDialogs>
-      <text id="1">Ça sent le geek par ici.</text>
-      <text id="2">Je vois le monde en noir et vert !</text>
-      <text id="3">print("Hello Worlds !");</text>
+      <text id="1">Personne, ils doivent être en pause café...</text>
+      <text id="2">Salut, Éric est absent, repasses plus tard.</text>
     </fuckDialogs>
   </room>
 </rooms>
