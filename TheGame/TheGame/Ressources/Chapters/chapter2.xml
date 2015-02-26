@@ -91,7 +91,7 @@ J'ai une petite question, avez-vous déjà rencontrer les autres membres du proj
     <choix>
       <answer id="1">
         <text>Pas encore, mais j'ai hâte de les rencontrer !</text>
-        <score>3</score>
+        <score>10</score>
       </answer>
       <answer id="2">
         <text>Chaque chose en son temps, cela arrivera.</text>
@@ -99,7 +99,7 @@ J'ai une petite question, avez-vous déjà rencontrer les autres membres du proj
       </answer>
       <answer id="3">
         <text>Non, j'appréhende toujours le moment de rencontrer de nouveaux collaborateurs..</text>
-        <score>-3</score>
+        <score>-10</score>
       </answer>
     </choix>
   </dialog>
@@ -125,7 +125,7 @@ Je vous attendais avec impatience.
       <choix>
         <answer id="1">
           <text>Elles sont utiles à l'organisation de l'entreprise.</text>
-          <score>10</score>
+          <score>20</score>
         </answer>
         <answer id="2">
           <text>Je ne préfère pas vous donner mon avis sur la question...</text>

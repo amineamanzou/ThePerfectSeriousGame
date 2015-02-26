@@ -24,7 +24,7 @@
 
 <dialog id="5" idParent="4" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note2.rst</content>
-  <x>60</x>
+  <x>50</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -36,7 +36,7 @@ Maintenant, c'est à toi de jouer!</text>
 
 <!--MOA MAGALIE -->
 <dialog id="7" idParent="6" type="C" idBat="2" end="false">
-  <text>Bonjour Steve, ravie ! Greg m'a prévenu de ton arrivée. J'ai quelques idées et je voudrais que tu me confirme par la suite si elles sont adaptées.</text>
+  <text>Bonjour, ravie ! Greg m'a prévenu de ton arrivée. J'ai quelques idées et je voudrais que tu me confirme par la suite si elles sont adaptées.</text>
 </dialog>
 
 <dialog id="8" idParent="7" type="C" idBat="2" end="false">
@@ -58,7 +58,7 @@ Maintenant, c'est à toi de jouer!</text>
       <text>J’irais voir le marketing pour mettre tes idées en application et nous ferons d’autres réunions,
 comme ça tu sauras comment sont adaptés tes idées. Merci beaucoup pour tes conseils en tout cas,
 j'ai été ravi de cette conversation!</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
     <answer id="2">
       <text>Je retiens tes idées et je verrais si je les utiliserais. Merci pour tes conseils!</text>
@@ -79,16 +79,16 @@ Qui vas-tu allez voir maintenant ?</text>
       <text>Je vais lire votre fiche puis aller voir la responsable RH pour qu’elle me donne des informations
 sur le ressenti des employés et leurs réactions face aux formations qu’elle organise.
 Je pense qu’elle a une vue d’ensemble qui peut être intéressante. </text>
-      <score>10</score>
+      <score>30</score>
     </answer>
     <answer id="2">
       <text>Je n’en ai aucune idée pour le moment!</text>
-      <score>-5</score>
+      <score>-10</score>
     </answer>
     <answer id="3">
       <text>Je vais aller à mon bureau pour lire votre fiche puis j’irais voir la MOE puis le PDG pour valider
 la possibilité de faire une application mobile en plus de celle sur ordinateur.</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
   </choix>
 </dialog>
@@ -96,7 +96,7 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 <!--back to desk-->
 <dialog id="14" idParent="13" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note3.rst</content>
-  <x>80</x>
+  <x>60</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -111,7 +111,7 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 
 <dialog id="17" idParent="16" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note4.rst</content>
-  <x>100</x>
+  <x>70</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -133,7 +133,7 @@ la possibilité de faire une application mobile en plus de celle sur ordinateur.
 Vous avez une vue d’ensemble sur les attentes des employés, leurs problèmes mais aussi sur leur
 ouverture d’esprit grâce aux formations que vous organisez.
 Que pensez vous qu’il leur manque au quotidien dans leur travail?</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
     <answer id="2">
       <text>Oui, j’attends que vous me donniez le ressentis des employés.</text>
@@ -156,7 +156,7 @@ Que pensez vous qu’il leur manque au quotidien dans leur travail?</text>
     <answer id="1">
       <text>Il faut donc stimuler le joueur a organiser le transfert des compétences et éclaircir la place
 de chaque salarié surtout à son arrivée et ses enjeux.</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
     <answer id="2">
       <text>Très bien, y a t’il autre chose?</text>
@@ -174,12 +174,12 @@ de chaque salarié surtout à son arrivée et ses enjeux.</text>
   <choix>
     <answer id="1">
       <text>Oui, les employés sont-il ouvert au digital?</text>
-      <score>0</score>
+      <score>10</score>
     </answer>
     <answer id="2">
       <text>Je voulais vous demandez si une application mobile soit bien perçue par les employés?
 Je ne sais pas si les gens sont ouvert au digital.</text>
-      <score>0</score>
+      <score>10</score>
     </answer>
   </choix>
 </dialog>
@@ -203,7 +203,7 @@ Je ne sais pas si les gens sont ouvert au digital.</text>
 
 <dialog id="29" idParent="28" type="F" idBat="4" end="true">
   <content>/Ressources/Notes/chapter1-note5.rst</content>
-  <x>120</x>
+  <x>80</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -214,7 +214,7 @@ Je ne sais pas si les gens sont ouvert au digital.</text>
   <choix>
     <answer id="1">
       <text>Bonjour, je tenais principalement à me présenter vu que l’on va beaucoup travailler ensemble.</text>
-      <score>10</score>
+      <score>5</score>
     </answer>
     <answer id="2">
       <text>Bonjour, je tenais principalement à me présenter étant donné que l’on va beaucoup travailler ensemble.</text>
@@ -233,7 +233,7 @@ Je ne sais pas si les gens sont ouvert au digital.</text>
     <answer id="1">
       <text>Je voulais également vous demander, Magalie et la DRH sont favorable a fait une application sur
 mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?</text>
-      <score>10</score>
+      <score>5</score>
     </answer>
     <answer id="2">
       <text>A bientôt.</text>
@@ -257,7 +257,7 @@ mobile Android pour les mobiles et tablettes de fonction. Êtes vous d’accord?
 
 <dialog id="36" idParent="35" type="F" idBat="4" end="false">
   <content>/Ressources/Notes/chapter1-note6.rst</content>
-  <x>140</x>
+  <x>90</x>
   <y>31</y>
   <image>./Images/note.png</image>
 </dialog>
@@ -274,7 +274,7 @@ Je suppose que vous avez commencé à réfléchir sur le jeu.</text>
     <answer id="1">
       <text>Pour le moment je collecte les informations, et ensuite je réfléchirai
 à comment façonner le serious game.</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
     <answer id="2">
       <text>A vrai dire, je n’ai pas encore eu le temps de voir les applications, je réunis
@@ -323,7 +323,7 @@ Revenez me voir dès que vous aurez avancé.</text>
     <answer id="1">
       <text>Vous connaissez déjà les objectifs du serious game qui ont pour base l'amélioration et
 la dynamisation de l'entreprise sur les postes clés ou les échanges entre services sont forts.</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
     <answer id="2">
       <text>Je commence par la partie coût directement.</text>
@@ -340,7 +340,7 @@ la dynamisation de l'entreprise sur les postes clés ou les échanges entre serv
 au wifi de l’entreprise.
 Je veux proposer le serious game sur mobile en plus de l’application sur ordinateur,
 pour que les gens puissent faire le test en groupe et comparer leur résultat.</text>
-      <score>10</score>
+      <score>20</score>
     </answer>
     <answer id="2">
       <text>Je veux faire une application mobile et sur ordinateur.</text>
