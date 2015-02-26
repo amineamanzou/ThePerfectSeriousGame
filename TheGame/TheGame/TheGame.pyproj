@@ -33,6 +33,9 @@
     <Compile Include="CustomWidget\RoomTitle.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CustomWidget\RstButton.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CustomWidget\ScoreSlider.py">
       <SubType>Code</SubType>
     </Compile>
@@ -107,6 +110,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="CustomWidget\RoomTitle.kv">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="CustomWidget\RstButton.kv">
       <SubType>Code</SubType>
     </Content>
     <Content Include="CustomWidget\ScoreSlider.kv">
