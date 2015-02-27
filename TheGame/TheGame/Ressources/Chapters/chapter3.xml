@@ -31,7 +31,7 @@ Tu peux aller voir la fiche pour ce sujet.</text>
   </dialog>-->
   <dialog id="2" idParent="1" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter3-note1.rst</content>
-    <x>40</x>
+    <x>60</x>
     <y>31</y>
     <image>./Images/note.png</image>
   </dialog>
@@ -99,9 +99,9 @@ Allez donc lire la fiche sur ce sujet et revenez me voir !
   </dialog>-->
   <dialog id="8" idParent="7" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter3-note2.rst</content>
-    <x>40</x>
-    <y>31</y>
-    <image>./Images/note.png</image>
+    <x>60</x>
+    <y>50</y>
+    <image>./Images/pin-note.png</image>
   </dialog>
 
   <dialog id="9" idParent="8"  type="C" idBat="6" end="true">
@@ -218,9 +218,9 @@ Pour en savoir plus sur les méthodes dont nous avons parlé, tu peux aller lire
 
   <dialog id="17" idParent="16" type="F" idBat="4" end="true">
     <content>/Ressources/Notes/chapter3-note3.rst</content>
-    <x>40</x>
-    <y>31</y>
-    <image>./Images/note.png</image>
+    <x>45</x>
+    <y>60</y>
+    <image>./Images/pin-note.png</image>
   </dialog>
 
 </chapter>

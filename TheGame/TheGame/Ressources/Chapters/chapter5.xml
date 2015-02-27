@@ -10,9 +10,9 @@
     </dialog>
     <dialog id="3" idParent="2" type="F" idBat="4" end="false">
         <content>/Ressources/Notes/chapter5-note1.rst</content>
-        <x>40</x>
-        <y>31</y>
-        <image>./Images/note.png</image>
+        <x>55</x>
+        <y>70</y>
+        <image>./Images/pin-note.png</image>
     </dialog>
 
     <dialog id="4" idParent="3" type="C" idBat="5" end="false">
@@ -124,9 +124,9 @@ et des informations complémentaires sur ce sujet.
 
     <dialog id="14" idParent="13" type="F" idBat="4" end="false">
         <content>/Ressources/Notes/chapter5-note2.rst</content>
-        <x>60</x>
-        <y>31</y>
-        <image>./Images/note.png</image>
+        <x>50</x>
+        <y>80</y>
+        <image>./Images/pin-note.png</image>
     </dialog>
 
     <dialog id="15" idParent="14" type="C" idBat="4" end="false">
@@ -138,9 +138,9 @@ Voici une fiche avec une introduction au game play et aux critères ergonomiques
 
     <dialog id="16" idParent="15" type="F" idBat="4" end="false">
         <content>/Ressources/Notes/chapter5-note3.rst</content>
-        <x>70</x>
-        <y>31</y>
-        <image>./Images/note.png</image>
+        <x>45</x>
+        <y>65</y>
+        <image>./Images/pin-note.png</image>
     </dialog>
 
     <dialog id="17" idParent="16" type="C" idBat="7" end="false">
