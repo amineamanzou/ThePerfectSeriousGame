@@ -39,14 +39,26 @@ class BossScreen(GameScreen):
             globalscore += room.score
             dialog = DialogTextElement()
             dialog.type = "C"
-            if room.score >= 50:
-                dialog.text = "J'ai eu des retours positifs en passant devant le département " + room.name + " ils sont très entousiaste à l'idée de jouer à un Serious Game, vous avez su les motiver et les impliquer dans le projet."
-            elif room.score >= 0:
-                dialog.text = "Comme vous l'avez constaté le département " + room.name + " est favorable à la poursuite du projet"
-            elif room.score >= -50:
-                dialog.text = "J'ai entendu dire que le département " + room.name + " n'est pas très enthousiaste à l'idée "
+
+            if room.name == "boss":
+                if room.score >= 50:
+                    dialog.text = "Personnellement, j'ai trouvé votre étude très pertinente, je pense que nous avons bien fait de vous confier ce projet"
+                elif room.score >= 0:
+                    dialog.text = "Personnellement, vous avez su me convaicre au fur et à mesure de nos échanges"
+                elif room.score >= -50:
+                    dialog.text = "Personnellement, beaucoup de point me semblent encore assez obscures"
+                else:
+                    dialog.text = "Personnellement, je suis désolé mais j'ai du mal à me représenter le serious game tel que vous me l'avez décrit"
             else:
-                dialog.text = "Le département " + room.name + " est fortement hostile au projet, vous n'avez pas du tout cerné leurs attentes et avez négligé leur point de vue."
+                if room.score >= 50:
+                    dialog.text = "J'ai eu des retours positifs en passant devant le département " + room.name + " ils sont très entousiaste à l'idée de jouer à un Serious Game, vous avez su les motiver et les impliquer dans le projet."
+                elif room.score >= 0:
+                    dialog.text = "Comme vous l'avez constaté le département " + room.name + " est favorable à la poursuite du projet"
+                elif room.score >= -50:
+                    dialog.text = "J'ai entendu dire que le département " + room.name + " n'est pas très enthousiaste à l'idée "
+                else:
+                    dialog.text = "Le département " + room.name + " est fortement hostile au projet, vous n'avez pas du tout cerné leurs attentes et avez négligé leur point de vue."
+            
             self.dialogs.append(dialog)
 
         dialog = DialogTextElement()
@@ -61,10 +73,9 @@ class BossScreen(GameScreen):
             dialog.text = "Mmmh... Go ou No go ? J'ai pas beaucoup de retours positifs malheursement il faut refaire une autre étude préalable."
         elif globalscore >= -100:
             dialog.text = "J'ai vraiment pas beaucoup de retours positifs, je pense qu'on devrait mettre en place une formation e-learning."
-        elif globalscore >= -200:
-            dialog.text = "Qu'est ce qui se passe ? J'ai que des mauvais retours. J'ai bien peur que les départements pensent à faire grève à cause de ce projet. No go."
         else:
-            dialog.text = ""
+            dialog.text = "Qu'est ce qui se passe ? J'ai que des mauvais retours. J'ai bien peur que les départements pensent à faire grève à cause de ce projet. No go."
+
         self.dialogs.append(dialog)
 
     def end(self, obj, val):
