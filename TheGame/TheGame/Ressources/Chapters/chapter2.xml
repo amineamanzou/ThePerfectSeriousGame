@@ -1,36 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <chapter>
-
-  <!-- un dialog a un type :! C="Classique" - E="Evaluation" - F="Fiche" -->
-
-<!--END 10 & 16-->
-
-  <!-- Deux dialogues classiques -->
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
-    <text>Je ne sais pas si tu  y as pensé mais il y a un point qui me permet important pour l’amélioration de l’entreprise, c’est la communication!</text>
+    <text>Je ne sais pas si tu y as pensé, mais il y a un point qui me permet important pour l'amélioration de l'entreprise, c'est la communication !</text>
   </dialog>
 
   <dialog id="2" idParent="1"  type="C" idBat="4" end="false">
     <text>Je t’ai laissé une fiche pour que tu en apprennes plus sur ce sujet.</text>
   </dialog>
-
-  <!-- Une fiche à lire, qui va débloquer deux branches de dialogues classiques et d'évaluation -->
-<!--  <dialog id="3" idParent="2" type="F" idBat="4" end="false">
-    <content>[size=20]La communication dans l'entreprise[/size]
-
-      [size=16]Communiquer pour vivre ensemble[/size]
-
-            [size=12]\nDans l'entreprise, il est important de vivre en harmonie avec ses collègues.
-            \nCela est bénéfique pour tout le monde: pour soi, pour ses collègues et pour l'entreprise
-            \nPour soi, cela donne un meilleur confort de travail et un certain bien être au travail.
-            \nPour l'entreprise, cela donne une bonne image et l'envie de rejoindre celle-ci et de travailler dur pour elle.[/size]
-
-
-    </content>
-    <x>600</x>
-    <y>600</y>
-    <image>./Images/fiche.png</image>
-  </dialog>-->
 
   <dialog id="3" idParent="2" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter2-note1.rst</content>
@@ -40,13 +16,11 @@
   </dialog>
 
   <dialog id="4" idParent="3"  type="C" idBat="4" end="false">
-    <text> Peut-être que tu peux essayer de voir M Alliance, le boss, s’il a du temps à t’accorder. Sinon, tu peux essayer d’en discuter avec le service RH, ils auront très certainement des informations à propos de la communication au sein de nos locaux. </text>
+    <text>Peut-être que tu peux essayer de voir M Alliance, le boss, s’il a du temps à t’accorder. Sinon, tu peux essayer d’en discuter avec le service RH, ils auront très certainement des informations à propos de la communication au sein de nos locaux.</text>
   </dialog>
-  <!-- la fiche debloque deux branches-->
 
-  <!-- Première branche, côté BOSS -->
   <dialog id="5" idParent="4"  type="C" idBat="6" end="false">
-    <text> Bonjour, je suis monsieur Alliance, PDG de cette entreprise. J'ai entendu parler de votre travail et de vos recherches.
+    <text>Bonjour, je suis monsieur Alliance, PDG de cette entreprise. J'ai entendu parler de votre travail et de vos recherches.
 Je suis en faveur d'une bonne ambiance au travail. J'aime à croire que les employés sont heureux dans leur environnement de travail et qu'ils entretiennent de bonnes relations avec leurs collègues.
 Cependant, j'espère que grâce à ce travail, nous pourrons inspirer d'avantage cet esprit d'harmonie à nos collaborateurs.</text>
   </dialog>
@@ -57,10 +31,8 @@ Et vous, pensez-vous que la bonne entente entre les collaborateurs rend l'entrep
     </text>
   </dialog>
 
-  <!-- Eval pour repondre au boss -->
   <dialog id="7" idParent="6"  type="E" idBat="6" end="false">
-    <title>Que répondez vous à Mr Alliance ?</title>
-    <!-- les différents choix -->
+    <title>Que répondez-vous à Mr Alliance ?</title>
     <choix>
       <answer id="1">
         <text>Je pense que vous avez raison. En entretenant de bonnes relations avec mes collègues,
@@ -68,12 +40,12 @@ je suis content de venir travailler le matin et je pense que cela me rend plus p
         <score>10</score>
       </answer>
       <answer id="2">
-        <text>Qu'importe les relations entre collègues? Je vais au bureau le matin et fait ma journée de travail.
+        <text>Qu'importent les relations entre collègues ? Je vais au bureau le matin et fais ma journée de travail.
 Les relations avec mes collègues ne sont pas importantes.</text>
         <score>-10</score>
       </answer>
       <answer id="3">
-        <text>Je ne sais pas trop..
+        <text>Je ne sais pas trop...
 Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au travail.</text>
         <score>0</score>
       </answer>
@@ -82,7 +54,7 @@ Je ne vois pas en quoi cela peut impacter mon travail ou mon bien-être au trava
 
   <dialog id="8" idParent="7"  type="C" idBat="6" end="false">
     <text>
-J'ai une petite question, avez-vous déjà rencontrer les autres membres du projet ?
+J'ai une petite question, avez-vous déjà rencontré les autres membres du projet ?
     </text>
   </dialog>
 
@@ -98,26 +70,23 @@ J'ai une petite question, avez-vous déjà rencontrer les autres membres du proj
         <score>0</score>
       </answer>
       <answer id="3">
-        <text>Non, j'appréhende toujours le moment de rencontrer de nouveaux collaborateurs..</text>
+        <text>Non, j'appréhende toujours le moment de rencontrer de nouveaux collaborateurs...</text>
         <score>-10</score>
       </answer>
     </choix>
   </dialog>
 
   <dialog id="10" idParent="9"  type="C" idBat="6" end="true">
-    <text>D'accord, de toute manière, vous les verrez tout au long de ce projet. Je suis ravi de vous avoir enfin rencontré. A bientot.</text>
+    <text>D'accord, de toute manière, vous les verrez tout au long de ce projet. Je suis ravi de vous avoir enfin rencontré. À bientôt.</text>
   </dialog>
 
-  <!-- Deuxième branche, côté RH -->
   <dialog id="11" idParent="4"  type="C" idBat="3" end="false">
     <text>Bienvenue au sein de la DRH. C'est moi, Brigitte.
-Je vous attendais avec impatience.
-    </text>
+Je vous attendais avec impatience.</text>
   </dialog>
 
   <dialog id="12" idParent="11"  type="C" idBat="3" end="false">
-    <text>Vous savez à quoi vous attendre avec les RH ?
-    </text>
+    <text>Vous savez à quoi vous attendre avec les RH ?</text>
   </dialog>
 
     <dialog id="13" idParent="12"  type="E" idBat="3" end="false">
@@ -132,7 +101,7 @@ Je vous attendais avec impatience.
           <score>-10</score>
         </answer>
         <answer id="3">
-          <text>Ca augmente la moyenne homme femme, que du bon !</text>
+          <text>Ça augmente la moyenne homme-femme, que du bon !</text>
           <score>0</score>
         </answer>
       </choix>
@@ -140,13 +109,13 @@ Je vous attendais avec impatience.
 
   <dialog id="14" idParent="13"  type="C" idBat="3" end="false">
     <text>
-Chacun son point de vue, en ce qui me concerne je suis ravie qu'il n'y aie pas que des femmes dans les RH !
+Chacun son point de vue, en ce qui me concerne, je suis ravie qu'il n'y ait pas que des femmes dans les RH !
     </text>
   </dialog>
 
   <dialog id="15" idParent="14"  type="C" idBat="3" end="false">
     <text>
-Nous allons essayer de vous aider afin de promouvoir votre serious game au sein de l'organisation, mais également préparer le terrain afin de l'intégrer au processus de formation d'un employé!
+Nous allons essayer de vous aider afin de promouvoir votre serious game au sein de l'organisation, mais également préparer le terrain afin de l'intégrer au processus de formation d'un employé !
 Mais avant ça, il va te falloir collaborer avec les personnes en charge de la réalisation.
 Reviens quand tu en as besoin !
     </text>
@@ -154,7 +123,7 @@ Reviens quand tu en as besoin !
 
   <dialog id="16" idParent="15"  type="C" idBat="3" end="true">
     <text>
-Je pense qu'on a fais le tour pour le moment, au plaisir de te revoir. Bon courage.
+Je pense qu'on a fait le tour pour le moment, au plaisir de te revoir. Bon courage.
     </text>
   </dialog>
 

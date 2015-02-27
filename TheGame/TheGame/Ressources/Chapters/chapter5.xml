@@ -2,7 +2,7 @@
 <chapter>
 
     <dialog id="1" idParent="0" type="C" idBat="4" end="false">
-        <text> J’ai eu des retours de plusieurs équipes. Tu as fait ton travail de collecte d’information, tu peux commencer à parler réalisation du serious game un peu plus en détail avec le marketing puis la MOE maintenant.</text>
+        <text>J'ai eu des retours de plusieurs équipes. Tu as fait ton travail de collecte d'informations, tu peux commencer à parler réalisation du serious game un peu plus en détail avec le marketing puis la MOE maintenant.</text>
     </dialog>
 
     <dialog id="2" idParent="1" type="C" idBat="4" end="false">
@@ -16,10 +16,10 @@
     </dialog>
 
     <dialog id="4" idParent="3" type="C" idBat="5" end="false">
-        <text>Alors, enfin prêt pour définir les bases du scénario? Nous devons donc nous servir du serious game pour atteindre nos objectifs d’apprentissage. Le joueur doit pouvoir expérimenter un projet sans prendre de risques et sans en avoir peur car cela reste une simulation.</text>
+        <text>Alors, enfin prêt pour définir les bases du scénario ? Nous devons donc nous servir du serious game pour atteindre nos objectifs d'apprentissage. Le joueur doit pouvoir expérimenter un projet sans prendre de risques et sans en avoir peur, car cela reste une simulation.</text>
     </dialog>
     <dialog id="5" idParent="4" type="C" idBat="5" end="false">
-        <text>Concernant la communication, il faut donc stimuler le joueur a développer les bonnes habitudes. Comme privilégier les appels, être positifs mais ferme dans les bonnes réponses et penser à féliciter ses interlocuteurs. As-tu d’autres idées?</text>
+        <text>Concernant la communication, il faut donc stimuler le joueur a développer les bonnes habitudes. Comme privilégier les appels, être positifs mais ferme dans les bonnes réponses et penser à féliciter ses interlocuteurs. As-tu d'autres idées ?</text>
     </dialog>
 
     <dialog id="6" idParent="5" type="E" idBat="5" end="false">
@@ -27,10 +27,10 @@
         <choix>
             <answer id="1">
                 <text>
-C’est effectivement cela, il faut que les bonnes réponses soient celle qui servent nos objectifs.
-Le joueur devra être guidé pour qu’il sente qu’il réussi le projet. C’est se que l’on appelle faire
-un bon gameflow. Il faut challenger l’utilisateur mais toujours le guider pour qu’il ne sente pas
-la charge de travail. Il faut qu’il puisse facilement voir et corriger ses erreurs pour s’améliorer.
+C'est effectivement cela, il faut que les bonnes réponses soient celle qui servent nos objectifs.
+Le joueur devra être guidé pour qu'il sente qu'il réussit le projet. C'est ce que l'on appelle faire
+un bon gameflow. Il faut challenger l'utilisateur, mais toujours le guider pour qu'il ne sente pas
+la charge de travail. Il faut qu'il puisse facilement voir et corriger ses erreurs pour s'améliorer.
                 </text>
                 <score>10</score>
             </answer>
@@ -46,7 +46,7 @@ du projet.
     </dialog>
 
     <dialog id="7" idParent="6" type="C" idBat="5" end="false">
-        <text>Concernant la méthodologie nous pouvons utiliser le fait qu’il soit guidé pour lui faire suivre cette méthodologie. J’utiliserais bien un médiateur pour cela, quelqu’un de son équipe pourrait être un bon guide. Cela renforcerait le côté réaliste ne crois-tu pas?</text>
+        <text>Concernant la méthodologie, nous pouvons utiliser le fait qu'il soit guidé pour lui faire suivre cette méthodologie. J'utiliserais bien un médiateur pour cela, quelqu'un de son équipe pourrait être un bon guide. Cela renforcerait le côté réaliste ne crois-tu pas ?</text>
     </dialog>
 
     <dialog id="8" idParent="7" type="E" idBat="5" end="false">
@@ -54,16 +54,16 @@ du projet.
         <choix>
             <answer id="1">
                 <text>
-Je pense qu’un médiateur ne peut pas guider assez notre utilisateur car il ne peut être partout et
-tout le temps en train d’accompagner notre utilisateur.
+Je pense qu'un médiateur ne peut pas guider assez notre utilisateur, car il ne peut être partout et
+tout le temps en train d'accompagner notre utilisateur.
                 </text>
                 <score>-10</score>
             </answer>
 
             <answer id="2">
                 <text>
-Je pense que c’est une très bonne idée d’utiliser un médiateur, c’est effectivement se qui se
-passerais dans la réalité. Nous devrions également inclure des connaissances qui n’auraient pas été
+Je pense que c'est une très bonne idée d'utiliser un médiateur, c'est effectivement ce qui se
+passerais dans la réalité. Nous devrions également inclure des connaissances qui n'auraient pas été
 transmises à nos utilisateurs et recentrer leur place dans notre entreprise.
                 </text>
                 <score>10</score>
@@ -80,14 +80,14 @@ transmises à nos utilisateurs et recentrer leur place dans notre entreprise.
         <choix>
             <answer id="1">
                 <text>
-Je suis d’accord, en tout cas merci pour ton aide et ta collaboration. J’espère que j'obtiendrais
-le go pour ce projet, nous avons tout fait pour donc je penses que l’on se reverra très vite!
+Je suis d'accord, en tout cas merci pour ton aide et ta collaboration. J'espère que j'obtiendrais
+le go pour ce projet, nous avons tout fait pour donc je pense que l'on se reverra très vite !
                 </text>
                 <score>10</score>
             </answer>
 
             <answer id="2">
-                <text>Je suis d’accord, je te tiens au courant si j’obtiens le go!</text>
+                <text>Je suis d'accord, je te tiens au courant si j'obtiens le go !</text>
                 <score>-10</score>
             </answer>
         </choix>
@@ -102,7 +102,7 @@ le go pour ce projet, nous avons tout fait pour donc je penses que l’on se rev
         <choix>
             <answer id="1">
                 <text>
-Pour être efficace, il faut fixer mes objectifs, je me rend compte qu'il y a de nombreux
+Pour être efficace, il faut fixer mes objectifs, je me rends compte qu'il y a de nombreux
 aspects à prendre en compte pour que notre serious game apporte le plus à l'entreprise.
                 </text>
                 <score>10</score>
@@ -160,8 +160,8 @@ l’accompagner au mieux à faire les bons choix et comprendre quelles sont les 
 
             <answer id="2">
                 <text>
-J’ai fait le choix de proposer un serious game le plus réaliste possible et avec de
-nombreuses fonctionnalités pour que l’utilisateur aient beaucoup de choix et qu’il corrige ses
+J'ai fait le choix de proposer un serious game le plus réaliste possible et avec de
+nombreuses fonctionnalités pour que l'utilisateur ait beaucoup de choix et qu'il corrige ses
 erreurs du quotidien en les expérimentant dans le jeu.
                 </text>
                 <score>20</score>
@@ -170,7 +170,7 @@ erreurs du quotidien en les expérimentant dans le jeu.
     </dialog>
 
     <dialog id="19" idParent="18" type="C" idBat="7" end="false">
-        <text>Et concernant le but du jeu. Comment pensez-vous le Game flow et le Game Play?</text>
+        <text>Et concernant le but du jeu. Comment pensez-vous le gameflow et le gameplay ?</text>
     </dialog>
 
     <dialog id="20" idParent="19" type="E" idBat="7" end="false">
@@ -178,18 +178,18 @@ erreurs du quotidien en les expérimentant dans le jeu.
         <choix>
             <answer id="1">
                 <text>
-Au niveau du Game flow, il faut l’équilibrer proposant un gameplay avec beaucoup d’options.
-En variant les modes de commandes et d’intéractions proposée au joueur on lui propose un
+Au niveau du gameflow, il faut l'équilibrer proposant un gameplay avec beaucoup d'options.
+En variant les modes de commandes et d'interactions proposée au joueur, on lui propose un
 meilleur gameplay avec un déroulement auto-génératif. Avec le marketing, nous avons choisi
-d’utiliser un interlocuteur du jeu pour aider et guider l’utilisateur comme dans la vie réelle.
+d'utiliser un interlocuteur du jeu pour aider et guider l'utilisateur comme dans la vie réelle.
                 </text>
                 <score>10</score>
             </answer>
 
             <answer id="2">
                 <text>
-Pour le game play je propose de faire un jeu en 2D et pour le reste nous verrons plus tard
-si j’ai bien le go pour le projet.
+Pour le gameplay, je propose de faire un jeu en 2D et pour le reste, nous verrons plus tard
+si j'ai bien le go pour le projet.
                 </text>
                 <score>-10</score>
             </answer>
@@ -197,11 +197,11 @@ si j’ai bien le go pour le projet.
     </dialog>
 
     <dialog id="21" idParent="20" type="C" idBat="7" end="false">
-        <text>Si vous n’avez plus de questions, je vous souhaite bon courage et j’espère à bientôt!</text>
+        <text>Si vous n'avez plus de questions, je vous souhaite bon courage et j'espère à bientôt !</text>
     </dialog>
 
     <dialog id="22" idParent="21" type="C" idBat="4" end="true">
-        <text>Nous voilà à la fin de ton premier travail d’étude préalable. Je te laisse aller voir le PDG pour qu’il te dise s’il met un go ou un no go sur le projet. Il a déjà eu le retour de toutes les équipes avec qui tu as pu travailler et te donnera donc sa décision. Bonne chance!</text>
+        <text>Nous voilà à la fin de ton premier travail d'étude préalable. Je te laisse aller voir le PDG pour qu'il te dise s'il met un go ou un no go sur le projet. Il a déjà eu le retour de toutes les équipes avec qui tu as pu travailler et te donnera donc sa décision. Bonne chance !</text>
     </dialog>
 
 </chapter>

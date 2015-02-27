@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <chapter>
-
-  <!--end 20 & 28 -->
-
   <dialog id="1" idParent="0" type="C" idBat="4" end="false">
     <text>
 Ah, tu es là, je me demandais quand tu passerais voir ton manager préféré !
@@ -47,7 +44,6 @@ Alors, ou en est tu de ton travail ? Est-ce que tu as réussi à fixer tout tes 
     <text>Te revoilà! J’ai lu la fiche d'Eric, je pense que tu devrais exposer ton choix de type de serious game au Marketing. Cependant, tu peux aussi aller voir la RH pour mieux définir la cible.</text>
   </dialog>
 
-  <!--BRANCHE 1 : debut RH -->
   <dialog id="7" idParent="6"  type="E" idBat="3" end="false">
     <title>Bonjour à nouveau! Quel bon vent t’amène?</title>
     <choix>
@@ -119,7 +115,6 @@ ou de la délégation de tâches comme les managers ou les MOA et MOE.
     <text>Je vais te pose une fiche sur ton bureau sur les serious game et leurs cibles. J’ai gardé cette fiche d’une formation récente. Vas la lire avant de voir le service Marketing.</text>
   </dialog>
 
-  <!--fiche sur bureau-->
   <dialog id="15" idParent="14" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter4-note2.rst</content>
     <x>65</x>
@@ -127,7 +122,6 @@ ou de la délégation de tâches comme les managers ou les MOA et MOE.
     <image>./Images/note.png</image>
   </dialog>
 
-  <!--marketing(5)-->
   <dialog id="16" idParent="15" type="C" idBat="5" end="false">
     <text>Bonjour! Brigitte m’a dit que tu étais passé lui parler de notre cible. Elle m’a envoyé un compte rendu de votre réunion. Que me proposes-tu?</text>
   </dialog>
@@ -196,7 +190,6 @@ et travailler sur ces failles ou mauvaises habitudes.
     <text>Très bien! Repasses me voir quand tu en as besoin.</text>
   </dialog>
 
-  <!--BRANCHE 2 id parent 6-->
   <dialog id="21" idParent="6" type="C" idBat="5" end="true">
     <text>Greg m’a dit qu’il t’avait envoyé une fiche concernant le type de serious game. Alors quel est ton choix?</text>
   </dialog>
@@ -233,7 +226,6 @@ Le jeu évolue dans le temps en fonction des réponses du joueur.
     <text>Brigitte veut te voir elle a un document pour toi. Reviens me voir tout à l’heure.</text>
   </dialog>
 
-  <!--rh 3-->
   <dialog id="25" idParent="24" type="C" idBat="3" end="true">
     <text>Bonjour à nouveau! J’ai une fiche qui est très intéressante, je voulais te la donner avant que tu travailles plus avec le marketing.</text>
   </dialog>
@@ -242,7 +234,6 @@ Le jeu évolue dans le temps en fonction des réponses du joueur.
     <text>Bon courage, je te laisse lire ça avant d’aller revoir Magalie.</text>
   </dialog>
 
-  <!--fiche au bureau-->
   <dialog id="27" idParent="26" type="F" idBat="4" end="false">
     <content>/Ressources/Notes/chapter4-note3.rst</content>
     <x>60</x>
@@ -250,7 +241,6 @@ Le jeu évolue dans le temps en fonction des réponses du joueur.
     <image>./Images/pin-note.png</image>
   </dialog>
 
-  <!--back to marketing-->
   <dialog id="28" idParent="27" type="C" idBat="5" end="true">
     <text>Je suppose que tu as lu la fiche de Brigitte. Quelle approche souhaites tu utiliser?</text>
   </dialog>
@@ -260,7 +250,7 @@ Le jeu évolue dans le temps en fonction des réponses du joueur.
     <choix>
       <answer id="1">
         <text>
-Je souhaite utiliser une approche principalement démonstrative, c’est à dire que l’utilisateur va
+Je souhaite utiliser une approche principalement démonstrative, c'est-à-dire que l'utilisateur va
 expérimenter une situation et essayer de faire les meilleurs choix.
 Les autres méthodes ne sont pas compatibles.
         </text>
@@ -268,10 +258,10 @@ Les autres méthodes ne sont pas compatibles.
       </answer>
       <answer id="2">
         <text>
-Je souhaite utiliser les approches associative, illustrative mais surtout démonstrative.
-L’approche démonstrative où le joueur expérimente par lui même est la plus importante.
-Cependant utiliser également les autres approches permet d’offrir plus d'interactions
-avec le joueur et d’apporter une touche de “game” nécessaire.
+Je souhaite utiliser les approches associatives, illustratives mais surtout démonstratives.
+L'approche démonstrative où le joueur expérimente par lui-même est la plus importante.
+Cependant utiliser également les autres approches permet d'offrir plus d'interactions
+avec le joueur et d'apporter une touche de "game" nécessaire.
         </text>
         <score>10</score>
       </answer>
@@ -279,15 +269,15 @@ avec le joueur et d’apporter une touche de “game” nécessaire.
   </dialog>
 
   <dialog id="30" idParent="29" type="C" idBat="5" end="true">
-    <text>Quand la MOA, Magalie, te parlait de ses besoins, elle te disait qu’il y avait des problèmes de communication et que le joueurs devait apprendre à téléphoner et pas toujours envoyer des mails. Si j’ai bien compris la fiche de Brigitte, offrir ce genre d’option revient à utiliser l’approche illustrative. Je suis donc favorable à l’utilisation de toutes les approches possibles si elle nous permettent d’avoir plus de possibilité d’atteindre notre joueur sur les bonnes pratiques.</text>
+    <text>Quand la MOA, Magalie, te parlait de ses besoins, elle te disait qu'il y avait des problèmes de communication et que le joueur devait apprendre à téléphoner et pas toujours envoyer des mails. Si j'ai bien compris la fiche de Brigitte, offrir ce genre d'option revient à utiliser l'approche illustrative. Je suis donc favorable à l'utilisation de toutes les approches possibles si elles nous permettent d'avoir plus de possibilités d'atteindre notre joueur sur les bonnes pratiques.</text>
   </dialog>
 
   <dialog id="31" idParent="30" type="C" idBat="5" end="true">
-    <text>Tout à l'heure tu me parlais d’un jeu abouti, quels sont les critères sur lesquels tu te bases?</text>
+    <text>Tout à l'heure, tu me parlais d'un jeu abouti, quels sont les critères sur lesquels tu te bases ?</text>
   </dialog>
 
   <dialog id="32" idParent="31"  type="E" idBat="5" end="true">
-    <title>Les critères: </title>
+    <title>Les critères :</title>
     <choix>
       <answer id="1">
         <text>Le jeu devra être principalement amusant et apprendre de bonnes habitudes à l’utilisateur.</text>
@@ -295,8 +285,8 @@ avec le joueur et d’apporter une touche de “game” nécessaire.
       </answer>
       <answer id="2">
         <text>
-Il devra réunir les critères de succès: un graphisme soigné, il devra être intéressant pour notre
-cible et assez riche au niveau de la qualité des informations liés à l’apprentissage comme
+Il devra réunir les critères de succès : un graphisme soigné, il devra être intéressant pour notre
+cible et assez riche au niveau de la qualité des informations liés à l'apprentissage comme
 les bonnes habitudes et méthodes.
         </text>
         <score>10</score>

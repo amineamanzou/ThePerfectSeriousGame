@@ -170,10 +170,23 @@
     <Content Include="Ressources\Notes\chapter1-note1.rst">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Ressources\Notes\chapter1-note2.rst" />
+    <Content Include="Ressources\Notes\chapter1-note3.rst" />
+    <Content Include="Ressources\Notes\chapter1-note4.rst" />
+    <Content Include="Ressources\Notes\chapter1-note5.rst" />
+    <Content Include="Ressources\Notes\chapter1-note6.rst" />
     <Content Include="Ressources\Notes\chapter2-note1.rst">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Ressources\Notes\chapter3-note1.rst" />
+    <Content Include="Ressources\Notes\chapter3-note2.rst" />
+    <Content Include="Ressources\Notes\chapter3-note3.rst" />
+    <Content Include="Ressources\Notes\chapter4-note1.rst" />
+    <Content Include="Ressources\Notes\chapter4-note2.rst" />
+    <Content Include="Ressources\Notes\chapter4-note3.rst" />
+    <Content Include="Ressources\Notes\chapter5-note1.rst" />
+    <Content Include="Ressources\Notes\chapter5-note2.rst" />
+    <Content Include="Ressources\Notes\chapter5-note3.rst" />
     <Content Include="Ressources\rooms.xml" />
     <Content Include="Ressources\story-dev.xml" />
     <Content Include="Ressources\story.xml" />
